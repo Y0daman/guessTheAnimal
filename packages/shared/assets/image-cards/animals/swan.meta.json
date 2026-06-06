@@ -1,0 +1,31 @@
+{
+  "id": "animal-swan",
+  "imageId": "animals/swan",
+  "names": {
+    "sv": "Svan",
+    "no": "Svane",
+    "da": "Svane",
+    "fi": "Joutsen",
+    "is": "Svanur",
+    "en-GB": "Swan",
+    "en-US": "Swan",
+    "en-CA": "Swan",
+    "en-AU": "Swan",
+    "de": "Schwan",
+    "fr": "Cygne",
+    "es": "Cisne",
+    "it": "Cigno",
+    "nl": "Zwaan",
+    "pt-BR": "Cisne",
+    "ja": "ハクチョウ",
+    "ko": "백조",
+    "hi": "हंस"
+  },
+  "prompt": "A cute child-friendly cartoon swan, graceful long neck, white feathers, floating on water, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:38:35.558Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

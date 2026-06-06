@@ -1,0 +1,31 @@
+{
+  "id": "animal-ostrich",
+  "imageId": "animals/ostrich",
+  "names": {
+    "sv": "Struts",
+    "no": "Struts",
+    "da": "Struds",
+    "fi": "Strutsi",
+    "is": "Strútur",
+    "en-GB": "Ostrich",
+    "en-US": "Ostrich",
+    "en-CA": "Ostrich",
+    "en-AU": "Ostrich",
+    "de": "Strauß",
+    "fr": "Autruche",
+    "es": "Avestruz",
+    "it": "Struzzo",
+    "nl": "Struisvogel",
+    "pt-BR": "Avestruz",
+    "ja": "ダチョウ",
+    "ko": "타조",
+    "hi": "शुतुरमुर्ग"
+  },
+  "prompt": "A cute child-friendly cartoon ostrich, full body, long neck, long legs, fluffy feathers, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:41:24.226Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

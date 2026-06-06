@@ -1,0 +1,31 @@
+{
+  "id": "animal-scorpion",
+  "imageId": "animals/scorpion",
+  "names": {
+    "sv": "Skorpion",
+    "no": "Skorpion",
+    "da": "Skorpion",
+    "fi": "Skorpioni",
+    "is": "Sporðdreki",
+    "en-GB": "Scorpion",
+    "en-US": "Scorpion",
+    "en-CA": "Scorpion",
+    "en-AU": "Scorpion",
+    "de": "Skorpion",
+    "fr": "Scorpion",
+    "es": "Escorpión",
+    "it": "Scorpione",
+    "nl": "Schorpioen",
+    "pt-BR": "Escorpião",
+    "ja": "サソリ",
+    "ko": "전갈",
+    "hi": "बिच्छू"
+  },
+  "prompt": "A cute child-friendly cartoon scorpion, small claws, curved tail, friendly non-scary face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:51:18.502Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

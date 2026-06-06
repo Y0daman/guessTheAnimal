@@ -1,0 +1,31 @@
+{
+  "id": "animal-jaguar",
+  "imageId": "animals/jaguar",
+  "names": {
+    "sv": "Jaguar",
+    "no": "Jaguar",
+    "da": "Jaguar",
+    "fi": "Jaguaari",
+    "is": "Jagúar",
+    "en-GB": "Jaguar",
+    "en-US": "Jaguar",
+    "en-CA": "Jaguar",
+    "en-AU": "Jaguar",
+    "de": "Jaguar",
+    "fr": "Jaguar",
+    "es": "Jaguar",
+    "it": "Giaguaro",
+    "nl": "Jaguar",
+    "pt-BR": "Onça-pintada",
+    "ja": "ジャガー",
+    "ko": "재규어",
+    "hi": "जगुआर"
+  },
+  "prompt": "A cute child-friendly cartoon jaguar, full body, strong rounded body, rosette spots, friendly face, jungle hint, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:26:28.391Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

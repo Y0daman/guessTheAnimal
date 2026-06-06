@@ -1,0 +1,31 @@
+{
+  "id": "animal-frog",
+  "imageId": "animals/frog",
+  "names": {
+    "sv": "Groda",
+    "no": "Frosk",
+    "da": "Frø",
+    "fi": "Sammakko",
+    "is": "Froskur",
+    "en-GB": "Frog",
+    "en-US": "Frog",
+    "en-CA": "Frog",
+    "en-AU": "Frog",
+    "de": "Frosch",
+    "fr": "Grenouille",
+    "es": "Rana",
+    "it": "Rana",
+    "nl": "Kikker",
+    "pt-BR": "Sapo",
+    "ja": "カエル",
+    "ko": "개구리",
+    "hi": "मेंढक"
+  },
+  "prompt": "A cute child-friendly cartoon frog, full body, big eyes, green rounded body, sitting pose, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:43:20.818Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

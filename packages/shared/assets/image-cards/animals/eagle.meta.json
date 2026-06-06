@@ -1,0 +1,31 @@
+{
+  "id": "animal-eagle",
+  "imageId": "animals/eagle",
+  "names": {
+    "sv": "Örn",
+    "no": "Ørn",
+    "da": "Ørn",
+    "fi": "Kotka",
+    "is": "Örn",
+    "en-GB": "Eagle",
+    "en-US": "Eagle",
+    "en-CA": "Eagle",
+    "en-AU": "Eagle",
+    "de": "Adler",
+    "fr": "Aigle",
+    "es": "Águila",
+    "it": "Aquila",
+    "nl": "Arend",
+    "pt-BR": "Águia",
+    "ja": "ワシ",
+    "ko": "독수리",
+    "hi": "गरुड़"
+  },
+  "prompt": "A cute child-friendly cartoon eagle, wings partly spread, strong beak, friendly heroic look, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:39:30.173Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

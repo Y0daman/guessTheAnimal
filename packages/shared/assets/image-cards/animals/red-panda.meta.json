@@ -1,0 +1,31 @@
+{
+  "id": "animal-red-panda",
+  "imageId": "animals/red-panda",
+  "names": {
+    "sv": "Röd panda",
+    "no": "Rød panda",
+    "da": "Rød panda",
+    "fi": "Kultapanda",
+    "is": "Rauð panda",
+    "en-GB": "Red panda",
+    "en-US": "Red panda",
+    "en-CA": "Red panda",
+    "en-AU": "Red panda",
+    "de": "Roter Panda",
+    "fr": "Panda roux",
+    "es": "Panda rojo",
+    "it": "Panda rosso",
+    "nl": "Rode panda",
+    "pt-BR": "Panda-vermelho",
+    "ja": "レッサーパンダ",
+    "ko": "레서판다",
+    "hi": "लाल पांडा"
+  },
+  "prompt": "A cute child-friendly cartoon red panda, full body, fluffy striped tail, reddish fur, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:53:56.263Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

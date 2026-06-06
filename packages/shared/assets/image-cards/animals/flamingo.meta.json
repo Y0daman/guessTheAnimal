@@ -1,0 +1,31 @@
+{
+  "id": "animal-flamingo",
+  "imageId": "animals/flamingo",
+  "names": {
+    "sv": "Flamingo",
+    "no": "Flamingo",
+    "da": "Flamingo",
+    "fi": "Flamingo",
+    "is": "Flamingó",
+    "en-GB": "Flamingo",
+    "en-US": "Flamingo",
+    "en-CA": "Flamingo",
+    "en-AU": "Flamingo",
+    "de": "Flamingo",
+    "fr": "Flamant rose",
+    "es": "Flamenco",
+    "it": "Fenicottero",
+    "nl": "Flamingo",
+    "pt-BR": "Flamingo",
+    "ja": "フラミンゴ",
+    "ko": "플라밍고",
+    "hi": "फ्लेमिंगो"
+  },
+  "prompt": "A cute child-friendly cartoon flamingo, full body, pink feathers, long legs, curved neck, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:40:26.987Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

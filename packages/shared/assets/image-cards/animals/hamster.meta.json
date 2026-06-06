@@ -1,0 +1,31 @@
+{
+  "id": "animal-hamster",
+  "imageId": "animals/hamster",
+  "names": {
+    "sv": "Hamster",
+    "no": "Hamster",
+    "da": "Hamster",
+    "fi": "Hamsteri",
+    "is": "Hamstur",
+    "en-GB": "Hamster",
+    "en-US": "Hamster",
+    "en-CA": "Hamster",
+    "en-AU": "Hamster",
+    "de": "Hamster",
+    "fr": "Hamster",
+    "es": "Hámster",
+    "it": "Criceto",
+    "nl": "Hamster",
+    "pt-BR": "Hamster",
+    "ja": "ハムスター",
+    "ko": "햄스터",
+    "hi": "हैम्स्टर"
+  },
+  "prompt": "A cute child-friendly cartoon hamster, round fluffy body, tiny paws, cheek pouches, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:36:46.930Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

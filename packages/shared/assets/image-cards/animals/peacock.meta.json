@@ -1,0 +1,31 @@
+{
+  "id": "animal-peacock",
+  "imageId": "animals/peacock",
+  "names": {
+    "sv": "Påfågel",
+    "no": "Påfugl",
+    "da": "Påfugl",
+    "fi": "Riikinkukko",
+    "is": "Páfugl",
+    "en-GB": "Peacock",
+    "en-US": "Peacock",
+    "en-CA": "Peacock",
+    "en-AU": "Peacock",
+    "de": "Pfau",
+    "fr": "Paon",
+    "es": "Pavo real",
+    "it": "Pavone",
+    "nl": "Pauw",
+    "pt-BR": "Pavão",
+    "ja": "クジャク",
+    "ko": "공작",
+    "hi": "मोर"
+  },
+  "prompt": "A cute child-friendly cartoon peacock, colorful tail fan, blue body, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:41:05.140Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

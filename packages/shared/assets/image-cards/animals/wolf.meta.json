@@ -1,0 +1,31 @@
+{
+  "id": "animal-wolf",
+  "imageId": "animals/wolf",
+  "names": {
+    "sv": "Varg",
+    "no": "Ulv",
+    "da": "Ulv",
+    "fi": "Susi",
+    "is": "Úlfur",
+    "en-GB": "Wolf",
+    "en-US": "Wolf",
+    "en-CA": "Wolf",
+    "en-AU": "Wolf",
+    "de": "Wolf",
+    "fr": "Loup",
+    "es": "Lobo",
+    "it": "Lupo",
+    "nl": "Wolf",
+    "pt-BR": "Lobo",
+    "ja": "オオカミ",
+    "ko": "늑대",
+    "hi": "भेड़िया"
+  },
+  "prompt": "A cute child-friendly cartoon wolf, full body, gray fur, friendly but wild look, rounded shapes, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:24:57.958Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "animal-anteater",
+  "imageId": "animals/anteater",
+  "names": {
+    "sv": "Myrslok",
+    "no": "Maursluker",
+    "da": "Myrsluger",
+    "fi": "Muurahaiskarhu",
+    "is": "Mauræta",
+    "en-GB": "Anteater",
+    "en-US": "Anteater",
+    "en-CA": "Anteater",
+    "en-AU": "Anteater",
+    "de": "Ameisenbär",
+    "fr": "Fourmilier",
+    "es": "Oso hormiguero",
+    "it": "Formichiere",
+    "nl": "Miereneter",
+    "pt-BR": "Tamanduá",
+    "ja": "アリクイ",
+    "ko": "개미핥기",
+    "hi": "चींटीखोर"
+  },
+  "prompt": "A cute child-friendly cartoon anteater, full body side view, long snout, bushy tail, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:28:22.179Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

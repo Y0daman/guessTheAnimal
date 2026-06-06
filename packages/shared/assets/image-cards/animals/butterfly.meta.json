@@ -1,0 +1,31 @@
+{
+  "id": "animal-butterfly",
+  "imageId": "animals/butterfly",
+  "names": {
+    "sv": "Fjäril",
+    "no": "Sommerfugl",
+    "da": "Sommerfugl",
+    "fi": "Perhonen",
+    "is": "Fiðrildi",
+    "en-GB": "Butterfly",
+    "en-US": "Butterfly",
+    "en-CA": "Butterfly",
+    "en-AU": "Butterfly",
+    "de": "Schmetterling",
+    "fr": "Papillon",
+    "es": "Mariposa",
+    "it": "Farfalla",
+    "nl": "Vlinder",
+    "pt-BR": "Borboleta",
+    "ja": "チョウ",
+    "ko": "나비",
+    "hi": "तितली"
+  },
+  "prompt": "A cute child-friendly cartoon butterfly, colorful symmetrical wings, small body, friendly style, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:49:17.253Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

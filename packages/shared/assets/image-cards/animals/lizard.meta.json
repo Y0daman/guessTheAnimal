@@ -1,0 +1,31 @@
+{
+  "id": "animal-lizard",
+  "imageId": "animals/lizard",
+  "names": {
+    "sv": "Ödla",
+    "no": "Øgle",
+    "da": "Firben",
+    "fi": "Lisko",
+    "is": "Eðla",
+    "en-GB": "Lizard",
+    "en-US": "Lizard",
+    "en-CA": "Lizard",
+    "en-AU": "Lizard",
+    "de": "Eidechse",
+    "fr": "Lézard",
+    "es": "Lagarto",
+    "it": "Lucertola",
+    "nl": "Hagedis",
+    "pt-BR": "Lagarto",
+    "ja": "トカゲ",
+    "ko": "도마뱀",
+    "hi": "छिपकली"
+  },
+  "prompt": "A cute child-friendly cartoon lizard, full body, long tail, small legs, colorful scales, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:42:58.749Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

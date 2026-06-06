@@ -1,0 +1,31 @@
+{
+  "id": "animal-horse",
+  "imageId": "animals/horse",
+  "names": {
+    "sv": "Häst",
+    "no": "Hest",
+    "da": "Hest",
+    "fi": "Hevonen",
+    "is": "Hestur",
+    "en-GB": "Horse",
+    "en-US": "Horse",
+    "en-CA": "Horse",
+    "en-AU": "Horse",
+    "de": "Pferd",
+    "fr": "Cheval",
+    "es": "Caballo",
+    "it": "Cavallo",
+    "nl": "Paard",
+    "pt-BR": "Cavalo",
+    "ja": "ウマ",
+    "ko": "말",
+    "hi": "घोड़ा"
+  },
+  "prompt": "A cute child-friendly cartoon horse, full body side view, mane, hooves, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:32:18.154Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

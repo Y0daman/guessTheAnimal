@@ -1,0 +1,5054 @@
+{
+  "schemaVersion": 1,
+  "language": "sv",
+  "assetRoot": "packages/shared/assets/image-cards/animals",
+  "purpose": "Metadata for animal image cards, image generation, clues, and future game modes.",
+  "generationDefaults": {
+    "provider": "openai",
+    "model": "gpt-image-2",
+    "aspectRatio": "1:1",
+    "imageSize": "1K",
+    "quality": "fast",
+    "style": "child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image",
+    "negativePrompt": "no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested",
+    "reviewStatus": "draft"
+  },
+  "gameIdeas": [
+    "Beskriv djuret utan att säga namnet.",
+    "Beskriv djuret med tre ord.",
+    "Härma djurets rörelse eller ljud innan svaret låses.",
+    "Imposter får bara kontinent eller habitat som ledtråd.",
+    "Barnläge: använd lättaste ledtråden och visa bilden för vanliga spelare."
+  ],
+  "animals": [
+    {
+      "id": "animal-lion",
+      "imageId": "animals/lion",
+      "nameSv": "Lejon",
+      "descriptionSv": "Ett stort kattdjur med kraftig kropp; hanen har ofta man.",
+      "continents": [
+        "Afrika"
+      ],
+      "habitats": [
+        "savann",
+        "gräsmark"
+      ],
+      "cluesSv": [
+        "Kallas ofta djurens kung.",
+        "Lever i flock.",
+        "Hanen kan ha en stor man."
+      ],
+      "promptSubject": "lion",
+      "prompt": "A cute child-friendly cartoon lion, full body, rounded shapes, golden fur, friendly face, simple clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv manen.",
+        "Beskriv hur djuret låter."
+      ],
+      "names": {
+        "sv": "Lejon",
+        "no": "Løve",
+        "da": "Løve",
+        "fi": "Leijona",
+        "is": "Ljón",
+        "en-GB": "Lion",
+        "en-US": "Lion",
+        "en-CA": "Lion",
+        "en-AU": "Lion",
+        "de": "Löwe",
+        "fr": "Lion",
+        "es": "León",
+        "it": "Leone",
+        "nl": "Leeuw",
+        "pt-BR": "Leão",
+        "ja": "ライオン",
+        "ko": "사자",
+        "hi": "शेर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/lion.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/lion.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-tiger",
+      "imageId": "animals/tiger",
+      "nameSv": "Tiger",
+      "descriptionSv": "Ett stort randigt kattdjur som ofta lever ensamt.",
+      "continents": [
+        "Asien"
+      ],
+      "habitats": [
+        "skog",
+        "djungel",
+        "gräsmark"
+      ],
+      "cluesSv": [
+        "Har tydliga svarta ränder.",
+        "Är ett stort kattdjur.",
+        "Lever vilt i Asien."
+      ],
+      "promptSubject": "tiger",
+      "prompt": "A cute child-friendly cartoon tiger, full body side view, rounded shapes, orange fur with soft black stripes, curled striped tail, friendly eyes, clean vector style, no text, light background.",
+      "gameIdeas": [
+        "Beskriv ränderna utan att säga tiger.",
+        "Jämför med ett annat kattdjur."
+      ],
+      "names": {
+        "sv": "Tiger",
+        "no": "Tiger",
+        "da": "Tiger",
+        "fi": "Tiikeri",
+        "is": "Tígrisdýr",
+        "en-GB": "Tiger",
+        "en-US": "Tiger",
+        "en-CA": "Tiger",
+        "en-AU": "Tiger",
+        "de": "Tiger",
+        "fr": "Tigre",
+        "es": "Tigre",
+        "it": "Tigre",
+        "nl": "Tijger",
+        "pt-BR": "Tigre",
+        "ja": "トラ",
+        "ko": "호랑이",
+        "hi": "बाघ"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/tiger.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/tiger.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-elephant",
+      "imageId": "animals/elephant",
+      "nameSv": "Elefant",
+      "descriptionSv": "Ett mycket stort däggdjur med snabel och stora öron.",
+      "continents": [
+        "Afrika",
+        "Asien"
+      ],
+      "habitats": [
+        "savann",
+        "skog"
+      ],
+      "cluesSv": [
+        "Har snabel.",
+        "Är ett av världens största landdjur.",
+        "Kan ha stora betar."
+      ],
+      "promptSubject": "elephant",
+      "prompt": "A cute child-friendly cartoon elephant, full body, big ears, long trunk, soft gray rounded shapes, friendly eyes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv snabeln.",
+        "Beskriv storleken utan att säga stor."
+      ],
+      "names": {
+        "sv": "Elefant",
+        "no": "Elefant",
+        "da": "Elefant",
+        "fi": "Norsu",
+        "is": "Fíll",
+        "en-GB": "Elephant",
+        "en-US": "Elephant",
+        "en-CA": "Elephant",
+        "en-AU": "Elephant",
+        "de": "Elefant",
+        "fr": "Éléphant",
+        "es": "Elefante",
+        "it": "Elefante",
+        "nl": "Olifant",
+        "pt-BR": "Elefante",
+        "ja": "ゾウ",
+        "ko": "코끼리",
+        "hi": "हाथी"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/elephant.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/elephant.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-giraffe",
+      "imageId": "animals/giraffe",
+      "nameSv": "Giraff",
+      "descriptionSv": "Ett högt däggdjur med lång hals och fläckig päls.",
+      "continents": [
+        "Afrika"
+      ],
+      "habitats": [
+        "savann",
+        "öppen skog"
+      ],
+      "cluesSv": [
+        "Har väldigt lång hals.",
+        "Äter ofta blad från höga träd.",
+        "Har fläckar på kroppen."
+      ],
+      "promptSubject": "giraffe",
+      "prompt": "A cute child-friendly cartoon giraffe, full body, long neck, brown spots, small horns, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv halsen.",
+        "Beskriv vad djuret äter."
+      ],
+      "names": {
+        "sv": "Giraff",
+        "no": "Sjiraff",
+        "da": "Giraf",
+        "fi": "Kirahvi",
+        "is": "Gíraffi",
+        "en-GB": "Giraffe",
+        "en-US": "Giraffe",
+        "en-CA": "Giraffe",
+        "en-AU": "Giraffe",
+        "de": "Giraffe",
+        "fr": "Girafe",
+        "es": "Jirafa",
+        "it": "Giraffa",
+        "nl": "Giraf",
+        "pt-BR": "Girafa",
+        "ja": "キリン",
+        "ko": "기린",
+        "hi": "जिराफ"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/giraffe.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/giraffe.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-zebra",
+      "imageId": "animals/zebra",
+      "nameSv": "Zebra",
+      "descriptionSv": "Ett hästliknande djur med svartvita ränder.",
+      "continents": [
+        "Afrika"
+      ],
+      "habitats": [
+        "savann",
+        "gräsmark"
+      ],
+      "cluesSv": [
+        "Ser ut som en randig häst.",
+        "Har svartvita ränder.",
+        "Lever ofta i flock."
+      ],
+      "promptSubject": "zebra",
+      "prompt": "A cute child-friendly cartoon zebra, full body side view, black and white stripes, rounded shapes, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv mönstret.",
+        "Beskriv djuret utan färger."
+      ],
+      "names": {
+        "sv": "Zebra",
+        "no": "Sebra",
+        "da": "Zebra",
+        "fi": "Seepra",
+        "is": "Sebrahestur",
+        "en-GB": "Zebra",
+        "en-US": "Zebra",
+        "en-CA": "Zebra",
+        "en-AU": "Zebra",
+        "de": "Zebra",
+        "fr": "Zèbre",
+        "es": "Cebra",
+        "it": "Zebra",
+        "nl": "Zebra",
+        "pt-BR": "Zebra",
+        "ja": "シマウマ",
+        "ko": "얼룩말",
+        "hi": "ज़ेबरा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/zebra.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/zebra.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-rhinoceros",
+      "imageId": "animals/rhinoceros",
+      "nameSv": "Noshörning",
+      "descriptionSv": "Ett tungt däggdjur med ett eller två horn på nosen.",
+      "continents": [
+        "Afrika",
+        "Asien"
+      ],
+      "habitats": [
+        "savann",
+        "gräsmark",
+        "skog"
+      ],
+      "cluesSv": [
+        "Har horn på nosen.",
+        "Är kraftigt byggd.",
+        "Kan väga väldigt mycket."
+      ],
+      "promptSubject": "rhinoceros",
+      "prompt": "A cute child-friendly cartoon rhinoceros, full body, rounded heavy body, horn on nose, gray skin, friendly expression, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv hornet.",
+        "Beskriv kroppen med ett ord."
+      ],
+      "names": {
+        "sv": "Noshörning",
+        "no": "Neshorn",
+        "da": "Næsehorn",
+        "fi": "Sarvikuono",
+        "is": "Nashyrningur",
+        "en-GB": "Rhinoceros",
+        "en-US": "Rhinoceros",
+        "en-CA": "Rhinoceros",
+        "en-AU": "Rhinoceros",
+        "de": "Nashorn",
+        "fr": "Rhinocéros",
+        "es": "Rinoceronte",
+        "it": "Rinoceronte",
+        "nl": "Neushoorn",
+        "pt-BR": "Rinoceronte",
+        "ja": "サイ",
+        "ko": "코뿔소",
+        "hi": "गैंडा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/rhinoceros.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/rhinoceros.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-hippopotamus",
+      "imageId": "animals/hippopotamus",
+      "nameSv": "Flodhäst",
+      "descriptionSv": "Ett stort rundat djur som ofta håller till i vatten.",
+      "continents": [
+        "Afrika"
+      ],
+      "habitats": [
+        "flod",
+        "sjö",
+        "våtmark"
+      ],
+      "cluesSv": [
+        "Är ofta i vatten.",
+        "Har stor mun.",
+        "Namnet innehåller flod."
+      ],
+      "promptSubject": "hippopotamus",
+      "prompt": "A cute child-friendly cartoon hippopotamus, round body, big mouth, small ears, gray-purple skin, partly near water, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv munnen.",
+        "Beskriv var djuret bor."
+      ],
+      "names": {
+        "sv": "Flodhäst",
+        "no": "Flodhest",
+        "da": "Flodhest",
+        "fi": "Virtahepo",
+        "is": "Flóðhestur",
+        "en-GB": "Hippopotamus",
+        "en-US": "Hippopotamus",
+        "en-CA": "Hippopotamus",
+        "en-AU": "Hippopotamus",
+        "de": "Nilpferd",
+        "fr": "Hippopotame",
+        "es": "Hipopótamo",
+        "it": "Ippopotamo",
+        "nl": "Nijlpaard",
+        "pt-BR": "Hipopótamo",
+        "ja": "カバ",
+        "ko": "하마",
+        "hi": "दरियाई घोड़ा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/hippopotamus.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/hippopotamus.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-gorilla",
+      "imageId": "animals/gorilla",
+      "nameSv": "Gorilla",
+      "descriptionSv": "En stor människoapa med kraftiga armar.",
+      "continents": [
+        "Afrika"
+      ],
+      "habitats": [
+        "regnskog",
+        "bergsskog"
+      ],
+      "cluesSv": [
+        "Är en människoapa.",
+        "Har starka armar.",
+        "Lever i Afrikas skogar."
+      ],
+      "promptSubject": "gorilla",
+      "prompt": "A cute child-friendly cartoon gorilla, full body, strong arms, dark fur, gentle friendly face, rounded shapes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv armarna.",
+        "Härma hur den rör sig."
+      ],
+      "names": {
+        "sv": "Gorilla",
+        "no": "Gorilla",
+        "da": "Gorilla",
+        "fi": "Gorilla",
+        "is": "Górilla",
+        "en-GB": "Gorilla",
+        "en-US": "Gorilla",
+        "en-CA": "Gorilla",
+        "en-AU": "Gorilla",
+        "de": "Gorilla",
+        "fr": "Gorille",
+        "es": "Gorila",
+        "it": "Gorilla",
+        "nl": "Gorilla",
+        "pt-BR": "Gorila",
+        "ja": "ゴリラ",
+        "ko": "고릴라",
+        "hi": "गोरिल्ला"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/gorilla.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/gorilla.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-chimpanzee",
+      "imageId": "animals/chimpanzee",
+      "nameSv": "Schimpans",
+      "descriptionSv": "En intelligent människoapa som ofta använder händerna skickligt.",
+      "continents": [
+        "Afrika"
+      ],
+      "habitats": [
+        "regnskog",
+        "savannskog"
+      ],
+      "cluesSv": [
+        "Är nära släkt med människor.",
+        "Kan använda enkla verktyg.",
+        "Är en apa utan svans."
+      ],
+      "promptSubject": "chimpanzee",
+      "prompt": "A cute child-friendly cartoon chimpanzee, full body, expressive face, long arms, brown-black fur, playful pose, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv intelligensen.",
+        "Beskriv ansiktet."
+      ],
+      "names": {
+        "sv": "Schimpans",
+        "no": "Sjimpanse",
+        "da": "Chimpanse",
+        "fi": "Simpanssi",
+        "is": "Simpansi",
+        "en-GB": "Chimpanzee",
+        "en-US": "Chimpanzee",
+        "en-CA": "Chimpanzee",
+        "en-AU": "Chimpanzee",
+        "de": "Schimpanse",
+        "fr": "Chimpanzé",
+        "es": "Chimpancé",
+        "it": "Scimpanzé",
+        "nl": "Chimpansee",
+        "pt-BR": "Chimpanzé",
+        "ja": "チンパンジー",
+        "ko": "침팬지",
+        "hi": "चिंपैंज़ी"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/chimpanzee.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/chimpanzee.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-panda",
+      "imageId": "animals/panda",
+      "nameSv": "Panda",
+      "descriptionSv": "En svartvit björn som är känd för att äta bambu.",
+      "continents": [
+        "Asien"
+      ],
+      "habitats": [
+        "bergsskog",
+        "bambuskog"
+      ],
+      "cluesSv": [
+        "Äter mycket bambu.",
+        "Är svartvit.",
+        "Är en björn från Kina."
+      ],
+      "promptSubject": "giant panda",
+      "prompt": "A cute child-friendly cartoon giant panda, full body, black and white fur, holding bamboo, rounded soft shapes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv maten.",
+        "Beskriv färgerna."
+      ],
+      "names": {
+        "sv": "Panda",
+        "no": "Panda",
+        "da": "Panda",
+        "fi": "Panda",
+        "is": "Panda",
+        "en-GB": "Panda",
+        "en-US": "Panda",
+        "en-CA": "Panda",
+        "en-AU": "Panda",
+        "de": "Panda",
+        "fr": "Panda",
+        "es": "Panda",
+        "it": "Panda",
+        "nl": "Panda",
+        "pt-BR": "Panda",
+        "ja": "パンダ",
+        "ko": "판다",
+        "hi": "पांडा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/panda.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/panda.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-polar-bear",
+      "imageId": "animals/polar-bear",
+      "nameSv": "Isbjörn",
+      "descriptionSv": "En stor vit björn som lever i arktiska områden.",
+      "continents": [
+        "Nordamerika",
+        "Europa",
+        "Asien"
+      ],
+      "habitats": [
+        "arktis",
+        "havsis"
+      ],
+      "cluesSv": [
+        "Lever där det är mycket is.",
+        "Har vit päls.",
+        "Är en björn som kan simma långt."
+      ],
+      "promptSubject": "polar bear",
+      "prompt": "A cute child-friendly cartoon polar bear, full body, white fur, rounded shapes, icy but friendly setting, clean vector illustration, no text, warm light background.",
+      "gameIdeas": [
+        "Beskriv klimatet.",
+        "Beskriv färgen utan att säga vit."
+      ],
+      "names": {
+        "sv": "Isbjörn",
+        "no": "Isbjørn",
+        "da": "Isbjørn",
+        "fi": "Jääkarhu",
+        "is": "Ísbjörn",
+        "en-GB": "Polar bear",
+        "en-US": "Polar bear",
+        "en-CA": "Polar bear",
+        "en-AU": "Polar bear",
+        "de": "Eisbär",
+        "fr": "Ours polaire",
+        "es": "Oso polar",
+        "it": "Orso polare",
+        "nl": "IJsbeer",
+        "pt-BR": "Urso-polar",
+        "ja": "ホッキョクグマ",
+        "ko": "북극곰",
+        "hi": "ध्रुवीय भालू"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/polar-bear.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/polar-bear.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-brown-bear",
+      "imageId": "animals/brown-bear",
+      "nameSv": "Brunbjörn",
+      "descriptionSv": "En stor björn med brun päls som lever i skogar och berg.",
+      "continents": [
+        "Nordamerika",
+        "Europa",
+        "Asien"
+      ],
+      "habitats": [
+        "skog",
+        "berg"
+      ],
+      "cluesSv": [
+        "Har brun päls.",
+        "Går i ide på vintern i kalla områden.",
+        "Äter både växter och djur."
+      ],
+      "promptSubject": "brown bear",
+      "prompt": "A cute child-friendly cartoon brown bear, full body, rounded brown fur, friendly face, forest hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv vintervanan.",
+        "Beskriv pälsen."
+      ],
+      "names": {
+        "sv": "Brunbjörn",
+        "no": "Brunbjørn",
+        "da": "Brun bjørn",
+        "fi": "Ruskeakarhu",
+        "is": "Brúnbjörn",
+        "en-GB": "Brown bear",
+        "en-US": "Brown bear",
+        "en-CA": "Brown bear",
+        "en-AU": "Brown bear",
+        "de": "Braunbär",
+        "fr": "Ours brun",
+        "es": "Oso pardo",
+        "it": "Orso bruno",
+        "nl": "Bruine beer",
+        "pt-BR": "Urso-pardo",
+        "ja": "ヒグマ",
+        "ko": "불곰",
+        "hi": "भूरा भालू"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/brown-bear.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/brown-bear.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-wolf",
+      "imageId": "animals/wolf",
+      "nameSv": "Varg",
+      "descriptionSv": "Ett hunddjur som ofta lever och jagar i flock.",
+      "continents": [
+        "Nordamerika",
+        "Europa",
+        "Asien"
+      ],
+      "habitats": [
+        "skog",
+        "tundra",
+        "berg"
+      ],
+      "cluesSv": [
+        "Ylar ofta.",
+        "Är släkt med hunden.",
+        "Lever ofta i flock."
+      ],
+      "promptSubject": "wolf",
+      "prompt": "A cute child-friendly cartoon wolf, full body, gray fur, friendly but wild look, rounded shapes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Gör ljudet.",
+        "Beskriv flocken."
+      ],
+      "names": {
+        "sv": "Varg",
+        "no": "Ulv",
+        "da": "Ulv",
+        "fi": "Susi",
+        "is": "Úlfur",
+        "en-GB": "Wolf",
+        "en-US": "Wolf",
+        "en-CA": "Wolf",
+        "en-AU": "Wolf",
+        "de": "Wolf",
+        "fr": "Loup",
+        "es": "Lobo",
+        "it": "Lupo",
+        "nl": "Wolf",
+        "pt-BR": "Lobo",
+        "ja": "オオカミ",
+        "ko": "늑대",
+        "hi": "भेड़िया"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/wolf.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/wolf.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-fox",
+      "imageId": "animals/fox",
+      "nameSv": "Räv",
+      "descriptionSv": "Ett smidigt hunddjur med spetsig nos och buskig svans.",
+      "continents": [
+        "Nordamerika",
+        "Europa",
+        "Asien",
+        "Afrika"
+      ],
+      "habitats": [
+        "skog",
+        "äng",
+        "stad"
+      ],
+      "cluesSv": [
+        "Har buskig svans.",
+        "Är ofta rödorange.",
+        "Beskrivs ofta som listig."
+      ],
+      "promptSubject": "red fox",
+      "prompt": "A cute child-friendly cartoon red fox, full body, bushy tail, pointed ears, orange fur, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv svansen.",
+        "Beskriv djurets personlighet i sagor."
+      ],
+      "names": {
+        "sv": "Räv",
+        "no": "Rev",
+        "da": "Ræv",
+        "fi": "Kettu",
+        "is": "Refur",
+        "en-GB": "Fox",
+        "en-US": "Fox",
+        "en-CA": "Fox",
+        "en-AU": "Fox",
+        "de": "Fuchs",
+        "fr": "Renard",
+        "es": "Zorro",
+        "it": "Volpe",
+        "nl": "Vos",
+        "pt-BR": "Raposa",
+        "ja": "キツネ",
+        "ko": "여우",
+        "hi": "लोमड़ी"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/fox.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/fox.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-lynx",
+      "imageId": "animals/lynx",
+      "nameSv": "Lo",
+      "descriptionSv": "Ett skyggt kattdjur med tofsar på öronen.",
+      "continents": [
+        "Europa",
+        "Asien",
+        "Nordamerika"
+      ],
+      "habitats": [
+        "skog",
+        "berg"
+      ],
+      "cluesSv": [
+        "Har tofsar på öronen.",
+        "Är ett vilt kattdjur.",
+        "Är Sveriges enda vilda kattdjur."
+      ],
+      "promptSubject": "lynx",
+      "prompt": "A cute child-friendly cartoon lynx, full body, ear tufts, spotted fur, short tail, friendly wildcat look, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv öronen.",
+        "Beskriv skillnaden mot tamkatt."
+      ],
+      "names": {
+        "sv": "Lo",
+        "no": "Gaupe",
+        "da": "Los",
+        "fi": "Ilves",
+        "is": "Gaupa",
+        "en-GB": "Lynx",
+        "en-US": "Lynx",
+        "en-CA": "Lynx",
+        "en-AU": "Lynx",
+        "de": "Luchs",
+        "fr": "Lynx",
+        "es": "Lince",
+        "it": "Lince",
+        "nl": "Lynx",
+        "pt-BR": "Lince",
+        "ja": "オオヤマネコ",
+        "ko": "스라소니",
+        "hi": "लिंक्स"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/lynx.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/lynx.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-cheetah",
+      "imageId": "animals/cheetah",
+      "nameSv": "Gepard",
+      "descriptionSv": "Ett snabbt kattdjur med prickig päls och smal kropp.",
+      "continents": [
+        "Afrika",
+        "Asien"
+      ],
+      "habitats": [
+        "savann",
+        "gräsmark"
+      ],
+      "cluesSv": [
+        "Är väldigt snabb.",
+        "Har prickar.",
+        "Är byggd för att springa."
+      ],
+      "promptSubject": "cheetah",
+      "prompt": "A cute child-friendly cartoon cheetah, full body running pose, spotted fur, slim body, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv hastigheten.",
+        "Beskriv prickarna."
+      ],
+      "names": {
+        "sv": "Gepard",
+        "no": "Gepard",
+        "da": "Gepard",
+        "fi": "Gepardi",
+        "is": "Blettatígur",
+        "en-GB": "Cheetah",
+        "en-US": "Cheetah",
+        "en-CA": "Cheetah",
+        "en-AU": "Cheetah",
+        "de": "Gepard",
+        "fr": "Guépard",
+        "es": "Guepardo",
+        "it": "Ghepardo",
+        "nl": "Jachtluipaard",
+        "pt-BR": "Guepardo",
+        "ja": "チーター",
+        "ko": "치타",
+        "hi": "चीता"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/cheetah.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/cheetah.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-leopard",
+      "imageId": "animals/leopard",
+      "nameSv": "Leopard",
+      "descriptionSv": "Ett prickigt kattdjur som ofta klättrar bra i träd.",
+      "continents": [
+        "Afrika",
+        "Asien"
+      ],
+      "habitats": [
+        "skog",
+        "savann",
+        "berg"
+      ],
+      "cluesSv": [
+        "Har fläckig päls.",
+        "Kan dra upp byte i träd.",
+        "Är ett stort kattdjur."
+      ],
+      "promptSubject": "leopard",
+      "prompt": "A cute child-friendly cartoon leopard, full body, rosette spots, long tail, friendly wildcat expression, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv fläckarna.",
+        "Beskriv klättringen."
+      ],
+      "names": {
+        "sv": "Leopard",
+        "no": "Leopard",
+        "da": "Leopard",
+        "fi": "Leopardi",
+        "is": "Hlébarði",
+        "en-GB": "Leopard",
+        "en-US": "Leopard",
+        "en-CA": "Leopard",
+        "en-AU": "Leopard",
+        "de": "Leopard",
+        "fr": "Léopard",
+        "es": "Leopardo",
+        "it": "Leopardo",
+        "nl": "Luipaard",
+        "pt-BR": "Leopardo",
+        "ja": "ヒョウ",
+        "ko": "표범",
+        "hi": "तेंदुआ"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/leopard.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/leopard.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-jaguar",
+      "imageId": "animals/jaguar",
+      "nameSv": "Jaguar",
+      "descriptionSv": "Ett kraftigt kattdjur från Amerika med fläckig päls.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika"
+      ],
+      "habitats": [
+        "regnskog",
+        "våtmark",
+        "skog"
+      ],
+      "cluesSv": [
+        "Lever i Amerika.",
+        "Liknar leopard men är kraftigare.",
+        "Trivs ofta nära vatten."
+      ],
+      "promptSubject": "jaguar",
+      "prompt": "A cute child-friendly cartoon jaguar, full body, strong rounded body, rosette spots, friendly face, jungle hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv habitatet.",
+        "Jämför med leopard."
+      ],
+      "names": {
+        "sv": "Jaguar",
+        "no": "Jaguar",
+        "da": "Jaguar",
+        "fi": "Jaguaari",
+        "is": "Jagúar",
+        "en-GB": "Jaguar",
+        "en-US": "Jaguar",
+        "en-CA": "Jaguar",
+        "en-AU": "Jaguar",
+        "de": "Jaguar",
+        "fr": "Jaguar",
+        "es": "Jaguar",
+        "it": "Giaguaro",
+        "nl": "Jaguar",
+        "pt-BR": "Onça-pintada",
+        "ja": "ジャガー",
+        "ko": "재규어",
+        "hi": "जगुआर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/jaguar.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/jaguar.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-kangaroo",
+      "imageId": "animals/kangaroo",
+      "nameSv": "Känguru",
+      "descriptionSv": "Ett hoppande pungdjur med starka bakben och lång svans.",
+      "continents": [
+        "Oceanien"
+      ],
+      "habitats": [
+        "gräsmark",
+        "buskmark",
+        "skog"
+      ],
+      "cluesSv": [
+        "Hoppar fram.",
+        "Har pung för ungen.",
+        "Lever i Australien."
+      ],
+      "promptSubject": "kangaroo",
+      "prompt": "A cute child-friendly cartoon kangaroo, full body, big hind legs, long tail, pouch, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Härma hur den rör sig.",
+        "Beskriv pungen."
+      ],
+      "names": {
+        "sv": "Känguru",
+        "no": "Kenguru",
+        "da": "Kænguru",
+        "fi": "Kenguru",
+        "is": "Kengúra",
+        "en-GB": "Kangaroo",
+        "en-US": "Kangaroo",
+        "en-CA": "Kangaroo",
+        "en-AU": "Kangaroo",
+        "de": "Känguru",
+        "fr": "Kangourou",
+        "es": "Canguro",
+        "it": "Canguro",
+        "nl": "Kangoeroe",
+        "pt-BR": "Canguru",
+        "ja": "カンガルー",
+        "ko": "캥거루",
+        "hi": "कंगारू"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/kangaroo.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/kangaroo.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-koala",
+      "imageId": "animals/koala",
+      "nameSv": "Koala",
+      "descriptionSv": "Ett trädlevande pungdjur som äter eukalyptusblad.",
+      "continents": [
+        "Oceanien"
+      ],
+      "habitats": [
+        "eukalyptusskog"
+      ],
+      "cluesSv": [
+        "Sitter ofta i träd.",
+        "Äter eukalyptus.",
+        "Lever i Australien."
+      ],
+      "promptSubject": "koala",
+      "prompt": "A cute child-friendly cartoon koala, sitting on branch, fluffy ears, gray fur, friendly sleepy face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv vad den äter.",
+        "Beskriv var den sitter."
+      ],
+      "names": {
+        "sv": "Koala",
+        "no": "Koala",
+        "da": "Koala",
+        "fi": "Koala",
+        "is": "Kóali",
+        "en-GB": "Koala",
+        "en-US": "Koala",
+        "en-CA": "Koala",
+        "en-AU": "Koala",
+        "de": "Koala",
+        "fr": "Koala",
+        "es": "Koala",
+        "it": "Koala",
+        "nl": "Koala",
+        "pt-BR": "Coala",
+        "ja": "コアラ",
+        "ko": "코알라",
+        "hi": "कोआला"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/koala.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/koala.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-wombat",
+      "imageId": "animals/wombat",
+      "nameSv": "Vombat",
+      "descriptionSv": "Ett kraftigt pungdjur som gräver gångar.",
+      "continents": [
+        "Oceanien"
+      ],
+      "habitats": [
+        "skog",
+        "gräsmark",
+        "buskmark"
+      ],
+      "cluesSv": [
+        "Är ett pungdjur.",
+        "Gräver mycket.",
+        "Lever i Australien."
+      ],
+      "promptSubject": "wombat",
+      "prompt": "A cute child-friendly cartoon wombat, full body, rounded sturdy shape, small ears, brown fur, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv formen.",
+        "Beskriv grävandet."
+      ],
+      "names": {
+        "sv": "Vombat",
+        "no": "Vombat",
+        "da": "Vombat",
+        "fi": "Vompatti",
+        "is": "Vombati",
+        "en-GB": "Wombat",
+        "en-US": "Wombat",
+        "en-CA": "Wombat",
+        "en-AU": "Wombat",
+        "de": "Wombat",
+        "fr": "Wombat",
+        "es": "Wombat",
+        "it": "Vombato",
+        "nl": "Wombat",
+        "pt-BR": "Vombate",
+        "ja": "ウォンバット",
+        "ko": "웜뱃",
+        "hi": "वॉम्बैट"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/wombat.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/wombat.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-platypus",
+      "imageId": "animals/platypus",
+      "nameSv": "Näbbdjur",
+      "descriptionSv": "Ett ovanligt däggdjur med ankliknande näbb och simfötter.",
+      "continents": [
+        "Oceanien"
+      ],
+      "habitats": [
+        "flod",
+        "sjö",
+        "våtmark"
+      ],
+      "cluesSv": [
+        "Har näbb men är däggdjur.",
+        "Lägger ägg.",
+        "Lever i Australien."
+      ],
+      "promptSubject": "platypus",
+      "prompt": "A cute child-friendly cartoon platypus, full body, duck-like bill, webbed feet, brown fur, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv varför det är ovanligt.",
+        "Beskriv näbben."
+      ],
+      "names": {
+        "sv": "Näbbdjur",
+        "no": "Nebbdyret",
+        "da": "Næbdyr",
+        "fi": "Vesinokkaeläin",
+        "is": "Breiðnefur",
+        "en-GB": "Platypus",
+        "en-US": "Platypus",
+        "en-CA": "Platypus",
+        "en-AU": "Platypus",
+        "de": "Schnabeltier",
+        "fr": "Ornithorynque",
+        "es": "Ornitorrinco",
+        "it": "Ornitorinco",
+        "nl": "Vogelbekdier",
+        "pt-BR": "Ornitorrinco",
+        "ja": "カモノハシ",
+        "ko": "오리너구리",
+        "hi": "प्लैटिपस"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/platypus.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/platypus.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-sloth",
+      "imageId": "animals/sloth",
+      "nameSv": "Sengångare",
+      "descriptionSv": "Ett långsamt trädlevande djur med långa klor.",
+      "continents": [
+        "Sydamerika",
+        "Nordamerika"
+      ],
+      "habitats": [
+        "regnskog"
+      ],
+      "cluesSv": [
+        "Rör sig mycket långsamt.",
+        "Hänger ofta i träd.",
+        "Har långa klor."
+      ],
+      "promptSubject": "sloth",
+      "prompt": "A cute child-friendly cartoon sloth, hanging from branch, long claws, smiling sleepy face, rounded shapes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Härma tempot.",
+        "Beskriv klorna."
+      ],
+      "names": {
+        "sv": "Sengångare",
+        "no": "Dovendyr",
+        "da": "Dovendyr",
+        "fi": "Laiskiainen",
+        "is": "Letidýr",
+        "en-GB": "Sloth",
+        "en-US": "Sloth",
+        "en-CA": "Sloth",
+        "en-AU": "Sloth",
+        "de": "Faultier",
+        "fr": "Paresseux",
+        "es": "Perezoso",
+        "it": "Bradipo",
+        "nl": "Luiaard",
+        "pt-BR": "Bicho-preguiça",
+        "ja": "ナマケモノ",
+        "ko": "나무늘보",
+        "hi": "स्लॉथ"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/sloth.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/sloth.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-anteater",
+      "imageId": "animals/anteater",
+      "nameSv": "Myrslok",
+      "descriptionSv": "Ett djur med lång nos och lång tunga som äter myror och termiter.",
+      "continents": [
+        "Sydamerika",
+        "Nordamerika"
+      ],
+      "habitats": [
+        "savann",
+        "skog",
+        "gräsmark"
+      ],
+      "cluesSv": [
+        "Äter myror.",
+        "Har lång nos.",
+        "Har väldigt lång tunga."
+      ],
+      "promptSubject": "anteater",
+      "prompt": "A cute child-friendly cartoon anteater, full body side view, long snout, bushy tail, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv nosen.",
+        "Beskriv maten."
+      ],
+      "names": {
+        "sv": "Myrslok",
+        "no": "Maursluker",
+        "da": "Myrsluger",
+        "fi": "Muurahaiskarhu",
+        "is": "Mauræta",
+        "en-GB": "Anteater",
+        "en-US": "Anteater",
+        "en-CA": "Anteater",
+        "en-AU": "Anteater",
+        "de": "Ameisenbär",
+        "fr": "Fourmilier",
+        "es": "Oso hormiguero",
+        "it": "Formichiere",
+        "nl": "Miereneter",
+        "pt-BR": "Tamanduá",
+        "ja": "アリクイ",
+        "ko": "개미핥기",
+        "hi": "चींटीखोर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/anteater.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/anteater.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-armadillo",
+      "imageId": "animals/armadillo",
+      "nameSv": "Bältdjur",
+      "descriptionSv": "Ett djur med hårt pansarliknande skal på kroppen.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika"
+      ],
+      "habitats": [
+        "gräsmark",
+        "skog",
+        "öken"
+      ],
+      "cluesSv": [
+        "Har pansar.",
+        "Kan rulla ihop sig vissa arter.",
+        "Namnet låter som något med bälte."
+      ],
+      "promptSubject": "armadillo",
+      "prompt": "A cute child-friendly cartoon armadillo, full body, segmented armor shell, small ears, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv skalet.",
+        "Beskriv skyddet."
+      ],
+      "names": {
+        "sv": "Bältdjur",
+        "no": "Beltedyr",
+        "da": "Bæltedyr",
+        "fi": "Vyötiäinen",
+        "is": "Beltisdýr",
+        "en-GB": "Armadillo",
+        "en-US": "Armadillo",
+        "en-CA": "Armadillo",
+        "en-AU": "Armadillo",
+        "de": "Gürteltier",
+        "fr": "Tatou",
+        "es": "Armadillo",
+        "it": "Armadillo",
+        "nl": "Gordeldier",
+        "pt-BR": "Tatu",
+        "ja": "アルマジロ",
+        "ko": "아르마딜로",
+        "hi": "आर्माडिलो"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/armadillo.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/armadillo.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-otter",
+      "imageId": "animals/otter",
+      "nameSv": "Utter",
+      "descriptionSv": "Ett smidigt rovdjur som simmar bra och lever nära vatten.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika"
+      ],
+      "habitats": [
+        "flod",
+        "sjö",
+        "kust"
+      ],
+      "cluesSv": [
+        "Är mycket bra på att simma.",
+        "Har tät päls.",
+        "Kan leka i vattnet."
+      ],
+      "promptSubject": "otter",
+      "prompt": "A cute child-friendly cartoon otter, swimming or floating, rounded body, whiskers, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv simningen.",
+        "Beskriv lekfullheten."
+      ],
+      "names": {
+        "sv": "Utter",
+        "no": "Oter",
+        "da": "Odder",
+        "fi": "Saukko",
+        "is": "Otur",
+        "en-GB": "Otter",
+        "en-US": "Otter",
+        "en-CA": "Otter",
+        "en-AU": "Otter",
+        "de": "Otter",
+        "fr": "Loutre",
+        "es": "Nutria",
+        "it": "Lontra",
+        "nl": "Otter",
+        "pt-BR": "Lontra",
+        "ja": "カワウソ",
+        "ko": "수달",
+        "hi": "ऊदबिलाव"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/otter.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/otter.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-beaver",
+      "imageId": "animals/beaver",
+      "nameSv": "Bäver",
+      "descriptionSv": "Ett gnagardjur som bygger dammar och har platt svans.",
+      "continents": [
+        "Nordamerika",
+        "Europa",
+        "Asien"
+      ],
+      "habitats": [
+        "flod",
+        "sjö",
+        "våtmark"
+      ],
+      "cluesSv": [
+        "Bygger dammar.",
+        "Har platt svans.",
+        "Gnager på träd."
+      ],
+      "promptSubject": "beaver",
+      "prompt": "A cute child-friendly cartoon beaver, full body, flat tail, big teeth, holding twig, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv byggandet.",
+        "Beskriv svansen."
+      ],
+      "names": {
+        "sv": "Bäver",
+        "no": "Bever",
+        "da": "Bæver",
+        "fi": "Majava",
+        "is": "Bjór",
+        "en-GB": "Beaver",
+        "en-US": "Beaver",
+        "en-CA": "Beaver",
+        "en-AU": "Beaver",
+        "de": "Biber",
+        "fr": "Castor",
+        "es": "Castor",
+        "it": "Castoro",
+        "nl": "Bever",
+        "pt-BR": "Castor",
+        "ja": "ビーバー",
+        "ko": "비버",
+        "hi": "बीवर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/beaver.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/beaver.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-squirrel",
+      "imageId": "animals/squirrel",
+      "nameSv": "Ekorre",
+      "descriptionSv": "Ett litet trädklättrande djur med yvig svans.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika"
+      ],
+      "habitats": [
+        "skog",
+        "park"
+      ],
+      "cluesSv": [
+        "Har yvig svans.",
+        "Samlar nötter.",
+        "Klättrar snabbt i träd."
+      ],
+      "promptSubject": "squirrel",
+      "prompt": "A cute child-friendly cartoon squirrel, full body, bushy tail, holding acorn, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv svansen.",
+        "Beskriv vad den samlar."
+      ],
+      "names": {
+        "sv": "Ekorre",
+        "no": "Ekorn",
+        "da": "Egern",
+        "fi": "Orava",
+        "is": "Íkorni",
+        "en-GB": "Squirrel",
+        "en-US": "Squirrel",
+        "en-CA": "Squirrel",
+        "en-AU": "Squirrel",
+        "de": "Eichhörnchen",
+        "fr": "Écureuil",
+        "es": "Ardilla",
+        "it": "Scoiattolo",
+        "nl": "Eekhoorn",
+        "pt-BR": "Esquilo",
+        "ja": "リス",
+        "ko": "다람쥐",
+        "hi": "गिलहरी"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/squirrel.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/squirrel.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-rabbit",
+      "imageId": "animals/rabbit",
+      "nameSv": "Kanin",
+      "descriptionSv": "Ett litet däggdjur med långa öron och starka bakben.",
+      "continents": [
+        "Europa",
+        "Afrika",
+        "Oceanien",
+        "Nordamerika",
+        "Sydamerika",
+        "Asien"
+      ],
+      "habitats": [
+        "äng",
+        "skogsbryn",
+        "gräsmark"
+      ],
+      "cluesSv": [
+        "Har långa öron.",
+        "Hoppar fram.",
+        "Äter gärna morot i teckningar."
+      ],
+      "promptSubject": "rabbit",
+      "prompt": "A cute child-friendly cartoon rabbit, full body, long ears, soft fur, friendly face, rounded shapes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv öronen.",
+        "Härma hoppet."
+      ],
+      "names": {
+        "sv": "Kanin",
+        "no": "Kanin",
+        "da": "Kanin",
+        "fi": "Kani",
+        "is": "Kanína",
+        "en-GB": "Rabbit",
+        "en-US": "Rabbit",
+        "en-CA": "Rabbit",
+        "en-AU": "Rabbit",
+        "de": "Kaninchen",
+        "fr": "Lapin",
+        "es": "Conejo",
+        "it": "Coniglio",
+        "nl": "Konijn",
+        "pt-BR": "Coelho",
+        "ja": "ウサギ",
+        "ko": "토끼",
+        "hi": "खरगोश"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/rabbit.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/rabbit.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-hedgehog",
+      "imageId": "animals/hedgehog",
+      "nameSv": "Igelkott",
+      "descriptionSv": "Ett litet djur med taggar på ryggen.",
+      "continents": [
+        "Europa",
+        "Asien",
+        "Afrika"
+      ],
+      "habitats": [
+        "skog",
+        "trädgård",
+        "gräsmark"
+      ],
+      "cluesSv": [
+        "Har taggar.",
+        "Kan rulla ihop sig.",
+        "Syns ofta i trädgårdar."
+      ],
+      "promptSubject": "hedgehog",
+      "prompt": "A cute child-friendly cartoon hedgehog, full body, small spines, round body, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv taggarna.",
+        "Beskriv hur den skyddar sig."
+      ],
+      "names": {
+        "sv": "Igelkott",
+        "no": "Piggsvin",
+        "da": "Pindsvin",
+        "fi": "Siili",
+        "is": "Broddgöltur",
+        "en-GB": "Hedgehog",
+        "en-US": "Hedgehog",
+        "en-CA": "Hedgehog",
+        "en-AU": "Hedgehog",
+        "de": "Igel",
+        "fr": "Hérisson",
+        "es": "Erizo",
+        "it": "Riccio",
+        "nl": "Egel",
+        "pt-BR": "Ouriço",
+        "ja": "ハリネズミ",
+        "ko": "고슴도치",
+        "hi": "हेजहॉग"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/hedgehog.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/hedgehog.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-bat",
+      "imageId": "animals/bat",
+      "nameSv": "Fladdermus",
+      "descriptionSv": "Ett flygande däggdjur som ofta är aktivt på natten.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika",
+        "Oceanien"
+      ],
+      "habitats": [
+        "grotta",
+        "skog",
+        "stad"
+      ],
+      "cluesSv": [
+        "Är ett däggdjur som flyger.",
+        "Är ofta nattaktiv.",
+        "Hänger ibland upp och ner."
+      ],
+      "promptSubject": "bat",
+      "prompt": "A cute child-friendly cartoon bat, wings spread, big friendly eyes, rounded ears, not scary, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv nattvanan.",
+        "Härma hur den hänger."
+      ],
+      "names": {
+        "sv": "Fladdermus",
+        "no": "Flaggermus",
+        "da": "Flagermus",
+        "fi": "Lepakko",
+        "is": "Leðurblaka",
+        "en-GB": "Bat",
+        "en-US": "Bat",
+        "en-CA": "Bat",
+        "en-AU": "Bat",
+        "de": "Fledermaus",
+        "fr": "Chauve-souris",
+        "es": "Murciélago",
+        "it": "Pipistrello",
+        "nl": "Vleermuis",
+        "pt-BR": "Morcego",
+        "ja": "コウモリ",
+        "ko": "박쥐",
+        "hi": "चमगादड़"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/bat.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/bat.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-deer",
+      "imageId": "animals/deer",
+      "nameSv": "Hjort",
+      "descriptionSv": "Ett graciöst hovdjur där hanen ofta har horn.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika"
+      ],
+      "habitats": [
+        "skog",
+        "äng",
+        "berg"
+      ],
+      "cluesSv": [
+        "Kan ha horn på huvudet.",
+        "Är ett hovdjur.",
+        "Rör sig ofta tyst i skogen."
+      ],
+      "promptSubject": "deer",
+      "prompt": "A cute child-friendly cartoon deer, full body, slender legs, small antlers, brown fur, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv hornen.",
+        "Beskriv skogsmiljön."
+      ],
+      "names": {
+        "sv": "Hjort",
+        "no": "Hjort",
+        "da": "Hjort",
+        "fi": "Peura",
+        "is": "Hjörtur",
+        "en-GB": "Deer",
+        "en-US": "Deer",
+        "en-CA": "Deer",
+        "en-AU": "Deer",
+        "de": "Hirsch",
+        "fr": "Cerf",
+        "es": "Ciervo",
+        "it": "Cervo",
+        "nl": "Hert",
+        "pt-BR": "Veado",
+        "ja": "シカ",
+        "ko": "사슴",
+        "hi": "हिरण"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/deer.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/deer.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-moose",
+      "imageId": "animals/moose",
+      "nameSv": "Älg",
+      "descriptionSv": "Ett stort hjortdjur med långa ben och breda horn hos tjuren.",
+      "continents": [
+        "Nordamerika",
+        "Europa",
+        "Asien"
+      ],
+      "habitats": [
+        "skog",
+        "våtmark"
+      ],
+      "cluesSv": [
+        "Kallas skogens konung i Sverige.",
+        "Har långa ben.",
+        "Kan ha stora breda horn."
+      ],
+      "promptSubject": "moose",
+      "prompt": "A cute child-friendly cartoon moose, full body, long legs, big antlers, friendly face, brown fur, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv storleken.",
+        "Beskriv hornen."
+      ],
+      "names": {
+        "sv": "Älg",
+        "no": "Elg",
+        "da": "Elg",
+        "fi": "Hirvi",
+        "is": "Elgur",
+        "en-GB": "Moose",
+        "en-US": "Moose",
+        "en-CA": "Moose",
+        "en-AU": "Moose",
+        "de": "Elch",
+        "fr": "Élan",
+        "es": "Alce",
+        "it": "Alce",
+        "nl": "Eland",
+        "pt-BR": "Alce",
+        "ja": "ヘラジカ",
+        "ko": "무스",
+        "hi": "मूस"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/moose.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/moose.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-reindeer",
+      "imageId": "animals/reindeer",
+      "nameSv": "Ren",
+      "descriptionSv": "Ett arktiskt hjortdjur som ofta lever i flock.",
+      "continents": [
+        "Nordamerika",
+        "Europa",
+        "Asien"
+      ],
+      "habitats": [
+        "tundra",
+        "fjäll",
+        "taiga"
+      ],
+      "cluesSv": [
+        "Förknippas med snö och norr.",
+        "Både hanar och honor kan ha horn.",
+        "Drar släde i sagor."
+      ],
+      "promptSubject": "reindeer",
+      "prompt": "A cute child-friendly cartoon reindeer, full body, antlers, soft brown fur, snowy hint, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv vintern.",
+        "Beskriv sagokopplingen."
+      ],
+      "names": {
+        "sv": "Ren",
+        "no": "Reinsdyr",
+        "da": "Rensdyr",
+        "fi": "Poro",
+        "is": "Hreindýr",
+        "en-GB": "Reindeer",
+        "en-US": "Reindeer",
+        "en-CA": "Reindeer",
+        "en-AU": "Reindeer",
+        "de": "Rentier",
+        "fr": "Renne",
+        "es": "Reno",
+        "it": "Renna",
+        "nl": "Rendier",
+        "pt-BR": "Rena",
+        "ja": "トナカイ",
+        "ko": "순록",
+        "hi": "रेनडियर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/reindeer.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/reindeer.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-horse",
+      "imageId": "animals/horse",
+      "nameSv": "Häst",
+      "descriptionSv": "Ett stort tamt hovdjur som människor rider på.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "gård",
+        "gräsmark"
+      ],
+      "cluesSv": [
+        "Människor kan rida på det.",
+        "Har man och hovarna klapprar.",
+        "Kan gnägga."
+      ],
+      "promptSubject": "horse",
+      "prompt": "A cute child-friendly cartoon horse, full body side view, mane, hooves, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Gör ljudet.",
+        "Beskriv hur den används av människor."
+      ],
+      "names": {
+        "sv": "Häst",
+        "no": "Hest",
+        "da": "Hest",
+        "fi": "Hevonen",
+        "is": "Hestur",
+        "en-GB": "Horse",
+        "en-US": "Horse",
+        "en-CA": "Horse",
+        "en-AU": "Horse",
+        "de": "Pferd",
+        "fr": "Cheval",
+        "es": "Caballo",
+        "it": "Cavallo",
+        "nl": "Paard",
+        "pt-BR": "Cavalo",
+        "ja": "ウマ",
+        "ko": "말",
+        "hi": "घोड़ा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/horse.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/horse.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-donkey",
+      "imageId": "animals/donkey",
+      "nameSv": "Åsna",
+      "descriptionSv": "Ett hästliknande djur med långa öron.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "gård",
+        "torrmark"
+      ],
+      "cluesSv": [
+        "Liknar häst men har längre öron.",
+        "Kan bära packning.",
+        "Låter annorlunda än häst."
+      ],
+      "promptSubject": "donkey",
+      "prompt": "A cute child-friendly cartoon donkey, full body, long ears, gray-brown fur, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv öronen.",
+        "Gör ljudet."
+      ],
+      "names": {
+        "sv": "Åsna",
+        "no": "Esel",
+        "da": "Æsel",
+        "fi": "Aasi",
+        "is": "Asni",
+        "en-GB": "Donkey",
+        "en-US": "Donkey",
+        "en-CA": "Donkey",
+        "en-AU": "Donkey",
+        "de": "Esel",
+        "fr": "Âne",
+        "es": "Burro",
+        "it": "Asino",
+        "nl": "Ezel",
+        "pt-BR": "Burro",
+        "ja": "ロバ",
+        "ko": "당나귀",
+        "hi": "गधा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/donkey.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/donkey.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-camel",
+      "imageId": "animals/camel",
+      "nameSv": "Kamel",
+      "descriptionSv": "Ett ökendjur med puckel eller pucklar på ryggen.",
+      "continents": [
+        "Afrika",
+        "Asien"
+      ],
+      "habitats": [
+        "öken",
+        "torrmark"
+      ],
+      "cluesSv": [
+        "Har puckel.",
+        "Klarar sig länge i torra miljöer.",
+        "Förknippas med öknen."
+      ],
+      "promptSubject": "camel",
+      "prompt": "A cute child-friendly cartoon camel, full body, hump, long legs, friendly face, desert hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv puckeln.",
+        "Beskriv miljön."
+      ],
+      "names": {
+        "sv": "Kamel",
+        "no": "Kamel",
+        "da": "Kamel",
+        "fi": "Kameli",
+        "is": "Úlfaldi",
+        "en-GB": "Camel",
+        "en-US": "Camel",
+        "en-CA": "Camel",
+        "en-AU": "Camel",
+        "de": "Kamel",
+        "fr": "Chameau",
+        "es": "Camello",
+        "it": "Cammello",
+        "nl": "Kameel",
+        "pt-BR": "Camelo",
+        "ja": "ラクダ",
+        "ko": "낙타",
+        "hi": "ऊँट"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/camel.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/camel.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-llama",
+      "imageId": "animals/llama",
+      "nameSv": "Lama",
+      "descriptionSv": "Ett sydamerikanskt kameldjur med lång hals och ullig päls.",
+      "continents": [
+        "Sydamerika"
+      ],
+      "habitats": [
+        "berg",
+        "högland"
+      ],
+      "cluesSv": [
+        "Lever i Anderna.",
+        "Har ullig päls.",
+        "Kan spotta när den blir irriterad."
+      ],
+      "promptSubject": "llama",
+      "prompt": "A cute child-friendly cartoon llama, full body, long neck, fluffy wool, friendly face, mountain hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv pälsen.",
+        "Beskriv var den lever."
+      ],
+      "names": {
+        "sv": "Lama",
+        "no": "Lama",
+        "da": "Lama",
+        "fi": "Laama",
+        "is": "Lamabjarg",
+        "en-GB": "Llama",
+        "en-US": "Llama",
+        "en-CA": "Llama",
+        "en-AU": "Llama",
+        "de": "Lama",
+        "fr": "Lama",
+        "es": "Llama",
+        "it": "Lama",
+        "nl": "Lama",
+        "pt-BR": "Lhama",
+        "ja": "ラマ",
+        "ko": "라마",
+        "hi": "लामा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/llama.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/llama.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-alpaca",
+      "imageId": "animals/alpaca",
+      "nameSv": "Alpacka",
+      "descriptionSv": "Ett ulligt sydamerikanskt kameldjur som hålls för sin mjuka ull.",
+      "continents": [
+        "Sydamerika"
+      ],
+      "habitats": [
+        "högland",
+        "gård"
+      ],
+      "cluesSv": [
+        "Har mycket mjuk ull.",
+        "Liknar lama.",
+        "Lever ofta i Anderna."
+      ],
+      "promptSubject": "alpaca",
+      "prompt": "A cute child-friendly cartoon alpaca, fluffy wool, small friendly face, full body, rounded shapes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv ullen.",
+        "Jämför med lama."
+      ],
+      "names": {
+        "sv": "Alpacka",
+        "no": "Alpakka",
+        "da": "Alpaka",
+        "fi": "Alpakka",
+        "is": "Alpakka",
+        "en-GB": "Alpaca",
+        "en-US": "Alpaca",
+        "en-CA": "Alpaca",
+        "en-AU": "Alpaca",
+        "de": "Alpaka",
+        "fr": "Alpaga",
+        "es": "Alpaca",
+        "it": "Alpaca",
+        "nl": "Alpaca",
+        "pt-BR": "Alpaca",
+        "ja": "アルパカ",
+        "ko": "알파카",
+        "hi": "अल्पाका"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/alpaca.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/alpaca.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-cow",
+      "imageId": "animals/cow",
+      "nameSv": "Ko",
+      "descriptionSv": "Ett tamt nötdjur som ofta hålls för mjölk och kött.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "gård",
+        "betesmark"
+      ],
+      "cluesSv": [
+        "Säger mu.",
+        "Kan ge mjölk.",
+        "Har ofta svarta och vita fläckar."
+      ],
+      "promptSubject": "cow",
+      "prompt": "A cute child-friendly cartoon cow, full body, black and white spots, friendly face, small horns, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Gör ljudet.",
+        "Beskriv fläckarna."
+      ],
+      "names": {
+        "sv": "Ko",
+        "no": "Ku",
+        "da": "Ko",
+        "fi": "Lehmä",
+        "is": "Kýr",
+        "en-GB": "Cow",
+        "en-US": "Cow",
+        "en-CA": "Cow",
+        "en-AU": "Cow",
+        "de": "Kuh",
+        "fr": "Vache",
+        "es": "Vaca",
+        "it": "Mucca",
+        "nl": "Koe",
+        "pt-BR": "Vaca",
+        "ja": "ウシ",
+        "ko": "소",
+        "hi": "गाय"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/cow.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/cow.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-pig",
+      "imageId": "animals/pig",
+      "nameSv": "Gris",
+      "descriptionSv": "Ett tamt djur med tryne och knorrig svans.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "gård"
+      ],
+      "cluesSv": [
+        "Har tryne.",
+        "Kan ha knorr på svansen.",
+        "Säger nöff i barnböcker."
+      ],
+      "promptSubject": "pig",
+      "prompt": "A cute child-friendly cartoon pig, full body, pink rounded body, curly tail, snout, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv trynet.",
+        "Gör ljudet."
+      ],
+      "names": {
+        "sv": "Gris",
+        "no": "Gris",
+        "da": "Gris",
+        "fi": "Sika",
+        "is": "Svín",
+        "en-GB": "Pig",
+        "en-US": "Pig",
+        "en-CA": "Pig",
+        "en-AU": "Pig",
+        "de": "Schwein",
+        "fr": "Cochon",
+        "es": "Cerdo",
+        "it": "Maiale",
+        "nl": "Varken",
+        "pt-BR": "Porco",
+        "ja": "ブタ",
+        "ko": "돼지",
+        "hi": "सूअर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/pig.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/pig.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-sheep",
+      "imageId": "animals/sheep",
+      "nameSv": "Får",
+      "descriptionSv": "Ett ulligt tamdjur som ofta hålls för ull och kött.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "gård",
+        "betesmark"
+      ],
+      "cluesSv": [
+        "Har ull.",
+        "Säger bä.",
+        "Kan klippas för sin päls."
+      ],
+      "promptSubject": "sheep",
+      "prompt": "A cute child-friendly cartoon sheep, fluffy wool, full body, friendly face, rounded shapes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv ullen.",
+        "Gör ljudet."
+      ],
+      "names": {
+        "sv": "Får",
+        "no": "Sau",
+        "da": "Får",
+        "fi": "Lammas",
+        "is": "Sauðfé",
+        "en-GB": "Sheep",
+        "en-US": "Sheep",
+        "en-CA": "Sheep",
+        "en-AU": "Sheep",
+        "de": "Schaf",
+        "fr": "Mouton",
+        "es": "Oveja",
+        "it": "Pecora",
+        "nl": "Schaap",
+        "pt-BR": "Ovelha",
+        "ja": "ヒツジ",
+        "ko": "양",
+        "hi": "भेड़"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/sheep.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/sheep.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-goat",
+      "imageId": "animals/goat",
+      "nameSv": "Get",
+      "descriptionSv": "Ett smidigt tamdjur med horn som ofta klättrar bra.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "gård",
+        "berg",
+        "betesmark"
+      ],
+      "cluesSv": [
+        "Kan klättra bra.",
+        "Har ofta horn och skägg.",
+        "Ger mjölk."
+      ],
+      "promptSubject": "goat",
+      "prompt": "A cute child-friendly cartoon goat, full body, small horns, little beard, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv skägget.",
+        "Beskriv klättringen."
+      ],
+      "names": {
+        "sv": "Get",
+        "no": "Geit",
+        "da": "Ged",
+        "fi": "Vuohi",
+        "is": "Geit",
+        "en-GB": "Goat",
+        "en-US": "Goat",
+        "en-CA": "Goat",
+        "en-AU": "Goat",
+        "de": "Ziege",
+        "fr": "Chèvre",
+        "es": "Cabra",
+        "it": "Capra",
+        "nl": "Geit",
+        "pt-BR": "Cabra",
+        "ja": "ヤギ",
+        "ko": "염소",
+        "hi": "बकरी"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/goat.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/goat.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-dog",
+      "imageId": "animals/dog",
+      "nameSv": "Hund",
+      "descriptionSv": "Ett tamt rovdjur och vanligt sällskapsdjur.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "hem",
+        "stad",
+        "gård"
+      ],
+      "cluesSv": [
+        "Kallas människans bästa vän.",
+        "Kan skälla.",
+        "Är ett vanligt husdjur."
+      ],
+      "promptSubject": "dog",
+      "prompt": "A cute child-friendly cartoon dog, full body, wagging tail, floppy ears, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Gör ljudet.",
+        "Beskriv relationen till människor."
+      ],
+      "names": {
+        "sv": "Hund",
+        "no": "Hund",
+        "da": "Hund",
+        "fi": "Koira",
+        "is": "Hundur",
+        "en-GB": "Dog",
+        "en-US": "Dog",
+        "en-CA": "Dog",
+        "en-AU": "Dog",
+        "de": "Hund",
+        "fr": "Chien",
+        "es": "Perro",
+        "it": "Cane",
+        "nl": "Hond",
+        "pt-BR": "Cachorro",
+        "ja": "イヌ",
+        "ko": "개",
+        "hi": "कुत्ता"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/dog.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/dog.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-cat",
+      "imageId": "animals/cat",
+      "nameSv": "Katt",
+      "descriptionSv": "Ett smidigt tamt kattdjur som ofta spinner.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "hem",
+        "stad",
+        "gård"
+      ],
+      "cluesSv": [
+        "Spinner när den trivs.",
+        "Har morrhår.",
+        "Är ett vanligt husdjur."
+      ],
+      "promptSubject": "cat",
+      "prompt": "A cute child-friendly cartoon cat, full body, whiskers, curved tail, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv morrhåren.",
+        "Gör ljudet."
+      ],
+      "names": {
+        "sv": "Katt",
+        "no": "Katt",
+        "da": "Kat",
+        "fi": "Kissa",
+        "is": "Köttur",
+        "en-GB": "Cat",
+        "en-US": "Cat",
+        "en-CA": "Cat",
+        "en-AU": "Cat",
+        "de": "Katze",
+        "fr": "Chat",
+        "es": "Gato",
+        "it": "Gatto",
+        "nl": "Kat",
+        "pt-BR": "Gato",
+        "ja": "ネコ",
+        "ko": "고양이",
+        "hi": "बिल्ली"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/cat.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/cat.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-mouse",
+      "imageId": "animals/mouse",
+      "nameSv": "Mus",
+      "descriptionSv": "Ett litet gnagardjur med lång svans.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "skog",
+        "fält",
+        "hem"
+      ],
+      "cluesSv": [
+        "Är mycket liten.",
+        "Gillar ost i teckningar.",
+        "Har lång tunn svans."
+      ],
+      "promptSubject": "mouse",
+      "prompt": "A cute child-friendly cartoon mouse, tiny body, big ears, long tail, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv storleken.",
+        "Beskriv öronen."
+      ],
+      "names": {
+        "sv": "Mus",
+        "no": "Mus",
+        "da": "Mus",
+        "fi": "Hiiri",
+        "is": "Mús",
+        "en-GB": "Mouse",
+        "en-US": "Mouse",
+        "en-CA": "Mouse",
+        "en-AU": "Mouse",
+        "de": "Maus",
+        "fr": "Souris",
+        "es": "Ratón",
+        "it": "Topo",
+        "nl": "Muis",
+        "pt-BR": "Camundongo",
+        "ja": "ネズミ",
+        "ko": "생쥐",
+        "hi": "चूहा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/mouse.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/mouse.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-rat",
+      "imageId": "animals/rat",
+      "nameSv": "Råtta",
+      "descriptionSv": "Ett intelligent gnagardjur med lång svans.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "stad",
+        "fält",
+        "skog"
+      ],
+      "cluesSv": [
+        "Är större än en mus.",
+        "Har lång svans.",
+        "Är mycket anpassningsbar."
+      ],
+      "promptSubject": "rat",
+      "prompt": "A cute child-friendly cartoon rat, full body, rounded ears, long tail, friendly non-scary face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Jämför med mus.",
+        "Beskriv svansen."
+      ],
+      "names": {
+        "sv": "Råtta",
+        "no": "Rotte",
+        "da": "Rotte",
+        "fi": "Rotta",
+        "is": "Rotta",
+        "en-GB": "Rat",
+        "en-US": "Rat",
+        "en-CA": "Rat",
+        "en-AU": "Rat",
+        "de": "Ratte",
+        "fr": "Rat",
+        "es": "Rata",
+        "it": "Ratto",
+        "nl": "Rat",
+        "pt-BR": "Rato",
+        "ja": "ラット",
+        "ko": "쥐",
+        "hi": "चूहा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/rat.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/rat.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-hamster",
+      "imageId": "animals/hamster",
+      "nameSv": "Hamster",
+      "descriptionSv": "Ett litet husdjur som kan samla mat i kindpåsar.",
+      "continents": [
+        "Asien",
+        "Europa"
+      ],
+      "habitats": [
+        "stäpp",
+        "ökenkant",
+        "hem"
+      ],
+      "cluesSv": [
+        "Är ett litet husdjur.",
+        "Kan springa i hjul.",
+        "Kan fylla kinderna med mat."
+      ],
+      "promptSubject": "hamster",
+      "prompt": "A cute child-friendly cartoon hamster, round fluffy body, tiny paws, cheek pouches, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv kinderna.",
+        "Beskriv husdjursmiljön."
+      ],
+      "names": {
+        "sv": "Hamster",
+        "no": "Hamster",
+        "da": "Hamster",
+        "fi": "Hamsteri",
+        "is": "Hamstur",
+        "en-GB": "Hamster",
+        "en-US": "Hamster",
+        "en-CA": "Hamster",
+        "en-AU": "Hamster",
+        "de": "Hamster",
+        "fr": "Hamster",
+        "es": "Hámster",
+        "it": "Criceto",
+        "nl": "Hamster",
+        "pt-BR": "Hamster",
+        "ja": "ハムスター",
+        "ko": "햄스터",
+        "hi": "हैम्स्टर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/hamster.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/hamster.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-guinea-pig",
+      "imageId": "animals/guinea-pig",
+      "nameSv": "Marsvin",
+      "descriptionSv": "Ett litet socialt gnagardjur som ofta hålls som husdjur.",
+      "continents": [
+        "Sydamerika",
+        "Global"
+      ],
+      "habitats": [
+        "gräsmark",
+        "hem"
+      ],
+      "cluesSv": [
+        "Är ett litet husdjur.",
+        "Har rund kropp och korta ben.",
+        "Kommer ursprungligen från Sydamerika."
+      ],
+      "promptSubject": "guinea pig",
+      "prompt": "A cute child-friendly cartoon guinea pig, round fluffy body, small ears, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv kroppen.",
+        "Beskriv som husdjur."
+      ],
+      "names": {
+        "sv": "Marsvin",
+        "no": "Marsvin",
+        "da": "Marsvin",
+        "fi": "Marsu",
+        "is": "Naggrís",
+        "en-GB": "Guinea pig",
+        "en-US": "Guinea pig",
+        "en-CA": "Guinea pig",
+        "en-AU": "Guinea pig",
+        "de": "Meerschweinchen",
+        "fr": "Cochon d’Inde",
+        "es": "Cobaya",
+        "it": "Porcellino d’India",
+        "nl": "Cavia",
+        "pt-BR": "Porquinho-da-índia",
+        "ja": "モルモット",
+        "ko": "기니피그",
+        "hi": "गिनी पिग"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/guinea-pig.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/guinea-pig.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-chicken",
+      "imageId": "animals/chicken",
+      "nameSv": "Höna",
+      "descriptionSv": "En tam fågel som kan lägga ägg.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "gård"
+      ],
+      "cluesSv": [
+        "Kan lägga ägg.",
+        "Har kam på huvudet.",
+        "Säger kackel."
+      ],
+      "promptSubject": "chicken hen",
+      "prompt": "A cute child-friendly cartoon hen, full body, red comb, small wings, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv äggen.",
+        "Gör ljudet."
+      ],
+      "names": {
+        "sv": "Höna",
+        "no": "Høne",
+        "da": "Høne",
+        "fi": "Kana",
+        "is": "Hæna",
+        "en-GB": "Hen",
+        "en-US": "Hen",
+        "en-CA": "Hen",
+        "en-AU": "Hen",
+        "de": "Henne",
+        "fr": "Poule",
+        "es": "Gallina",
+        "it": "Gallina",
+        "nl": "Kip",
+        "pt-BR": "Galinha",
+        "ja": "メンドリ",
+        "ko": "암탉",
+        "hi": "मुर्गी"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/chicken.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/chicken.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-rooster",
+      "imageId": "animals/rooster",
+      "nameSv": "Tupp",
+      "descriptionSv": "En färgstark hönsfågel som ofta galer på morgonen.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "gård"
+      ],
+      "cluesSv": [
+        "Galer på morgonen.",
+        "Har stor kam.",
+        "Är hanen hos höns."
+      ],
+      "promptSubject": "rooster",
+      "prompt": "A cute child-friendly cartoon rooster, colorful feathers, red comb, full body, friendly pose, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Gör ljudet.",
+        "Beskriv fjädrarna."
+      ],
+      "names": {
+        "sv": "Tupp",
+        "no": "Hane",
+        "da": "Hane",
+        "fi": "Kukko",
+        "is": "Hani",
+        "en-GB": "Rooster",
+        "en-US": "Rooster",
+        "en-CA": "Rooster",
+        "en-AU": "Rooster",
+        "de": "Hahn",
+        "fr": "Coq",
+        "es": "Gallo",
+        "it": "Gallo",
+        "nl": "Haan",
+        "pt-BR": "Galo",
+        "ja": "オンドリ",
+        "ko": "수탉",
+        "hi": "मुर्गा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/rooster.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/rooster.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-duck",
+      "imageId": "animals/duck",
+      "nameSv": "Anka",
+      "descriptionSv": "En vattenfågel med platt näbb och simfötter.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "sjö",
+        "damm",
+        "flod"
+      ],
+      "cluesSv": [
+        "Simmar ofta i dammar.",
+        "Har platt näbb.",
+        "Säger kvack."
+      ],
+      "promptSubject": "duck",
+      "prompt": "A cute child-friendly cartoon duck, full body, flat beak, webbed feet, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Gör ljudet.",
+        "Beskriv näbben."
+      ],
+      "names": {
+        "sv": "Anka",
+        "no": "And",
+        "da": "And",
+        "fi": "Ankka",
+        "is": "Önd",
+        "en-GB": "Duck",
+        "en-US": "Duck",
+        "en-CA": "Duck",
+        "en-AU": "Duck",
+        "de": "Ente",
+        "fr": "Canard",
+        "es": "Pato",
+        "it": "Anatra",
+        "nl": "Eend",
+        "pt-BR": "Pato",
+        "ja": "アヒル",
+        "ko": "오리",
+        "hi": "बतख"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/duck.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/duck.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-goose",
+      "imageId": "animals/goose",
+      "nameSv": "Gås",
+      "descriptionSv": "En större vattenfågel med lång hals.",
+      "continents": [
+        "Nordamerika",
+        "Europa",
+        "Asien",
+        "Afrika"
+      ],
+      "habitats": [
+        "sjö",
+        "våtmark",
+        "fält"
+      ],
+      "cluesSv": [
+        "Har lång hals.",
+        "Kan väsa högt.",
+        "Flyger ofta i formation."
+      ],
+      "promptSubject": "goose",
+      "prompt": "A cute child-friendly cartoon goose, full body, long neck, orange beak, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv halsen.",
+        "Beskriv flygformationen."
+      ],
+      "names": {
+        "sv": "Gås",
+        "no": "Gås",
+        "da": "Gås",
+        "fi": "Hanhi",
+        "is": "Gæs",
+        "en-GB": "Goose",
+        "en-US": "Goose",
+        "en-CA": "Goose",
+        "en-AU": "Goose",
+        "de": "Gans",
+        "fr": "Oie",
+        "es": "Ganso",
+        "it": "Oca",
+        "nl": "Gans",
+        "pt-BR": "Ganso",
+        "ja": "ガチョウ",
+        "ko": "거위",
+        "hi": "हंस"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/goose.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/goose.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-swan",
+      "imageId": "animals/swan",
+      "nameSv": "Svan",
+      "descriptionSv": "En stor elegant vattenfågel med lång hals.",
+      "continents": [
+        "Nordamerika",
+        "Europa",
+        "Asien",
+        "Oceanien"
+      ],
+      "habitats": [
+        "sjö",
+        "flod",
+        "kust"
+      ],
+      "cluesSv": [
+        "Har lång böjd hals.",
+        "Är ofta vit.",
+        "Ses som elegant."
+      ],
+      "promptSubject": "swan",
+      "prompt": "A cute child-friendly cartoon swan, graceful long neck, white feathers, floating on water, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv elegansen.",
+        "Beskriv halsformen."
+      ],
+      "names": {
+        "sv": "Svan",
+        "no": "Svane",
+        "da": "Svane",
+        "fi": "Joutsen",
+        "is": "Svanur",
+        "en-GB": "Swan",
+        "en-US": "Swan",
+        "en-CA": "Swan",
+        "en-AU": "Swan",
+        "de": "Schwan",
+        "fr": "Cygne",
+        "es": "Cisne",
+        "it": "Cigno",
+        "nl": "Zwaan",
+        "pt-BR": "Cisne",
+        "ja": "ハクチョウ",
+        "ko": "백조",
+        "hi": "हंस"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/swan.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/swan.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-eagle",
+      "imageId": "animals/eagle",
+      "nameSv": "Örn",
+      "descriptionSv": "En stor rovfågel med stark näbb och skarpa klor.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika",
+        "Oceanien"
+      ],
+      "habitats": [
+        "berg",
+        "skog",
+        "kust"
+      ],
+      "cluesSv": [
+        "Är en rovfågel.",
+        "Har skarp blick.",
+        "Kan sväva högt."
+      ],
+      "promptSubject": "eagle",
+      "prompt": "A cute child-friendly cartoon eagle, wings partly spread, strong beak, friendly heroic look, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv blicken.",
+        "Beskriv hur den flyger."
+      ],
+      "names": {
+        "sv": "Örn",
+        "no": "Ørn",
+        "da": "Ørn",
+        "fi": "Kotka",
+        "is": "Örn",
+        "en-GB": "Eagle",
+        "en-US": "Eagle",
+        "en-CA": "Eagle",
+        "en-AU": "Eagle",
+        "de": "Adler",
+        "fr": "Aigle",
+        "es": "Águila",
+        "it": "Aquila",
+        "nl": "Arend",
+        "pt-BR": "Águia",
+        "ja": "ワシ",
+        "ko": "독수리",
+        "hi": "गरुड़"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/eagle.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/eagle.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-owl",
+      "imageId": "animals/owl",
+      "nameSv": "Uggla",
+      "descriptionSv": "En nattaktiv fågel med stora ögon och tyst flykt.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika",
+        "Oceanien"
+      ],
+      "habitats": [
+        "skog",
+        "öppen mark"
+      ],
+      "cluesSv": [
+        "Har stora ögon.",
+        "Är ofta vaken på natten.",
+        "Säger ho-ho i sagor."
+      ],
+      "promptSubject": "owl",
+      "prompt": "A cute child-friendly cartoon owl, big eyes, rounded body, perched on branch, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv ögonen.",
+        "Gör ljudet."
+      ],
+      "names": {
+        "sv": "Uggla",
+        "no": "Ugle",
+        "da": "Ugle",
+        "fi": "Pöllö",
+        "is": "Ugla",
+        "en-GB": "Owl",
+        "en-US": "Owl",
+        "en-CA": "Owl",
+        "en-AU": "Owl",
+        "de": "Eule",
+        "fr": "Hibou",
+        "es": "Búho",
+        "it": "Gufo",
+        "nl": "Uil",
+        "pt-BR": "Coruja",
+        "ja": "フクロウ",
+        "ko": "올빼미",
+        "hi": "उल्लू"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/owl.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/owl.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-penguin",
+      "imageId": "animals/penguin",
+      "nameSv": "Pingvin",
+      "descriptionSv": "En fågel som inte kan flyga men simmar mycket bra.",
+      "continents": [
+        "Antarktis",
+        "Sydamerika",
+        "Afrika",
+        "Oceanien"
+      ],
+      "habitats": [
+        "kust",
+        "is",
+        "hav"
+      ],
+      "cluesSv": [
+        "Är en fågel som inte flyger.",
+        "Simmar bra.",
+        "Förknippas ofta med is."
+      ],
+      "promptSubject": "penguin",
+      "prompt": "A cute child-friendly cartoon penguin, full body, black and white feathers, orange feet, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv gångstilen.",
+        "Beskriv simningen."
+      ],
+      "names": {
+        "sv": "Pingvin",
+        "no": "Pingvin",
+        "da": "Pingvin",
+        "fi": "Pingviini",
+        "is": "Mörgæs",
+        "en-GB": "Penguin",
+        "en-US": "Penguin",
+        "en-CA": "Penguin",
+        "en-AU": "Penguin",
+        "de": "Pinguin",
+        "fr": "Manchot",
+        "es": "Pingüino",
+        "it": "Pinguino",
+        "nl": "Pinguïn",
+        "pt-BR": "Pinguim",
+        "ja": "ペンギン",
+        "ko": "펭귄",
+        "hi": "पेंगुइन"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/penguin.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/penguin.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-flamingo",
+      "imageId": "animals/flamingo",
+      "nameSv": "Flamingo",
+      "descriptionSv": "En rosa vadarfågel med långa ben och böjd näbb.",
+      "continents": [
+        "Afrika",
+        "Europa",
+        "Asien",
+        "Nordamerika",
+        "Sydamerika"
+      ],
+      "habitats": [
+        "sjö",
+        "lagun",
+        "våtmark"
+      ],
+      "cluesSv": [
+        "Är ofta rosa.",
+        "Står ibland på ett ben.",
+        "Har långa ben."
+      ],
+      "promptSubject": "flamingo",
+      "prompt": "A cute child-friendly cartoon flamingo, full body, pink feathers, long legs, curved neck, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Stå på ett ben.",
+        "Beskriv färgen."
+      ],
+      "names": {
+        "sv": "Flamingo",
+        "no": "Flamingo",
+        "da": "Flamingo",
+        "fi": "Flamingo",
+        "is": "Flamingó",
+        "en-GB": "Flamingo",
+        "en-US": "Flamingo",
+        "en-CA": "Flamingo",
+        "en-AU": "Flamingo",
+        "de": "Flamingo",
+        "fr": "Flamant rose",
+        "es": "Flamenco",
+        "it": "Fenicottero",
+        "nl": "Flamingo",
+        "pt-BR": "Flamingo",
+        "ja": "フラミンゴ",
+        "ko": "플라밍고",
+        "hi": "फ्लेमिंगो"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/flamingo.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/flamingo.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-parrot",
+      "imageId": "animals/parrot",
+      "nameSv": "Papegoja",
+      "descriptionSv": "En färgstark fågel som kan härma ljud.",
+      "continents": [
+        "Sydamerika",
+        "Nordamerika",
+        "Afrika",
+        "Asien",
+        "Oceanien"
+      ],
+      "habitats": [
+        "regnskog",
+        "skog"
+      ],
+      "cluesSv": [
+        "Kan härma prat.",
+        "Har ofta starka färger.",
+        "Har böjd näbb."
+      ],
+      "promptSubject": "parrot",
+      "prompt": "A cute child-friendly cartoon parrot, colorful feathers, curved beak, perched on branch, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Härma en papegoja.",
+        "Beskriv färgerna."
+      ],
+      "names": {
+        "sv": "Papegoja",
+        "no": "Papegøye",
+        "da": "Papegøje",
+        "fi": "Papukaija",
+        "is": "Páfagaukur",
+        "en-GB": "Parrot",
+        "en-US": "Parrot",
+        "en-CA": "Parrot",
+        "en-AU": "Parrot",
+        "de": "Papagei",
+        "fr": "Perroquet",
+        "es": "Loro",
+        "it": "Pappagallo",
+        "nl": "Papegaai",
+        "pt-BR": "Papagaio",
+        "ja": "オウム",
+        "ko": "앵무새",
+        "hi": "तोता"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/parrot.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/parrot.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-peacock",
+      "imageId": "animals/peacock",
+      "nameSv": "Påfågel",
+      "descriptionSv": "En fågel där hanen kan fälla ut en stor färgstark stjärt.",
+      "continents": [
+        "Asien"
+      ],
+      "habitats": [
+        "skog",
+        "park",
+        "öppen mark"
+      ],
+      "cluesSv": [
+        "Har stor vacker stjärt.",
+        "Kan visa upp fjädrar som en solfjäder.",
+        "Är mycket färgstark."
+      ],
+      "promptSubject": "peacock",
+      "prompt": "A cute child-friendly cartoon peacock, colorful tail fan, blue body, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv stjärten.",
+        "Beskriv färgerna."
+      ],
+      "names": {
+        "sv": "Påfågel",
+        "no": "Påfugl",
+        "da": "Påfugl",
+        "fi": "Riikinkukko",
+        "is": "Páfugl",
+        "en-GB": "Peacock",
+        "en-US": "Peacock",
+        "en-CA": "Peacock",
+        "en-AU": "Peacock",
+        "de": "Pfau",
+        "fr": "Paon",
+        "es": "Pavo real",
+        "it": "Pavone",
+        "nl": "Pauw",
+        "pt-BR": "Pavão",
+        "ja": "クジャク",
+        "ko": "공작",
+        "hi": "मोर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/peacock.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/peacock.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-ostrich",
+      "imageId": "animals/ostrich",
+      "nameSv": "Struts",
+      "descriptionSv": "En stor fågel som inte flyger men springer snabbt.",
+      "continents": [
+        "Afrika"
+      ],
+      "habitats": [
+        "savann",
+        "ökenkant"
+      ],
+      "cluesSv": [
+        "Är världens största fågel.",
+        "Kan inte flyga.",
+        "Springer snabbt."
+      ],
+      "promptSubject": "ostrich",
+      "prompt": "A cute child-friendly cartoon ostrich, full body, long neck, long legs, fluffy feathers, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv benen.",
+        "Härma springandet."
+      ],
+      "names": {
+        "sv": "Struts",
+        "no": "Struts",
+        "da": "Struds",
+        "fi": "Strutsi",
+        "is": "Strútur",
+        "en-GB": "Ostrich",
+        "en-US": "Ostrich",
+        "en-CA": "Ostrich",
+        "en-AU": "Ostrich",
+        "de": "Strauß",
+        "fr": "Autruche",
+        "es": "Avestruz",
+        "it": "Struzzo",
+        "nl": "Struisvogel",
+        "pt-BR": "Avestruz",
+        "ja": "ダチョウ",
+        "ko": "타조",
+        "hi": "शुतुरमुर्ग"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/ostrich.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/ostrich.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-crocodile",
+      "imageId": "animals/crocodile",
+      "nameSv": "Krokodil",
+      "descriptionSv": "Ett stort kräldjur med lång kropp, kraftig svans och vassa tänder.",
+      "continents": [
+        "Afrika",
+        "Asien",
+        "Oceanien",
+        "Nordamerika",
+        "Sydamerika"
+      ],
+      "habitats": [
+        "flod",
+        "våtmark",
+        "sjö"
+      ],
+      "cluesSv": [
+        "Har lång käke.",
+        "Lever ofta nära vatten.",
+        "Har många vassa tänder."
+      ],
+      "promptSubject": "crocodile",
+      "prompt": "A cute child-friendly cartoon crocodile, full body side view, green scales, long snout, friendly non-scary face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv tänderna snällt.",
+        "Beskriv vattnet."
+      ],
+      "names": {
+        "sv": "Krokodil",
+        "no": "Krokodille",
+        "da": "Krokodille",
+        "fi": "Krokotiili",
+        "is": "Krókódíll",
+        "en-GB": "Crocodile",
+        "en-US": "Crocodile",
+        "en-CA": "Crocodile",
+        "en-AU": "Crocodile",
+        "de": "Krokodil",
+        "fr": "Crocodile",
+        "es": "Cocodrilo",
+        "it": "Coccodrillo",
+        "nl": "Krokodil",
+        "pt-BR": "Crocodilo",
+        "ja": "ワニ",
+        "ko": "악어",
+        "hi": "मगरमच्छ"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/crocodile.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/crocodile.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-alligator",
+      "imageId": "animals/alligator",
+      "nameSv": "Alligator",
+      "descriptionSv": "Ett krokodilliknande kräldjur med bred nos.",
+      "continents": [
+        "Nordamerika",
+        "Asien"
+      ],
+      "habitats": [
+        "våtmark",
+        "flod",
+        "sjö"
+      ],
+      "cluesSv": [
+        "Liknar krokodil.",
+        "Har bredare nos.",
+        "Lever i våtmarker."
+      ],
+      "promptSubject": "alligator",
+      "prompt": "A cute child-friendly cartoon alligator, full body, broad snout, green scales, friendly non-scary face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Jämför med krokodil.",
+        "Beskriv nosen."
+      ],
+      "names": {
+        "sv": "Alligator",
+        "no": "Alligator",
+        "da": "Alligator",
+        "fi": "Alligaattori",
+        "is": "Alligator",
+        "en-GB": "Alligator",
+        "en-US": "Alligator",
+        "en-CA": "Alligator",
+        "en-AU": "Alligator",
+        "de": "Alligator",
+        "fr": "Alligator",
+        "es": "Caimán",
+        "it": "Alligatore",
+        "nl": "Alligator",
+        "pt-BR": "Jacaré",
+        "ja": "アリゲーター",
+        "ko": "앨리게이터",
+        "hi": "ऐलिगेटर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/alligator.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/alligator.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-turtle",
+      "imageId": "animals/turtle",
+      "nameSv": "Sköldpadda",
+      "descriptionSv": "Ett kräldjur med hårt skal på ryggen.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika",
+        "Oceanien"
+      ],
+      "habitats": [
+        "hav",
+        "sjö",
+        "flod",
+        "skog"
+      ],
+      "cluesSv": [
+        "Har skal.",
+        "Rör sig ofta långsamt på land.",
+        "Kan dra in huvudet i skalet."
+      ],
+      "promptSubject": "turtle",
+      "prompt": "A cute child-friendly cartoon turtle, full body, round shell, small head, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv skalet.",
+        "Härma långsam rörelse."
+      ],
+      "names": {
+        "sv": "Sköldpadda",
+        "no": "Skilpadde",
+        "da": "Skildpadde",
+        "fi": "Kilpikonna",
+        "is": "Skjaldbaka",
+        "en-GB": "Turtle",
+        "en-US": "Turtle",
+        "en-CA": "Turtle",
+        "en-AU": "Turtle",
+        "de": "Schildkröte",
+        "fr": "Tortue",
+        "es": "Tortuga",
+        "it": "Tartaruga",
+        "nl": "Schildpad",
+        "pt-BR": "Tartaruga",
+        "ja": "カメ",
+        "ko": "거북",
+        "hi": "कछुआ"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/turtle.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/turtle.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-snake",
+      "imageId": "animals/snake",
+      "nameSv": "Orm",
+      "descriptionSv": "Ett benlöst kräldjur som ringlar fram.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika",
+        "Oceanien"
+      ],
+      "habitats": [
+        "skog",
+        "öken",
+        "gräsmark",
+        "våtmark"
+      ],
+      "cluesSv": [
+        "Har inga ben.",
+        "Ringlar fram.",
+        "Kan ömsa skinn."
+      ],
+      "promptSubject": "snake",
+      "prompt": "A cute child-friendly cartoon snake, coiled body, friendly eyes, simple pattern, non-scary, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Härma rörelsen.",
+        "Beskriv kroppen."
+      ],
+      "names": {
+        "sv": "Orm",
+        "no": "Slange",
+        "da": "Slange",
+        "fi": "Käärme",
+        "is": "Snákur",
+        "en-GB": "Snake",
+        "en-US": "Snake",
+        "en-CA": "Snake",
+        "en-AU": "Snake",
+        "de": "Schlange",
+        "fr": "Serpent",
+        "es": "Serpiente",
+        "it": "Serpente",
+        "nl": "Slang",
+        "pt-BR": "Cobra",
+        "ja": "ヘビ",
+        "ko": "뱀",
+        "hi": "साँप"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/snake.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/snake.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-lizard",
+      "imageId": "animals/lizard",
+      "nameSv": "Ödla",
+      "descriptionSv": "Ett kräldjur med fjällig hud, svans och fyra ben.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika",
+        "Oceanien"
+      ],
+      "habitats": [
+        "öken",
+        "skog",
+        "stenig mark"
+      ],
+      "cluesSv": [
+        "Har fjäll och svans.",
+        "Solar ofta på stenar.",
+        "Är ett kräldjur."
+      ],
+      "promptSubject": "lizard",
+      "prompt": "A cute child-friendly cartoon lizard, full body, long tail, small legs, colorful scales, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv svansen.",
+        "Beskriv solandet."
+      ],
+      "names": {
+        "sv": "Ödla",
+        "no": "Øgle",
+        "da": "Firben",
+        "fi": "Lisko",
+        "is": "Eðla",
+        "en-GB": "Lizard",
+        "en-US": "Lizard",
+        "en-CA": "Lizard",
+        "en-AU": "Lizard",
+        "de": "Eidechse",
+        "fr": "Lézard",
+        "es": "Lagarto",
+        "it": "Lucertola",
+        "nl": "Hagedis",
+        "pt-BR": "Lagarto",
+        "ja": "トカゲ",
+        "ko": "도마뱀",
+        "hi": "छिपकली"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/lizard.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/lizard.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-frog",
+      "imageId": "animals/frog",
+      "nameSv": "Groda",
+      "descriptionSv": "Ett groddjur som hoppar och ofta lever nära vatten.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika",
+        "Oceanien"
+      ],
+      "habitats": [
+        "damm",
+        "våtmark",
+        "skog"
+      ],
+      "cluesSv": [
+        "Hoppar.",
+        "Säger kvack i barnböcker.",
+        "Lever ofta nära vatten."
+      ],
+      "promptSubject": "frog",
+      "prompt": "A cute child-friendly cartoon frog, full body, big eyes, green rounded body, sitting pose, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Härma hoppet.",
+        "Gör ljudet."
+      ],
+      "names": {
+        "sv": "Groda",
+        "no": "Frosk",
+        "da": "Frø",
+        "fi": "Sammakko",
+        "is": "Froskur",
+        "en-GB": "Frog",
+        "en-US": "Frog",
+        "en-CA": "Frog",
+        "en-AU": "Frog",
+        "de": "Frosch",
+        "fr": "Grenouille",
+        "es": "Rana",
+        "it": "Rana",
+        "nl": "Kikker",
+        "pt-BR": "Sapo",
+        "ja": "カエル",
+        "ko": "개구리",
+        "hi": "मेंढक"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/frog.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/frog.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-toad",
+      "imageId": "animals/toad",
+      "nameSv": "Padda",
+      "descriptionSv": "Ett groddjur med torrare knottrig hud än grodor.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika"
+      ],
+      "habitats": [
+        "skog",
+        "trädgård",
+        "våtmark"
+      ],
+      "cluesSv": [
+        "Liknar groda.",
+        "Har ofta knottrig hud.",
+        "Hoppar inte lika långt som grodan."
+      ],
+      "promptSubject": "toad",
+      "prompt": "A cute child-friendly cartoon toad, full body, rounded bumpy skin, friendly eyes, non-scary, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Jämför med groda.",
+        "Beskriv huden."
+      ],
+      "names": {
+        "sv": "Padda",
+        "no": "Padde",
+        "da": "Tudse",
+        "fi": "Rupikonna",
+        "is": "Karta",
+        "en-GB": "Toad",
+        "en-US": "Toad",
+        "en-CA": "Toad",
+        "en-AU": "Toad",
+        "de": "Kröte",
+        "fr": "Crapaud",
+        "es": "Sapo",
+        "it": "Rospo",
+        "nl": "Pad",
+        "pt-BR": "Sapo",
+        "ja": "ヒキガエル",
+        "ko": "두꺼비",
+        "hi": "भेक"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/toad.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/toad.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-salamander",
+      "imageId": "animals/salamander",
+      "nameSv": "Salamander",
+      "descriptionSv": "Ett groddjur med lång kropp och svans.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika"
+      ],
+      "habitats": [
+        "skog",
+        "våtmark",
+        "bäck"
+      ],
+      "cluesSv": [
+        "Är ett groddjur med svans.",
+        "Liknar en liten ödla.",
+        "Lever ofta fuktigt."
+      ],
+      "promptSubject": "salamander",
+      "prompt": "A cute child-friendly cartoon salamander, full body, smooth skin, long tail, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv fuktig miljö.",
+        "Jämför med ödla."
+      ],
+      "names": {
+        "sv": "Salamander",
+        "no": "Salamander",
+        "da": "Salamander",
+        "fi": "Salamanteri",
+        "is": "Salamandra",
+        "en-GB": "Salamander",
+        "en-US": "Salamander",
+        "en-CA": "Salamander",
+        "en-AU": "Salamander",
+        "de": "Salamander",
+        "fr": "Salamandre",
+        "es": "Salamandra",
+        "it": "Salamandra",
+        "nl": "Salamander",
+        "pt-BR": "Salamandra",
+        "ja": "サンショウウオ",
+        "ko": "도롱뇽",
+        "hi": "सलामैंडर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/salamander.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/salamander.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-clownfish",
+      "imageId": "animals/clownfish",
+      "nameSv": "Clownfisk",
+      "descriptionSv": "En orange och vit fisk som ofta lever bland havsanemoner.",
+      "continents": [
+        "Asien",
+        "Oceanien"
+      ],
+      "habitats": [
+        "korallrev",
+        "hav"
+      ],
+      "cluesSv": [
+        "Är orange med vita ränder.",
+        "Lever i korallrev.",
+        "Känd från en film om en fisk som heter Nemo."
+      ],
+      "promptSubject": "clownfish",
+      "prompt": "A cute child-friendly cartoon clownfish, orange body with white stripes, underwater reef hint, friendly eyes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv ränderna.",
+        "Beskriv havsmiljön."
+      ],
+      "names": {
+        "sv": "Clownfisk",
+        "no": "Klovnefisk",
+        "da": "Klovnfisk",
+        "fi": "Vuokkokala",
+        "is": "Trúðfiskur",
+        "en-GB": "Clownfish",
+        "en-US": "Clownfish",
+        "en-CA": "Clownfish",
+        "en-AU": "Clownfish",
+        "de": "Clownfisch",
+        "fr": "Poisson-clown",
+        "es": "Pez payaso",
+        "it": "Pesce pagliaccio",
+        "nl": "Clownvis",
+        "pt-BR": "Peixe-palhaço",
+        "ja": "クマノミ",
+        "ko": "흰동가리",
+        "hi": "क्लाउनफ़िश"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/clownfish.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/clownfish.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-shark",
+      "imageId": "animals/shark",
+      "nameSv": "Haj",
+      "descriptionSv": "En stor rovfisk med fenor och flera rader tänder.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "hav"
+      ],
+      "cluesSv": [
+        "Lever i havet.",
+        "Har tydlig ryggfena.",
+        "Är en stor fisk."
+      ],
+      "promptSubject": "shark",
+      "prompt": "A cute child-friendly cartoon shark, full body side view, blue-gray body, dorsal fin, friendly non-scary face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv fenan.",
+        "Beskriv havet."
+      ],
+      "names": {
+        "sv": "Haj",
+        "no": "Hai",
+        "da": "Haj",
+        "fi": "Hai",
+        "is": "Hákarl",
+        "en-GB": "Shark",
+        "en-US": "Shark",
+        "en-CA": "Shark",
+        "en-AU": "Shark",
+        "de": "Hai",
+        "fr": "Requin",
+        "es": "Tiburón",
+        "it": "Squalo",
+        "nl": "Haai",
+        "pt-BR": "Tubarão",
+        "ja": "サメ",
+        "ko": "상어",
+        "hi": "शार्क"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/shark.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/shark.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-dolphin",
+      "imageId": "animals/dolphin",
+      "nameSv": "Delfin",
+      "descriptionSv": "Ett intelligent havslevande däggdjur som ofta hoppar över vattenytan.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "hav",
+        "kust"
+      ],
+      "cluesSv": [
+        "Är ett däggdjur i havet.",
+        "Hoppar ofta över vattenytan.",
+        "Verkar ofta lekfull."
+      ],
+      "promptSubject": "dolphin",
+      "prompt": "A cute child-friendly cartoon dolphin, jumping from water, smooth blue-gray body, friendly smile, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv hoppet.",
+        "Beskriv lekfullheten."
+      ],
+      "names": {
+        "sv": "Delfin",
+        "no": "Delfin",
+        "da": "Delfin",
+        "fi": "Delfiini",
+        "is": "Höfrungur",
+        "en-GB": "Dolphin",
+        "en-US": "Dolphin",
+        "en-CA": "Dolphin",
+        "en-AU": "Dolphin",
+        "de": "Delfin",
+        "fr": "Dauphin",
+        "es": "Delfín",
+        "it": "Delfino",
+        "nl": "Dolfijn",
+        "pt-BR": "Golfinho",
+        "ja": "イルカ",
+        "ko": "돌고래",
+        "hi": "डॉल्फ़िन"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/dolphin.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/dolphin.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-whale",
+      "imageId": "animals/whale",
+      "nameSv": "Val",
+      "descriptionSv": "Ett mycket stort havslevande däggdjur.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "hav"
+      ],
+      "cluesSv": [
+        "Är enormt stor.",
+        "Andas luft fast den lever i havet.",
+        "Kan spruta vatten från blåshålet."
+      ],
+      "promptSubject": "whale",
+      "prompt": "A cute child-friendly cartoon whale, full body, large rounded blue body, water spout, friendly eye, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv storleken.",
+        "Beskriv blåshålet."
+      ],
+      "names": {
+        "sv": "Val",
+        "no": "Hval",
+        "da": "Hval",
+        "fi": "Valas",
+        "is": "Hvalur",
+        "en-GB": "Whale",
+        "en-US": "Whale",
+        "en-CA": "Whale",
+        "en-AU": "Whale",
+        "de": "Wal",
+        "fr": "Baleine",
+        "es": "Ballena",
+        "it": "Balena",
+        "nl": "Walvis",
+        "pt-BR": "Baleia",
+        "ja": "クジラ",
+        "ko": "고래",
+        "hi": "व्हेल"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/whale.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/whale.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-orca",
+      "imageId": "animals/orca",
+      "nameSv": "Späckhuggare",
+      "descriptionSv": "En svartvit tandval som lever i havet.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "hav"
+      ],
+      "cluesSv": [
+        "Är svartvit.",
+        "Kallas också orca.",
+        "Är egentligen en sorts delfin."
+      ],
+      "promptSubject": "orca",
+      "prompt": "A cute child-friendly cartoon orca, black and white body, dorsal fin, friendly non-scary face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv färgerna.",
+        "Berätta att den är släkt med delfin."
+      ],
+      "names": {
+        "sv": "Späckhuggare",
+        "no": "Spekkhogger",
+        "da": "Spækhugger",
+        "fi": "Miekkavalas",
+        "is": "Háhyrningur",
+        "en-GB": "Orca",
+        "en-US": "Orca",
+        "en-CA": "Orca",
+        "en-AU": "Orca",
+        "de": "Orca",
+        "fr": "Orque",
+        "es": "Orca",
+        "it": "Orca",
+        "nl": "Orka",
+        "pt-BR": "Orca",
+        "ja": "シャチ",
+        "ko": "범고래",
+        "hi": "ओर्का"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/orca.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/orca.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-seal",
+      "imageId": "animals/seal",
+      "nameSv": "Säl",
+      "descriptionSv": "Ett havslevande däggdjur med rund kropp och simfenor.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika",
+        "Oceanien",
+        "Antarktis"
+      ],
+      "habitats": [
+        "kust",
+        "hav",
+        "is"
+      ],
+      "cluesSv": [
+        "Har simfenor.",
+        "Kan ligga på klippor eller is.",
+        "Är ett däggdjur i havet."
+      ],
+      "promptSubject": "seal",
+      "prompt": "A cute child-friendly cartoon seal, rounded body, flippers, whiskers, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv simfenorna.",
+        "Härma hur den rör sig på land."
+      ],
+      "names": {
+        "sv": "Säl",
+        "no": "Sel",
+        "da": "Sæl",
+        "fi": "Hylje",
+        "is": "Selur",
+        "en-GB": "Seal",
+        "en-US": "Seal",
+        "en-CA": "Seal",
+        "en-AU": "Seal",
+        "de": "Robbe",
+        "fr": "Phoque",
+        "es": "Foca",
+        "it": "Foca",
+        "nl": "Zeehond",
+        "pt-BR": "Foca",
+        "ja": "アザラシ",
+        "ko": "물범",
+        "hi": "सील"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/seal.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/seal.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-sea-lion",
+      "imageId": "animals/sea-lion",
+      "nameSv": "Sjölejon",
+      "descriptionSv": "Ett havslevande däggdjur som kan röra sig smidigare på land än sälar.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Asien",
+        "Oceanien"
+      ],
+      "habitats": [
+        "kust",
+        "hav"
+      ],
+      "cluesSv": [
+        "Liknar säl.",
+        "Kan låta högt.",
+        "Ses ofta på klippor vid havet."
+      ],
+      "promptSubject": "sea lion",
+      "prompt": "A cute child-friendly cartoon sea lion, full body, flippers, whiskers, sitting pose, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Jämför med säl.",
+        "Gör ett högt ljud."
+      ],
+      "names": {
+        "sv": "Sjölejon",
+        "no": "Sjøløve",
+        "da": "Søløve",
+        "fi": "Merileijona",
+        "is": "Sæljón",
+        "en-GB": "Sea lion",
+        "en-US": "Sea lion",
+        "en-CA": "Sea lion",
+        "en-AU": "Sea lion",
+        "de": "Seelöwe",
+        "fr": "Otarie",
+        "es": "León marino",
+        "it": "Leone marino",
+        "nl": "Zeeleeuw",
+        "pt-BR": "Leão-marinho",
+        "ja": "アシカ",
+        "ko": "바다사자",
+        "hi": "समुद्री शेर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/sea-lion.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/sea-lion.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-walrus",
+      "imageId": "animals/walrus",
+      "nameSv": "Valross",
+      "descriptionSv": "Ett stort havslevande däggdjur med långa betar och morrhår.",
+      "continents": [
+        "Nordamerika",
+        "Europa",
+        "Asien"
+      ],
+      "habitats": [
+        "arktis",
+        "havsis",
+        "kust"
+      ],
+      "cluesSv": [
+        "Har långa betar.",
+        "Har mycket morrhår.",
+        "Lever i kalla hav."
+      ],
+      "promptSubject": "walrus",
+      "prompt": "A cute child-friendly cartoon walrus, full body, long tusks, whiskers, brown rounded body, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv betarna.",
+        "Beskriv kylan."
+      ],
+      "names": {
+        "sv": "Valross",
+        "no": "Hvalross",
+        "da": "Hvalros",
+        "fi": "Mursu",
+        "is": "Rostungur",
+        "en-GB": "Walrus",
+        "en-US": "Walrus",
+        "en-CA": "Walrus",
+        "en-AU": "Walrus",
+        "de": "Walross",
+        "fr": "Morse",
+        "es": "Morsa",
+        "it": "Tricheco",
+        "nl": "Walrus",
+        "pt-BR": "Morsa",
+        "ja": "セイウチ",
+        "ko": "바다코끼리",
+        "hi": "वालरस"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/walrus.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/walrus.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-octopus",
+      "imageId": "animals/octopus",
+      "nameSv": "Bläckfisk",
+      "descriptionSv": "Ett havsdjur med åtta armar och mjuk kropp.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "hav",
+        "korallrev",
+        "havsbotten"
+      ],
+      "cluesSv": [
+        "Har åtta armar.",
+        "Kan spruta bläck.",
+        "Är mycket smart för att vara havsdjur."
+      ],
+      "promptSubject": "octopus",
+      "prompt": "A cute child-friendly cartoon octopus, eight arms, rounded head, big friendly eyes, underwater hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Räkna armarna.",
+        "Beskriv bläcket."
+      ],
+      "names": {
+        "sv": "Bläckfisk",
+        "no": "Blekksprut",
+        "da": "Blæksprutte",
+        "fi": "Mustekala",
+        "is": "Kolkrabbi",
+        "en-GB": "Octopus",
+        "en-US": "Octopus",
+        "en-CA": "Octopus",
+        "en-AU": "Octopus",
+        "de": "Oktopus",
+        "fr": "Poulpe",
+        "es": "Pulpo",
+        "it": "Polpo",
+        "nl": "Octopus",
+        "pt-BR": "Polvo",
+        "ja": "タコ",
+        "ko": "문어",
+        "hi": "ऑक्टोपस"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/octopus.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/octopus.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-squid",
+      "imageId": "animals/squid",
+      "nameSv": "Tioarmad bläckfisk",
+      "descriptionSv": "Ett havsdjur med lång kropp, fenor och flera armar.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "hav"
+      ],
+      "cluesSv": [
+        "Liknar bläckfisk.",
+        "Har lång kropp.",
+        "Kan röra sig snabbt i vattnet."
+      ],
+      "promptSubject": "squid",
+      "prompt": "A cute child-friendly cartoon squid, long body, tentacles, big friendly eyes, underwater hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Jämför med bläckfisk.",
+        "Beskriv kroppen."
+      ],
+      "names": {
+        "sv": "Tioarmad bläckfisk",
+        "no": "Akkar",
+        "da": "Tiarmet blæksprutte",
+        "fi": "Kalmari",
+        "is": "Smokkfiskur",
+        "en-GB": "Squid",
+        "en-US": "Squid",
+        "en-CA": "Squid",
+        "en-AU": "Squid",
+        "de": "Kalmar",
+        "fr": "Calmar",
+        "es": "Calamar",
+        "it": "Calamaro",
+        "nl": "Inktvis",
+        "pt-BR": "Lula",
+        "ja": "イカ",
+        "ko": "오징어",
+        "hi": "स्क्विड"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/squid.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/squid.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-jellyfish",
+      "imageId": "animals/jellyfish",
+      "nameSv": "Manet",
+      "descriptionSv": "Ett mjukt havsdjur med klockformad kropp och tentakler.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "hav"
+      ],
+      "cluesSv": [
+        "Ser nästan genomskinlig ut.",
+        "Har tentakler.",
+        "Driver ofta med strömmar."
+      ],
+      "promptSubject": "jellyfish",
+      "prompt": "A cute child-friendly cartoon jellyfish, translucent bell, soft tentacles, friendly magical look, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv rörelsen.",
+        "Beskriv tentaklerna."
+      ],
+      "names": {
+        "sv": "Manet",
+        "no": "Manet",
+        "da": "Vandmand",
+        "fi": "Meduusa",
+        "is": "Marglytta",
+        "en-GB": "Jellyfish",
+        "en-US": "Jellyfish",
+        "en-CA": "Jellyfish",
+        "en-AU": "Jellyfish",
+        "de": "Qualle",
+        "fr": "Méduse",
+        "es": "Medusa",
+        "it": "Medusa",
+        "nl": "Kwal",
+        "pt-BR": "Água-viva",
+        "ja": "クラゲ",
+        "ko": "해파리",
+        "hi": "जेलीफ़िश"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/jellyfish.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/jellyfish.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-starfish",
+      "imageId": "animals/starfish",
+      "nameSv": "Sjöstjärna",
+      "descriptionSv": "Ett havsdjur med stjärnformad kropp och oftast fem armar.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "hav",
+        "havsbotten",
+        "korallrev"
+      ],
+      "cluesSv": [
+        "Ser ut som en stjärna.",
+        "Lever i havet.",
+        "Har ofta fem armar."
+      ],
+      "promptSubject": "starfish",
+      "prompt": "A cute child-friendly cartoon starfish, five arms, orange color, friendly face, sandy seabed hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Räkna armarna.",
+        "Beskriv formen."
+      ],
+      "names": {
+        "sv": "Sjöstjärna",
+        "no": "Sjøstjerne",
+        "da": "Søstjerne",
+        "fi": "Meritähti",
+        "is": "Krossfiskur",
+        "en-GB": "Starfish",
+        "en-US": "Starfish",
+        "en-CA": "Starfish",
+        "en-AU": "Starfish",
+        "de": "Seestern",
+        "fr": "Étoile de mer",
+        "es": "Estrella de mar",
+        "it": "Stella marina",
+        "nl": "Zeester",
+        "pt-BR": "Estrela-do-mar",
+        "ja": "ヒトデ",
+        "ko": "불가사리",
+        "hi": "समुद्री तारा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/starfish.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/starfish.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-crab",
+      "imageId": "animals/crab",
+      "nameSv": "Krabba",
+      "descriptionSv": "Ett kräftdjur med klor och sidledsgång.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "kust",
+        "hav",
+        "strand"
+      ],
+      "cluesSv": [
+        "Har klor.",
+        "Går ofta sidledes.",
+        "Lever vid havet."
+      ],
+      "promptSubject": "crab",
+      "prompt": "A cute child-friendly cartoon crab, red shell, two claws, big friendly eyes, beach hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Gå sidledes.",
+        "Beskriv klorna."
+      ],
+      "names": {
+        "sv": "Krabba",
+        "no": "Krabbe",
+        "da": "Krabbe",
+        "fi": "Rapu",
+        "is": "Krabbi",
+        "en-GB": "Crab",
+        "en-US": "Crab",
+        "en-CA": "Crab",
+        "en-AU": "Crab",
+        "de": "Krabbe",
+        "fr": "Crabe",
+        "es": "Cangrejo",
+        "it": "Granchio",
+        "nl": "Krab",
+        "pt-BR": "Caranguejo",
+        "ja": "カニ",
+        "ko": "게",
+        "hi": "केकड़ा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/crab.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/crab.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-lobster",
+      "imageId": "animals/lobster",
+      "nameSv": "Hummer",
+      "descriptionSv": "Ett kräftdjur med stora klor och hårt skal.",
+      "continents": [
+        "Nordamerika",
+        "Europa"
+      ],
+      "habitats": [
+        "hav",
+        "havsbotten"
+      ],
+      "cluesSv": [
+        "Har stora klor.",
+        "Lever på havsbotten.",
+        "Har hårt skal."
+      ],
+      "promptSubject": "lobster",
+      "prompt": "A cute child-friendly cartoon lobster, full body, big claws, red shell, friendly eyes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv klorna.",
+        "Jämför med krabba."
+      ],
+      "names": {
+        "sv": "Hummer",
+        "no": "Hummer",
+        "da": "Hummer",
+        "fi": "Hummeri",
+        "is": "Humar",
+        "en-GB": "Lobster",
+        "en-US": "Lobster",
+        "en-CA": "Lobster",
+        "en-AU": "Lobster",
+        "de": "Hummer",
+        "fr": "Homard",
+        "es": "Langosta",
+        "it": "Aragosta",
+        "nl": "Kreeft",
+        "pt-BR": "Lagosta",
+        "ja": "ロブスター",
+        "ko": "바닷가재",
+        "hi": "लॉब्स्टर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/lobster.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/lobster.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-butterfly",
+      "imageId": "animals/butterfly",
+      "nameSv": "Fjäril",
+      "descriptionSv": "En insekt med stora ofta färgglada vingar.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "äng",
+        "skog",
+        "trädgård"
+      ],
+      "cluesSv": [
+        "Har färgglada vingar.",
+        "Börjar livet som larv.",
+        "Flyger mellan blommor."
+      ],
+      "promptSubject": "butterfly",
+      "prompt": "A cute child-friendly cartoon butterfly, colorful symmetrical wings, small body, friendly style, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv vingarna.",
+        "Beskriv förvandlingen."
+      ],
+      "names": {
+        "sv": "Fjäril",
+        "no": "Sommerfugl",
+        "da": "Sommerfugl",
+        "fi": "Perhonen",
+        "is": "Fiðrildi",
+        "en-GB": "Butterfly",
+        "en-US": "Butterfly",
+        "en-CA": "Butterfly",
+        "en-AU": "Butterfly",
+        "de": "Schmetterling",
+        "fr": "Papillon",
+        "es": "Mariposa",
+        "it": "Farfalla",
+        "nl": "Vlinder",
+        "pt-BR": "Borboleta",
+        "ja": "チョウ",
+        "ko": "나비",
+        "hi": "तितली"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/butterfly.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/butterfly.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-bee",
+      "imageId": "animals/bee",
+      "nameSv": "Bi",
+      "descriptionSv": "En insekt som pollinerar blommor och kan göra honung.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "äng",
+        "trädgård",
+        "skog"
+      ],
+      "cluesSv": [
+        "Gör honung.",
+        "Pollinerar blommor.",
+        "Har gula och svarta ränder."
+      ],
+      "promptSubject": "bee",
+      "prompt": "A cute child-friendly cartoon bee, rounded body, yellow and black stripes, translucent wings, big friendly eyes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv honung.",
+        "Surra som ett bi."
+      ],
+      "names": {
+        "sv": "Bi",
+        "no": "Bie",
+        "da": "Bi",
+        "fi": "Mehiläinen",
+        "is": "Býfluga",
+        "en-GB": "Bee",
+        "en-US": "Bee",
+        "en-CA": "Bee",
+        "en-AU": "Bee",
+        "de": "Biene",
+        "fr": "Abeille",
+        "es": "Abeja",
+        "it": "Ape",
+        "nl": "Bij",
+        "pt-BR": "Abelha",
+        "ja": "ハチ",
+        "ko": "벌",
+        "hi": "मधुमक्खी"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/bee.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/bee.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-wasp",
+      "imageId": "animals/wasp",
+      "nameSv": "Geting",
+      "descriptionSv": "En gulsvart insekt med smal midja och vingar.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "skog",
+        "trädgård",
+        "stad"
+      ],
+      "cluesSv": [
+        "Har gulsvarta ränder.",
+        "Liknar bi men gör inte honung på samma sätt.",
+        "Kan stickas."
+      ],
+      "promptSubject": "wasp",
+      "prompt": "A cute child-friendly cartoon wasp, side view, rounded body, big friendly eyes, yellow and black stripes, translucent wings, tiny legs, playful clean vector illustration, no text, warm beige background.",
+      "gameIdeas": [
+        "Jämför med bi.",
+        "Beskriv ränderna."
+      ],
+      "names": {
+        "sv": "Geting",
+        "no": "Veps",
+        "da": "Hveps",
+        "fi": "Ampiainen",
+        "is": "Geitungur",
+        "en-GB": "Wasp",
+        "en-US": "Wasp",
+        "en-CA": "Wasp",
+        "en-AU": "Wasp",
+        "de": "Wespe",
+        "fr": "Guêpe",
+        "es": "Avispa",
+        "it": "Vespa",
+        "nl": "Wesp",
+        "pt-BR": "Vespa",
+        "ja": "スズメバチ",
+        "ko": "말벌",
+        "hi": "ततैया"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/wasp.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/wasp.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-ant",
+      "imageId": "animals/ant",
+      "nameSv": "Myra",
+      "descriptionSv": "En liten social insekt som lever i samhällen.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "skog",
+        "mark",
+        "trädgård"
+      ],
+      "cluesSv": [
+        "Lever i stack eller bo.",
+        "Är mycket liten men stark.",
+        "Jobbar ofta tillsammans."
+      ],
+      "promptSubject": "ant",
+      "prompt": "A cute child-friendly cartoon ant, full body, six legs, antennae, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv samarbete.",
+        "Beskriv storleken."
+      ],
+      "names": {
+        "sv": "Myra",
+        "no": "Maur",
+        "da": "Myre",
+        "fi": "Muurahainen",
+        "is": "Maur",
+        "en-GB": "Ant",
+        "en-US": "Ant",
+        "en-CA": "Ant",
+        "en-AU": "Ant",
+        "de": "Ameise",
+        "fr": "Fourmi",
+        "es": "Hormiga",
+        "it": "Formica",
+        "nl": "Mier",
+        "pt-BR": "Formiga",
+        "ja": "アリ",
+        "ko": "개미",
+        "hi": "चींटी"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/ant.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/ant.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-ladybug",
+      "imageId": "animals/ladybug",
+      "nameSv": "Nyckelpiga",
+      "descriptionSv": "En liten rund skalbagge, ofta röd med svarta prickar.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "äng",
+        "trädgård",
+        "skog"
+      ],
+      "cluesSv": [
+        "Är ofta röd med prickar.",
+        "Är en liten skalbagge.",
+        "Landar ibland på handen."
+      ],
+      "promptSubject": "ladybug",
+      "prompt": "A cute child-friendly cartoon ladybug, red shell with black spots, tiny legs, friendly eyes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Räkna prickar.",
+        "Beskriv färgen."
+      ],
+      "names": {
+        "sv": "Nyckelpiga",
+        "no": "Marihøne",
+        "da": "Mariehøne",
+        "fi": "Leppäkerttu",
+        "is": "Maríubjalla",
+        "en-GB": "Ladybug",
+        "en-US": "Ladybug",
+        "en-CA": "Ladybug",
+        "en-AU": "Ladybug",
+        "de": "Marienkäfer",
+        "fr": "Coccinelle",
+        "es": "Mariquita",
+        "it": "Coccinella",
+        "nl": "Lieveheersbeestje",
+        "pt-BR": "Joaninha",
+        "ja": "テントウムシ",
+        "ko": "무당벌레",
+        "hi": "लेडीबग"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/ladybug.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/ladybug.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-spider",
+      "imageId": "animals/spider",
+      "nameSv": "Spindel",
+      "descriptionSv": "Ett åttabent djur som ofta spinner nät.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "skog",
+        "hem",
+        "öken",
+        "gräsmark"
+      ],
+      "cluesSv": [
+        "Har åtta ben.",
+        "Spinner nät.",
+        "Är inte en insekt."
+      ],
+      "promptSubject": "spider",
+      "prompt": "A cute child-friendly cartoon spider, eight legs, big friendly eyes, small web hint, non-scary, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Räkna benen.",
+        "Beskriv nätet."
+      ],
+      "names": {
+        "sv": "Spindel",
+        "no": "Edderkopp",
+        "da": "Edderkop",
+        "fi": "Hämähäkki",
+        "is": "Könguló",
+        "en-GB": "Spider",
+        "en-US": "Spider",
+        "en-CA": "Spider",
+        "en-AU": "Spider",
+        "de": "Spinne",
+        "fr": "Araignée",
+        "es": "Araña",
+        "it": "Ragno",
+        "nl": "Spin",
+        "pt-BR": "Aranha",
+        "ja": "クモ",
+        "ko": "거미",
+        "hi": "मकड़ी"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/spider.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/spider.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-scorpion",
+      "imageId": "animals/scorpion",
+      "nameSv": "Skorpion",
+      "descriptionSv": "Ett leddjur med klor och böjd svans med gadd.",
+      "continents": [
+        "Afrika",
+        "Asien",
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Oceanien"
+      ],
+      "habitats": [
+        "öken",
+        "torrmark",
+        "skog"
+      ],
+      "cluesSv": [
+        "Har klor.",
+        "Har böjd svans med gadd.",
+        "Lever ofta i torra miljöer."
+      ],
+      "promptSubject": "scorpion",
+      "prompt": "A cute child-friendly cartoon scorpion, small claws, curved tail, friendly non-scary face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv svansen.",
+        "Beskriv klorna."
+      ],
+      "names": {
+        "sv": "Skorpion",
+        "no": "Skorpion",
+        "da": "Skorpion",
+        "fi": "Skorpioni",
+        "is": "Sporðdreki",
+        "en-GB": "Scorpion",
+        "en-US": "Scorpion",
+        "en-CA": "Scorpion",
+        "en-AU": "Scorpion",
+        "de": "Skorpion",
+        "fr": "Scorpion",
+        "es": "Escorpión",
+        "it": "Scorpione",
+        "nl": "Schorpioen",
+        "pt-BR": "Escorpião",
+        "ja": "サソリ",
+        "ko": "전갈",
+        "hi": "बिच्छू"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/scorpion.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/scorpion.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-snail",
+      "imageId": "animals/snail",
+      "nameSv": "Snigel",
+      "descriptionSv": "Ett långsamt blötdjur, ofta med skal.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "trädgård",
+        "skog",
+        "våtmark"
+      ],
+      "cluesSv": [
+        "Rör sig långsamt.",
+        "Kan ha skal på ryggen.",
+        "Lämnar slemmigt spår."
+      ],
+      "promptSubject": "snail",
+      "prompt": "A cute child-friendly cartoon snail, spiral shell, soft body, friendly eyes on stalks, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Härma långsam rörelse.",
+        "Beskriv skalet."
+      ],
+      "names": {
+        "sv": "Snigel",
+        "no": "Snegle",
+        "da": "Snegl",
+        "fi": "Etana",
+        "is": "Snigill",
+        "en-GB": "Snail",
+        "en-US": "Snail",
+        "en-CA": "Snail",
+        "en-AU": "Snail",
+        "de": "Schnecke",
+        "fr": "Escargot",
+        "es": "Caracol",
+        "it": "Lumaca",
+        "nl": "Slak",
+        "pt-BR": "Caracol",
+        "ja": "カタツムリ",
+        "ko": "달팽이",
+        "hi": "घोंघा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/snail.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/snail.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-earthworm",
+      "imageId": "animals/earthworm",
+      "nameSv": "Daggmask",
+      "descriptionSv": "Ett ringformat maskdjur som lever i jord och hjälper marken.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "jord",
+        "trädgård",
+        "skog"
+      ],
+      "cluesSv": [
+        "Lever i jorden.",
+        "Kommer ofta fram när det regnar.",
+        "Hjälper jorden att må bra."
+      ],
+      "promptSubject": "earthworm",
+      "prompt": "A cute child-friendly cartoon earthworm, simple segmented body, friendly face, soil hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv regnkopplingen.",
+        "Beskriv var den bor."
+      ],
+      "names": {
+        "sv": "Daggmask",
+        "no": "Meitemark",
+        "da": "Regnorm",
+        "fi": "Kastemato",
+        "is": "Ánamaðkur",
+        "en-GB": "Earthworm",
+        "en-US": "Earthworm",
+        "en-CA": "Earthworm",
+        "en-AU": "Earthworm",
+        "de": "Regenwurm",
+        "fr": "Ver de terre",
+        "es": "Lombriz",
+        "it": "Lombrico",
+        "nl": "Regenworm",
+        "pt-BR": "Minhoca",
+        "ja": "ミミズ",
+        "ko": "지렁이",
+        "hi": "केंचुआ"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/earthworm.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/earthworm.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-dragonfly",
+      "imageId": "animals/dragonfly",
+      "nameSv": "Trollslända",
+      "descriptionSv": "En snabb flygande insekt med lång kropp och stora vingar.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "sjö",
+        "damm",
+        "våtmark"
+      ],
+      "cluesSv": [
+        "Har lång smal kropp.",
+        "Flyger snabbt nära vatten.",
+        "Har stora genomskinliga vingar."
+      ],
+      "promptSubject": "dragonfly",
+      "prompt": "A cute child-friendly cartoon dragonfly, long body, big transparent wings, friendly eyes, pond hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv vingarna.",
+        "Beskriv vattnet."
+      ],
+      "names": {
+        "sv": "Trollslända",
+        "no": "Øyenstikker",
+        "da": "Guldsmed",
+        "fi": "Sudenkorento",
+        "is": "Drekafluga",
+        "en-GB": "Dragonfly",
+        "en-US": "Dragonfly",
+        "en-CA": "Dragonfly",
+        "en-AU": "Dragonfly",
+        "de": "Libelle",
+        "fr": "Libellule",
+        "es": "Libélula",
+        "it": "Libellula",
+        "nl": "Libel",
+        "pt-BR": "Libélula",
+        "ja": "トンボ",
+        "ko": "잠자리",
+        "hi": "व्याध-पतंग"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/dragonfly.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/dragonfly.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-grasshopper",
+      "imageId": "animals/grasshopper",
+      "nameSv": "Gräshoppa",
+      "descriptionSv": "En hoppande insekt med starka bakben.",
+      "continents": [
+        "Global"
+      ],
+      "habitats": [
+        "äng",
+        "gräsmark",
+        "fält"
+      ],
+      "cluesSv": [
+        "Hoppar långt.",
+        "Har starka bakben.",
+        "Lever ofta i gräs."
+      ],
+      "promptSubject": "grasshopper",
+      "prompt": "A cute child-friendly cartoon grasshopper, full body, big hind legs, green body, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Härma hoppet.",
+        "Beskriv bakbenen."
+      ],
+      "names": {
+        "sv": "Gräshoppa",
+        "no": "Gresshoppe",
+        "da": "Græshoppe",
+        "fi": "Heinäsirkka",
+        "is": "Engispretta",
+        "en-GB": "Grasshopper",
+        "en-US": "Grasshopper",
+        "en-CA": "Grasshopper",
+        "en-AU": "Grasshopper",
+        "de": "Heuschrecke",
+        "fr": "Sauterelle",
+        "es": "Saltamontes",
+        "it": "Cavalletta",
+        "nl": "Sprinkhaan",
+        "pt-BR": "Gafanhoto",
+        "ja": "バッタ",
+        "ko": "메뚜기",
+        "hi": "टिड्डा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/grasshopper.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/grasshopper.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-mantis",
+      "imageId": "animals/mantis",
+      "nameSv": "Bönsyrsa",
+      "descriptionSv": "En insekt med framben som ofta hålls som om den ber.",
+      "continents": [
+        "Nordamerika",
+        "Sydamerika",
+        "Europa",
+        "Asien",
+        "Afrika",
+        "Oceanien"
+      ],
+      "habitats": [
+        "buskmark",
+        "skog",
+        "trädgård"
+      ],
+      "cluesSv": [
+        "Har speciella framben.",
+        "Ser ut som den ber.",
+        "Är en skicklig jägare bland insekter."
+      ],
+      "promptSubject": "praying mantis",
+      "prompt": "A cute child-friendly cartoon praying mantis, green body, folded front legs, big friendly eyes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Visa frambenen.",
+        "Beskriv hållningen."
+      ],
+      "names": {
+        "sv": "Bönsyrsa",
+        "no": "Kneler",
+        "da": "Knæler",
+        "fi": "Rukoilijasirkka",
+        "is": "Bænabeiða",
+        "en-GB": "Praying mantis",
+        "en-US": "Praying mantis",
+        "en-CA": "Praying mantis",
+        "en-AU": "Praying mantis",
+        "de": "Gottesanbeterin",
+        "fr": "Mante religieuse",
+        "es": "Mantis religiosa",
+        "it": "Mantide religiosa",
+        "nl": "Bidsprinkhaan",
+        "pt-BR": "Louva-a-deus",
+        "ja": "カマキリ",
+        "ko": "사마귀",
+        "hi": "प्रेइंग मैंटिस"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/mantis.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/mantis.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-penguin-emperor",
+      "imageId": "animals/emperor-penguin",
+      "nameSv": "Kejsarpingvin",
+      "descriptionSv": "Den största pingvinarten, känd från Antarktis.",
+      "continents": [
+        "Antarktis"
+      ],
+      "habitats": [
+        "is",
+        "hav"
+      ],
+      "cluesSv": [
+        "Är den största pingvinen.",
+        "Lever i Antarktis.",
+        "Har gulorange färg vid halsen."
+      ],
+      "promptSubject": "emperor penguin",
+      "prompt": "A cute child-friendly cartoon emperor penguin, full body, black and white with yellow neck patches, icy hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv halsfärgen.",
+        "Beskriv kylan."
+      ],
+      "names": {
+        "sv": "Kejsarpingvin",
+        "no": "Keiserpingvin",
+        "da": "Kejserpingvin",
+        "fi": "Keisaripingviini",
+        "is": "Keisaramörgæs",
+        "en-GB": "Emperor penguin",
+        "en-US": "Emperor penguin",
+        "en-CA": "Emperor penguin",
+        "en-AU": "Emperor penguin",
+        "de": "Kaiserpinguin",
+        "fr": "Manchot empereur",
+        "es": "Pingüino emperador",
+        "it": "Pinguino imperatore",
+        "nl": "Keizerspinguïn",
+        "pt-BR": "Pinguim-imperador",
+        "ja": "コウテイペンギン",
+        "ko": "황제펭귄",
+        "hi": "सम्राट पेंगुइन"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/emperor-penguin.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/emperor-penguin.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-red-panda",
+      "imageId": "animals/red-panda",
+      "nameSv": "Röd panda",
+      "descriptionSv": "Ett litet trädlevande däggdjur med rödbrun päls och ringad svans.",
+      "continents": [
+        "Asien"
+      ],
+      "habitats": [
+        "bergsskog",
+        "bambuskog"
+      ],
+      "cluesSv": [
+        "Har rödbrun päls.",
+        "Har randig svans.",
+        "Är inte samma som jättepanda."
+      ],
+      "promptSubject": "red panda",
+      "prompt": "A cute child-friendly cartoon red panda, full body, fluffy striped tail, reddish fur, friendly face, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Jämför med panda.",
+        "Beskriv svansen."
+      ],
+      "names": {
+        "sv": "Röd panda",
+        "no": "Rød panda",
+        "da": "Rød panda",
+        "fi": "Kultapanda",
+        "is": "Rauð panda",
+        "en-GB": "Red panda",
+        "en-US": "Red panda",
+        "en-CA": "Red panda",
+        "en-AU": "Red panda",
+        "de": "Roter Panda",
+        "fr": "Panda roux",
+        "es": "Panda rojo",
+        "it": "Panda rosso",
+        "nl": "Rode panda",
+        "pt-BR": "Panda-vermelho",
+        "ja": "レッサーパンダ",
+        "ko": "레서판다",
+        "hi": "लाल पांडा"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/red-panda.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/red-panda.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-meerkat",
+      "imageId": "animals/meerkat",
+      "nameSv": "Surikat",
+      "descriptionSv": "Ett litet flocklevande rovdjur som ofta står upprätt och spanar.",
+      "continents": [
+        "Afrika"
+      ],
+      "habitats": [
+        "öken",
+        "savann",
+        "torrmark"
+      ],
+      "cluesSv": [
+        "Står ofta upprätt och spanar.",
+        "Lever i grupp.",
+        "Känd från savann och öken."
+      ],
+      "promptSubject": "meerkat",
+      "prompt": "A cute child-friendly cartoon meerkat, standing upright, small body, alert friendly eyes, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Stå och spana.",
+        "Beskriv gruppen."
+      ],
+      "names": {
+        "sv": "Surikat",
+        "no": "Surikat",
+        "da": "Surikat",
+        "fi": "Mangusti",
+        "is": "Jarðköttur",
+        "en-GB": "Meerkat",
+        "en-US": "Meerkat",
+        "en-CA": "Meerkat",
+        "en-AU": "Meerkat",
+        "de": "Erdmännchen",
+        "fr": "Suricate",
+        "es": "Suricata",
+        "it": "Suricato",
+        "nl": "Stokstaartje",
+        "pt-BR": "Suricato",
+        "ja": "ミーアキャット",
+        "ko": "미어캣",
+        "hi": "मीरकैट"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/meerkat.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/meerkat.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-lemur",
+      "imageId": "animals/lemur",
+      "nameSv": "Lemur",
+      "descriptionSv": "En primat från Madagaskar, ofta med lång ringad svans.",
+      "continents": [
+        "Afrika"
+      ],
+      "habitats": [
+        "skog",
+        "regnskog"
+      ],
+      "cluesSv": [
+        "Lever på Madagaskar.",
+        "Kan ha ringad svans.",
+        "Är en primat."
+      ],
+      "promptSubject": "lemur",
+      "prompt": "A cute child-friendly cartoon ring-tailed lemur, long striped tail, big eyes, friendly pose, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv svansen.",
+        "Beskriv ön den kommer från."
+      ],
+      "names": {
+        "sv": "Lemur",
+        "no": "Lemur",
+        "da": "Lemur",
+        "fi": "Lemuri",
+        "is": "Lemúr",
+        "en-GB": "Lemur",
+        "en-US": "Lemur",
+        "en-CA": "Lemur",
+        "en-AU": "Lemur",
+        "de": "Lemur",
+        "fr": "Lémurien",
+        "es": "Lémur",
+        "it": "Lemure",
+        "nl": "Maki",
+        "pt-BR": "Lêmure",
+        "ja": "キツネザル",
+        "ko": "여우원숭이",
+        "hi": "लीमर"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/lemur.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/lemur.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    },
+    {
+      "id": "animal-orangutan",
+      "imageId": "animals/orangutan",
+      "nameSv": "Orangutang",
+      "descriptionSv": "En rödbrun människoapa som lever i träd i Sydostasien.",
+      "continents": [
+        "Asien"
+      ],
+      "habitats": [
+        "regnskog"
+      ],
+      "cluesSv": [
+        "Har rödbrun päls.",
+        "Lever mycket i träd.",
+        "Är en människoapa."
+      ],
+      "promptSubject": "orangutan",
+      "prompt": "A cute child-friendly cartoon orangutan, long arms, reddish fur, gentle friendly face, tree hint, clean vector illustration, no text, warm background.",
+      "gameIdeas": [
+        "Beskriv armarna.",
+        "Beskriv trädmiljön."
+      ],
+      "names": {
+        "sv": "Orangutang",
+        "no": "Orangutang",
+        "da": "Orangutang",
+        "fi": "Oranki",
+        "is": "Órangútan",
+        "en-GB": "Orangutan",
+        "en-US": "Orangutan",
+        "en-CA": "Orangutan",
+        "en-AU": "Orangutan",
+        "de": "Orang-Utan",
+        "fr": "Orang-outan",
+        "es": "Orangután",
+        "it": "Orangutan",
+        "nl": "Orang-oetan",
+        "pt-BR": "Orangotango",
+        "ja": "オランウータン",
+        "ko": "오랑우탄",
+        "hi": "ओरंगुटान"
+      },
+      "nameReviewStatus": "draft",
+      "assetPath": "asset:image-cards/animals/orangutan.png",
+      "generatedMetadataPath": "packages/shared/assets/image-cards/animals/orangutan.meta.json",
+      "imageReviewStatus": "approved-for-prototype"
+    }
+  ],
+  "supportedLanguages": [
+    "sv",
+    "no",
+    "da",
+    "fi",
+    "is",
+    "en-GB",
+    "en-US",
+    "en-CA",
+    "en-AU",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "pt-BR",
+    "ja",
+    "ko",
+    "hi"
+  ],
+  "localization": {
+    "status": "draft-machine-assisted",
+    "requiredNameLanguages": [
+      "sv",
+      "no",
+      "da",
+      "fi",
+      "is",
+      "en-GB",
+      "en-US",
+      "en-CA",
+      "en-AU",
+      "de",
+      "fr",
+      "es",
+      "it",
+      "nl",
+      "pt-BR",
+      "ja",
+      "ko",
+      "hi"
+    ],
+    "note": "Animal display names are populated for all supported languages and should be reviewed by native speakers before release."
+  }
+}

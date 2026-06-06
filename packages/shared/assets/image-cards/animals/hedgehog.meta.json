@@ -1,0 +1,31 @@
+{
+  "id": "animal-hedgehog",
+  "imageId": "animals/hedgehog",
+  "names": {
+    "sv": "Igelkott",
+    "no": "Piggsvin",
+    "da": "Pindsvin",
+    "fi": "Siili",
+    "is": "Broddgöltur",
+    "en-GB": "Hedgehog",
+    "en-US": "Hedgehog",
+    "en-CA": "Hedgehog",
+    "en-AU": "Hedgehog",
+    "de": "Igel",
+    "fr": "Hérisson",
+    "es": "Erizo",
+    "it": "Riccio",
+    "nl": "Egel",
+    "pt-BR": "Ouriço",
+    "ja": "ハリネズミ",
+    "ko": "고슴도치",
+    "hi": "हेजहॉग"
+  },
+  "prompt": "A cute child-friendly cartoon hedgehog, full body, small spines, round body, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:30:38.164Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

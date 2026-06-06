@@ -1,0 +1,31 @@
+{
+  "id": "animal-clownfish",
+  "imageId": "animals/clownfish",
+  "names": {
+    "sv": "Clownfisk",
+    "no": "Klovnefisk",
+    "da": "Klovnfisk",
+    "fi": "Vuokkokala",
+    "is": "Trúðfiskur",
+    "en-GB": "Clownfish",
+    "en-US": "Clownfish",
+    "en-CA": "Clownfish",
+    "en-AU": "Clownfish",
+    "de": "Clownfisch",
+    "fr": "Poisson-clown",
+    "es": "Pez payaso",
+    "it": "Pesce pagliaccio",
+    "nl": "Clownvis",
+    "pt-BR": "Peixe-palhaço",
+    "ja": "クマノミ",
+    "ko": "흰동가리",
+    "hi": "क्लाउनफ़िश"
+  },
+  "prompt": "A cute child-friendly cartoon clownfish, orange body with white stripes, underwater reef hint, friendly eyes, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:44:47.667Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

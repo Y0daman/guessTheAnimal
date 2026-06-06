@@ -1,0 +1,31 @@
+{
+  "id": "animal-octopus",
+  "imageId": "animals/octopus",
+  "names": {
+    "sv": "Bläckfisk",
+    "no": "Blekksprut",
+    "da": "Blæksprutte",
+    "fi": "Mustekala",
+    "is": "Kolkrabbi",
+    "en-GB": "Octopus",
+    "en-US": "Octopus",
+    "en-CA": "Octopus",
+    "en-AU": "Octopus",
+    "de": "Oktopus",
+    "fr": "Poulpe",
+    "es": "Pulpo",
+    "it": "Polpo",
+    "nl": "Octopus",
+    "pt-BR": "Polvo",
+    "ja": "タコ",
+    "ko": "문어",
+    "hi": "ऑक्टोपस"
+  },
+  "prompt": "A cute child-friendly cartoon octopus, eight arms, rounded head, big friendly eyes, underwater hint, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:47:24.774Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

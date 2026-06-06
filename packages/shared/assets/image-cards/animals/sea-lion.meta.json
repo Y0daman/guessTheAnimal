@@ -1,0 +1,31 @@
+{
+  "id": "animal-sea-lion",
+  "imageId": "animals/sea-lion",
+  "names": {
+    "sv": "Sjölejon",
+    "no": "Sjøløve",
+    "da": "Søløve",
+    "fi": "Merileijona",
+    "is": "Sæljón",
+    "en-GB": "Sea lion",
+    "en-US": "Sea lion",
+    "en-CA": "Sea lion",
+    "en-AU": "Sea lion",
+    "de": "Seelöwe",
+    "fr": "Otarie",
+    "es": "León marino",
+    "it": "Leone marino",
+    "nl": "Zeeleeuw",
+    "pt-BR": "Leão-marinho",
+    "ja": "アシカ",
+    "ko": "바다사자",
+    "hi": "समुद्री शेर"
+  },
+  "prompt": "A cute child-friendly cartoon sea lion, full body, flippers, whiskers, sitting pose, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:46:41.660Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

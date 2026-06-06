@@ -1,0 +1,31 @@
+{
+  "id": "animal-starfish",
+  "imageId": "animals/starfish",
+  "names": {
+    "sv": "Sjöstjärna",
+    "no": "Sjøstjerne",
+    "da": "Søstjerne",
+    "fi": "Meritähti",
+    "is": "Krossfiskur",
+    "en-GB": "Starfish",
+    "en-US": "Starfish",
+    "en-CA": "Starfish",
+    "en-AU": "Starfish",
+    "de": "Seestern",
+    "fr": "Étoile de mer",
+    "es": "Estrella de mar",
+    "it": "Stella marina",
+    "nl": "Zeester",
+    "pt-BR": "Estrela-do-mar",
+    "ja": "ヒトデ",
+    "ko": "불가사리",
+    "hi": "समुद्री तारा"
+  },
+  "prompt": "A cute child-friendly cartoon starfish, five arms, orange color, friendly face, sandy seabed hint, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:48:19.904Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

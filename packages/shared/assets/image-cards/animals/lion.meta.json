@@ -1,0 +1,31 @@
+{
+  "id": "animal-lion",
+  "imageId": "animals/lion",
+  "names": {
+    "sv": "Lejon",
+    "no": "Løve",
+    "da": "Løve",
+    "fi": "Leijona",
+    "is": "Ljón",
+    "en-GB": "Lion",
+    "en-US": "Lion",
+    "en-CA": "Lion",
+    "en-AU": "Lion",
+    "de": "Löwe",
+    "fr": "Lion",
+    "es": "León",
+    "it": "Leone",
+    "nl": "Leeuw",
+    "pt-BR": "Leão",
+    "ja": "ライオン",
+    "ko": "사자",
+    "hi": "शेर"
+  },
+  "prompt": "A cute child-friendly cartoon lion, full body, rounded shapes, golden fur, friendly face, simple clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:21:04.377Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

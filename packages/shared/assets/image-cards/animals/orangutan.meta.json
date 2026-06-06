@@ -1,0 +1,31 @@
+{
+  "id": "animal-orangutan",
+  "imageId": "animals/orangutan",
+  "names": {
+    "sv": "Orangutang",
+    "no": "Orangutang",
+    "da": "Orangutang",
+    "fi": "Oranki",
+    "is": "Órangútan",
+    "en-GB": "Orangutan",
+    "en-US": "Orangutan",
+    "en-CA": "Orangutan",
+    "en-AU": "Orangutan",
+    "de": "Orang-Utan",
+    "fr": "Orang-outan",
+    "es": "Orangután",
+    "it": "Orangutan",
+    "nl": "Orang-oetan",
+    "pt-BR": "Orangotango",
+    "ja": "オランウータン",
+    "ko": "오랑우탄",
+    "hi": "ओरंगुटान"
+  },
+  "prompt": "A cute child-friendly cartoon orangutan, long arms, reddish fur, gentle friendly face, tree hint, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:54:53.297Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

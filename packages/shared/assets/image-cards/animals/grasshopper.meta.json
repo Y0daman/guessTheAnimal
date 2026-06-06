@@ -1,0 +1,31 @@
+{
+  "id": "animal-grasshopper",
+  "imageId": "animals/grasshopper",
+  "names": {
+    "sv": "Gräshoppa",
+    "no": "Gresshoppe",
+    "da": "Græshoppe",
+    "fi": "Heinäsirkka",
+    "is": "Engispretta",
+    "en-GB": "Grasshopper",
+    "en-US": "Grasshopper",
+    "en-CA": "Grasshopper",
+    "en-AU": "Grasshopper",
+    "de": "Heuschrecke",
+    "fr": "Sauterelle",
+    "es": "Saltamontes",
+    "it": "Cavalletta",
+    "nl": "Sprinkhaan",
+    "pt-BR": "Gafanhoto",
+    "ja": "バッタ",
+    "ko": "메뚜기",
+    "hi": "टिड्डा"
+  },
+  "prompt": "A cute child-friendly cartoon grasshopper, full body, big hind legs, green body, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:52:54.426Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

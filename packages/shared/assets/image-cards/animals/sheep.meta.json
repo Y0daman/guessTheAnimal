@@ -1,0 +1,31 @@
+{
+  "id": "animal-sheep",
+  "imageId": "animals/sheep",
+  "names": {
+    "sv": "Får",
+    "no": "Sau",
+    "da": "Får",
+    "fi": "Lammas",
+    "is": "Sauðfé",
+    "en-GB": "Sheep",
+    "en-US": "Sheep",
+    "en-CA": "Sheep",
+    "en-AU": "Sheep",
+    "de": "Schaf",
+    "fr": "Mouton",
+    "es": "Oveja",
+    "it": "Pecora",
+    "nl": "Schaap",
+    "pt-BR": "Ovelha",
+    "ja": "ヒツジ",
+    "ko": "양",
+    "hi": "भेड़"
+  },
+  "prompt": "A cute child-friendly cartoon sheep, fluffy wool, full body, friendly face, rounded shapes, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:34:52.813Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

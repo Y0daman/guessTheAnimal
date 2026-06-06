@@ -1,0 +1,31 @@
+{
+  "id": "animal-owl",
+  "imageId": "animals/owl",
+  "names": {
+    "sv": "Uggla",
+    "no": "Ugle",
+    "da": "Ugle",
+    "fi": "Pöllö",
+    "is": "Ugla",
+    "en-GB": "Owl",
+    "en-US": "Owl",
+    "en-CA": "Owl",
+    "en-AU": "Owl",
+    "de": "Eule",
+    "fr": "Hibou",
+    "es": "Búho",
+    "it": "Gufo",
+    "nl": "Uil",
+    "pt-BR": "Coruja",
+    "ja": "フクロウ",
+    "ko": "올빼미",
+    "hi": "उल्लू"
+  },
+  "prompt": "A cute child-friendly cartoon owl, big eyes, rounded body, perched on branch, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:39:51.128Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

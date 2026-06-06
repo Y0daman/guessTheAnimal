@@ -1,0 +1,31 @@
+{
+  "id": "animal-shark",
+  "imageId": "animals/shark",
+  "names": {
+    "sv": "Haj",
+    "no": "Hai",
+    "da": "Haj",
+    "fi": "Hai",
+    "is": "Hákarl",
+    "en-GB": "Shark",
+    "en-US": "Shark",
+    "en-CA": "Shark",
+    "en-AU": "Shark",
+    "de": "Hai",
+    "fr": "Requin",
+    "es": "Tiburón",
+    "it": "Squalo",
+    "nl": "Haai",
+    "pt-BR": "Tubarão",
+    "ja": "サメ",
+    "ko": "상어",
+    "hi": "शार्क"
+  },
+  "prompt": "A cute child-friendly cartoon shark, full body side view, blue-gray body, dorsal fin, friendly non-scary face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:45:05.213Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

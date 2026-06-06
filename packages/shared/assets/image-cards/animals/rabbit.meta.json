@@ -1,0 +1,31 @@
+{
+  "id": "animal-rabbit",
+  "imageId": "animals/rabbit",
+  "names": {
+    "sv": "Kanin",
+    "no": "Kanin",
+    "da": "Kanin",
+    "fi": "Kani",
+    "is": "Kanína",
+    "en-GB": "Rabbit",
+    "en-US": "Rabbit",
+    "en-CA": "Rabbit",
+    "en-AU": "Rabbit",
+    "de": "Kaninchen",
+    "fr": "Lapin",
+    "es": "Conejo",
+    "it": "Coniglio",
+    "nl": "Konijn",
+    "pt-BR": "Coelho",
+    "ja": "ウサギ",
+    "ko": "토끼",
+    "hi": "खरगोश"
+  },
+  "prompt": "A cute child-friendly cartoon rabbit, full body, long ears, soft fur, friendly face, rounded shapes, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:30:21.351Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

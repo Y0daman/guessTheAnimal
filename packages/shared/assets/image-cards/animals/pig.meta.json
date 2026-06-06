@@ -1,0 +1,31 @@
+{
+  "id": "animal-pig",
+  "imageId": "animals/pig",
+  "names": {
+    "sv": "Gris",
+    "no": "Gris",
+    "da": "Gris",
+    "fi": "Sika",
+    "is": "Svín",
+    "en-GB": "Pig",
+    "en-US": "Pig",
+    "en-CA": "Pig",
+    "en-AU": "Pig",
+    "de": "Schwein",
+    "fr": "Cochon",
+    "es": "Cerdo",
+    "it": "Maiale",
+    "nl": "Varken",
+    "pt-BR": "Porco",
+    "ja": "ブタ",
+    "ko": "돼지",
+    "hi": "सूअर"
+  },
+  "prompt": "A cute child-friendly cartoon pig, full body, pink rounded body, curly tail, snout, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:34:35.300Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

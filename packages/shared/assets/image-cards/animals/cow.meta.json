@@ -1,0 +1,31 @@
+{
+  "id": "animal-cow",
+  "imageId": "animals/cow",
+  "names": {
+    "sv": "Ko",
+    "no": "Ku",
+    "da": "Ko",
+    "fi": "Lehmä",
+    "is": "Kýr",
+    "en-GB": "Cow",
+    "en-US": "Cow",
+    "en-CA": "Cow",
+    "en-AU": "Cow",
+    "de": "Kuh",
+    "fr": "Vache",
+    "es": "Vaca",
+    "it": "Mucca",
+    "nl": "Koe",
+    "pt-BR": "Vaca",
+    "ja": "ウシ",
+    "ko": "소",
+    "hi": "गाय"
+  },
+  "prompt": "A cute child-friendly cartoon cow, full body, black and white spots, friendly face, small horns, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:34:16.011Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

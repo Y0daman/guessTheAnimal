@@ -1,0 +1,31 @@
+{
+  "id": "animal-snake",
+  "imageId": "animals/snake",
+  "names": {
+    "sv": "Orm",
+    "no": "Slange",
+    "da": "Slange",
+    "fi": "Käärme",
+    "is": "Snákur",
+    "en-GB": "Snake",
+    "en-US": "Snake",
+    "en-CA": "Snake",
+    "en-AU": "Snake",
+    "de": "Schlange",
+    "fr": "Serpent",
+    "es": "Serpiente",
+    "it": "Serpente",
+    "nl": "Slang",
+    "pt-BR": "Cobra",
+    "ja": "ヘビ",
+    "ko": "뱀",
+    "hi": "साँप"
+  },
+  "prompt": "A cute child-friendly cartoon snake, coiled body, friendly eyes, simple pattern, non-scary, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:42:39.049Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

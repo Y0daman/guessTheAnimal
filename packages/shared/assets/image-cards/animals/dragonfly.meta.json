@@ -1,0 +1,31 @@
+{
+  "id": "animal-dragonfly",
+  "imageId": "animals/dragonfly",
+  "names": {
+    "sv": "Trollslända",
+    "no": "Øyenstikker",
+    "da": "Guldsmed",
+    "fi": "Sudenkorento",
+    "is": "Drekafluga",
+    "en-GB": "Dragonfly",
+    "en-US": "Dragonfly",
+    "en-CA": "Dragonfly",
+    "en-AU": "Dragonfly",
+    "de": "Libelle",
+    "fr": "Libellule",
+    "es": "Libélula",
+    "it": "Libellula",
+    "nl": "Libel",
+    "pt-BR": "Libélula",
+    "ja": "トンボ",
+    "ko": "잠자리",
+    "hi": "व्याध-पतंग"
+  },
+  "prompt": "A cute child-friendly cartoon dragonfly, long body, big transparent wings, friendly eyes, pond hint, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:52:37.217Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

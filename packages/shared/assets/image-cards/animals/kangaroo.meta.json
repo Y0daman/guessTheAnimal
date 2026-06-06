@@ -1,0 +1,31 @@
+{
+  "id": "animal-kangaroo",
+  "imageId": "animals/kangaroo",
+  "names": {
+    "sv": "Känguru",
+    "no": "Kenguru",
+    "da": "Kænguru",
+    "fi": "Kenguru",
+    "is": "Kengúra",
+    "en-GB": "Kangaroo",
+    "en-US": "Kangaroo",
+    "en-CA": "Kangaroo",
+    "en-AU": "Kangaroo",
+    "de": "Känguru",
+    "fr": "Kangourou",
+    "es": "Canguro",
+    "it": "Canguro",
+    "nl": "Kangoeroe",
+    "pt-BR": "Canguru",
+    "ja": "カンガルー",
+    "ko": "캥거루",
+    "hi": "कंगारू"
+  },
+  "prompt": "A cute child-friendly cartoon kangaroo, full body, big hind legs, long tail, pouch, friendly face, clean vector illustration, no text, warm background. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no cluttered background, no extra animals unless requested. Important: do not include any written animal name, labels, letters, captions, or watermark inside the image. Composition: centered animal, full body visible, enough empty space around the subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-05T23:26:46.693Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}
