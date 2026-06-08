@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Guess The Animal",
+    "slug": "guess-the-animal",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "guesstheanimal",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.y0daman.guesstheanimal",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSAllowsLocalNetworking": true
+        }
+      }
+    },
+    "android": {
+      "package": "com.y0daman.guesstheanimal"
+    }
+  }
+}

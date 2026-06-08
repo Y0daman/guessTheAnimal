@@ -1,0 +1,31 @@
+{
+  "id": "animal-boa-constrictor",
+  "imageId": "animals/boa-constrictor",
+  "names": {
+    "sv": "Boaorm",
+    "no": "Boa constrictor",
+    "da": "Boa constrictor",
+    "fi": "Boa constrictor",
+    "is": "Boa constrictor",
+    "en-GB": "Boa constrictor",
+    "en-US": "Boa constrictor",
+    "en-CA": "Boa constrictor",
+    "en-AU": "Boa constrictor",
+    "de": "Boa constrictor",
+    "fr": "Boa constrictor",
+    "es": "Boa constrictor",
+    "it": "Boa constrictor",
+    "nl": "Boa constrictor",
+    "pt-BR": "Boa constrictor",
+    "ja": "Boa constrictor",
+    "ko": "Boa constrictor",
+    "hi": "Boa constrictor"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of boa constrictor snake wrapped around branch, non-scary. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-07T10:39:54.528Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

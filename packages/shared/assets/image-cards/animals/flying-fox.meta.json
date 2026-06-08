@@ -1,0 +1,31 @@
+{
+  "id": "animal-flying-fox",
+  "imageId": "animals/flying-fox",
+  "names": {
+    "sv": "Flyghund",
+    "no": "Flying fox",
+    "da": "Flying fox",
+    "fi": "Flying fox",
+    "is": "Flying fox",
+    "en-GB": "Flying fox",
+    "en-US": "Flying fox",
+    "en-CA": "Flying fox",
+    "en-AU": "Flying fox",
+    "de": "Flying fox",
+    "fr": "Flying fox",
+    "es": "Flying fox",
+    "it": "Flying fox",
+    "nl": "Flying fox",
+    "pt-BR": "Flying fox",
+    "ja": "Flying fox",
+    "ko": "Flying fox",
+    "hi": "Flying fox"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of large fruit bat hanging from branch with fox-like face and wide wings, friendly non-scary. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no blood, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T01:02:30.615Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

@@ -5,8 +5,10 @@ Föreslagen riktning är en TypeScript-monorepo där spelregler och djurdata lig
 | Sökväg | Ansvar |
 | --- | --- |
 | `apps/demo` | Webbdemo för snabb testning i browser. |
-| `apps/mobile` | Expo/React Native-app för iPhone, iPad och Android. |
+| `apps/mobile` | Fristående Expo-app för iPhone, iPad och Android med lokal metadata och lokala djurbilder. |
 | `packages/shared` | Delade typer, djurkort, frågor, filtrering, scoring och rundlogik. |
+| `packages/shared/src/game` | Ren spelmotor för solorundor, frågor, scoring och unlock-progress. |
+| `packages/shared/src/game/animal-attributes.js` | Explicit gameplay-metadata per djur för frågesvar, storlek, färg, ben, vingar, simning, ägg, habitattyp och låslogik. |
 | `packages/shared/assets/image-cards/animals` | Djurillustrationer och bildmetadata. |
 | `packages/app-core` | API-kontrakt och klientkod för online multiplayer. |
 | `packages/purchases` | Paket, entitlements, köpstatus och reklamfri status. |
@@ -19,7 +21,9 @@ Föreslagen riktning är en TypeScript-monorepo där spelregler och djurdata lig
 - Djurdata ska ligga i `packages/shared/src/content/animals.ts`.
 - Frågor ska ligga i `packages/shared/src/content/questions.ts`.
 - Filtreringslogik ska vara ren domänlogik utan UI-beroenden.
+- Frågesvar ska komma från explicit djurmetadata, inte från fri textmatchning.
 - Scoring ska vara deterministisk och testbar.
+- Rewarded-ad-progress ska kunna testas utan annons-SDK.
 - UI ska inte duplicera regler för vilka djur som matchar ett svar.
 - Online-backend ska senare validera rum, spelare, svar och gissningar server-side.
 - Funktioner och tester som implementerar krav bör märkas med `Implements: REQ-GTA-NNN`.

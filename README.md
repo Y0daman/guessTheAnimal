@@ -79,4 +79,49 @@ npm install
 npm run demo
 ```
 
-Demot är en lokal soloversion utan backend. Datorn väljer ett upplåst djur, spelaren ställer ja/nej-frågor och gissar genom att trycka på djurkort.
+Demot är ett lokalt solospel utan backend. Datorn väljer ett upplåst djur, spelaren ställer ja/nej-frågor och gissar genom att trycka på djurkort.
+
+Nuvarande implementation innehåller:
+
+- Riktig runda-fas: startläge, aktiv runda, vinst och ge upp.
+- Ren domänlogik i `packages/shared/src/game`.
+- Frågor grupperade efter kropp, förmåga, plats, utseende och färg.
+- Explicita gameplay-attribut för samtliga djur i `packages/shared/src/game/animal-attributes.js`.
+- Automatisk filtrering av möjliga djur.
+- Poäng, stjärnor, bästa poäng och antal vunna rundor.
+- Lokal kortlåsning med rewarded-ad-progress.
+- Enhetstester för frågesvar, filtrering, scoring och unlock.
+
+```bash
+npm test
+npm run build
+```
+
+## Kör Som Mobilapp
+
+Mobilleveransen ligger i `apps/mobile`. Den är en fristående Expo-app som använder lokal metadata, lokala djurbilder och samma spelmotor som webbdemot. Den kräver ingen Vite-server och ingen backend.
+
+Installera mobilberoenden en gång:
+
+```bash
+npm install --prefix apps/mobile
+```
+
+Starta iPhone Simulator:
+
+```bash
+npm run mobile:ios
+```
+
+Starta Android Emulator:
+
+```bash
+npm run mobile:android
+```
+
+Verifiera mobilbundlen:
+
+```bash
+npm --prefix apps/mobile run check
+npm --prefix apps/mobile run export:ios
+```

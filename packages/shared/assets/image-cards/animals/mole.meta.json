@@ -1,0 +1,31 @@
+{
+  "id": "animal-mole",
+  "imageId": "animals/mole",
+  "names": {
+    "sv": "Mullvad",
+    "no": "Mole",
+    "da": "Mole",
+    "fi": "Mole",
+    "is": "Mole",
+    "en-GB": "Mole",
+    "en-US": "Mole",
+    "en-CA": "Mole",
+    "en-AU": "Mole",
+    "de": "Mole",
+    "fr": "Mole",
+    "es": "Mole",
+    "it": "Mole",
+    "nl": "Mole",
+    "pt-BR": "Mole",
+    "ja": "Mole",
+    "ko": "Mole",
+    "hi": "Mole"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of mole with digging paws and small eyes. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-07T11:20:52.780Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

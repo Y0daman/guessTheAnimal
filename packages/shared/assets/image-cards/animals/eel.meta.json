@@ -1,0 +1,31 @@
+{
+  "id": "animal-eel",
+  "imageId": "animals/eel",
+  "names": {
+    "sv": "Ål",
+    "no": "Eel",
+    "da": "Eel",
+    "fi": "Eel",
+    "is": "Eel",
+    "en-GB": "Eel",
+    "en-US": "Eel",
+    "en-CA": "Eel",
+    "en-AU": "Eel",
+    "de": "Eel",
+    "fr": "Eel",
+    "es": "Eel",
+    "it": "Eel",
+    "nl": "Eel",
+    "pt-BR": "Eel",
+    "ja": "Eel",
+    "ko": "Eel",
+    "hi": "Eel"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of eel swimming in water. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T00:05:14.328Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "animal-woodpecker",
+  "imageId": "animals/woodpecker",
+  "names": {
+    "sv": "Hackspett",
+    "no": "Woodpecker",
+    "da": "Woodpecker",
+    "fi": "Woodpecker",
+    "is": "Woodpecker",
+    "en-GB": "Woodpecker",
+    "en-US": "Woodpecker",
+    "en-CA": "Woodpecker",
+    "en-AU": "Woodpecker",
+    "de": "Woodpecker",
+    "fr": "Woodpecker",
+    "es": "Woodpecker",
+    "it": "Woodpecker",
+    "nl": "Woodpecker",
+    "pt-BR": "Woodpecker",
+    "ja": "Woodpecker",
+    "ko": "Woodpecker",
+    "hi": "Woodpecker"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of woodpecker on tree trunk with red head detail. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-07T10:43:14.669Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

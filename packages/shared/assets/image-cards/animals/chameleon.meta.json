@@ -1,0 +1,31 @@
+{
+  "id": "animal-chameleon",
+  "imageId": "animals/chameleon",
+  "names": {
+    "sv": "Kameleont",
+    "no": "Chameleon",
+    "da": "Chameleon",
+    "fi": "Chameleon",
+    "is": "Chameleon",
+    "en-GB": "Chameleon",
+    "en-US": "Chameleon",
+    "en-CA": "Chameleon",
+    "en-AU": "Chameleon",
+    "de": "Chameleon",
+    "fr": "Chameleon",
+    "es": "Chameleon",
+    "it": "Chameleon",
+    "nl": "Chameleon",
+    "pt-BR": "Chameleon",
+    "ja": "Chameleon",
+    "ko": "Chameleon",
+    "hi": "Chameleon"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of chameleon on branch with curled tail and big eyes, friendly cartoon. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T01:49:14.927Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

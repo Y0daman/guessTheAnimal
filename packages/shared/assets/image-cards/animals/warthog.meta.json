@@ -1,0 +1,31 @@
+{
+  "id": "animal-warthog",
+  "imageId": "animals/warthog",
+  "names": {
+    "sv": "Vårtsvin",
+    "no": "Warthog",
+    "da": "Warthog",
+    "fi": "Warthog",
+    "is": "Warthog",
+    "en-GB": "Warthog",
+    "en-US": "Warthog",
+    "en-CA": "Warthog",
+    "en-AU": "Warthog",
+    "de": "Warthog",
+    "fr": "Warthog",
+    "es": "Warthog",
+    "it": "Warthog",
+    "nl": "Warthog",
+    "pt-BR": "Warthog",
+    "ja": "Warthog",
+    "ko": "Warthog",
+    "hi": "Warthog"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of warthog with tusks and mane. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-07T23:58:43.067Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

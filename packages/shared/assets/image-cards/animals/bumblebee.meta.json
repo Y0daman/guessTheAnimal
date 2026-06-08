@@ -1,0 +1,31 @@
+{
+  "id": "animal-bumblebee",
+  "imageId": "animals/bumblebee",
+  "names": {
+    "sv": "Humla",
+    "no": "Bumblebee",
+    "da": "Bumblebee",
+    "fi": "Bumblebee",
+    "is": "Bumblebee",
+    "en-GB": "Bumblebee",
+    "en-US": "Bumblebee",
+    "en-CA": "Bumblebee",
+    "en-AU": "Bumblebee",
+    "de": "Bumblebee",
+    "fr": "Bumblebee",
+    "es": "Bumblebee",
+    "it": "Bumblebee",
+    "nl": "Bumblebee",
+    "pt-BR": "Bumblebee",
+    "ja": "Bumblebee",
+    "ko": "Bumblebee",
+    "hi": "Bumblebee"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of a fluffy bumblebee with yellow and black fuzzy stripes, small wings, friendly eyes, and rounded body. Clear centered full-body subject, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T01:34:22.226Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

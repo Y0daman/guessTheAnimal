@@ -1,0 +1,31 @@
+{
+  "id": "animal-giant-tortoise",
+  "imageId": "animals/giant-tortoise",
+  "names": {
+    "sv": "Jättesköldpadda",
+    "no": "Giant tortoise",
+    "da": "Giant tortoise",
+    "fi": "Giant tortoise",
+    "is": "Giant tortoise",
+    "en-GB": "Giant tortoise",
+    "en-US": "Giant tortoise",
+    "en-CA": "Giant tortoise",
+    "en-AU": "Giant tortoise",
+    "de": "Giant tortoise",
+    "fr": "Giant tortoise",
+    "es": "Giant tortoise",
+    "it": "Giant tortoise",
+    "nl": "Giant tortoise",
+    "pt-BR": "Giant tortoise",
+    "ja": "Giant tortoise",
+    "ko": "Giant tortoise",
+    "hi": "Giant tortoise"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of giant tortoise with large domed shell walking slowly, friendly cartoon. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no blood, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T01:25:24.575Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

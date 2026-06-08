@@ -1,0 +1,31 @@
+{
+  "id": "animal-gazelle",
+  "imageId": "animals/gazelle",
+  "names": {
+    "sv": "Gasell",
+    "no": "Gazelle",
+    "da": "Gazelle",
+    "fi": "Gazelle",
+    "is": "Gazelle",
+    "en-GB": "Gazelle",
+    "en-US": "Gazelle",
+    "en-CA": "Gazelle",
+    "en-AU": "Gazelle",
+    "de": "Gazelle",
+    "fr": "Gazelle",
+    "es": "Gazelle",
+    "it": "Gazelle",
+    "nl": "Gazelle",
+    "pt-BR": "Gazelle",
+    "ja": "Gazelle",
+    "ko": "Gazelle",
+    "hi": "Gazelle"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of slender gazelle with small horns. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-07T23:59:00.770Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

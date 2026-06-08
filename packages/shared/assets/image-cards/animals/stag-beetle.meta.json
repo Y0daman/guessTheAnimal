@@ -1,0 +1,31 @@
+{
+  "id": "animal-stag-beetle",
+  "imageId": "animals/stag-beetle",
+  "names": {
+    "sv": "Ekoxe",
+    "no": "Stag beetle",
+    "da": "Stag beetle",
+    "fi": "Stag beetle",
+    "is": "Stag beetle",
+    "en-GB": "Stag beetle",
+    "en-US": "Stag beetle",
+    "en-CA": "Stag beetle",
+    "en-AU": "Stag beetle",
+    "de": "Stag beetle",
+    "fr": "Stag beetle",
+    "es": "Stag beetle",
+    "it": "Stag beetle",
+    "nl": "Stag beetle",
+    "pt-BR": "Stag beetle",
+    "ja": "Stag beetle",
+    "ko": "Stag beetle",
+    "hi": "Stag beetle"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of stag beetle with antler-like jaws, non-scary. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T00:12:19.719Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

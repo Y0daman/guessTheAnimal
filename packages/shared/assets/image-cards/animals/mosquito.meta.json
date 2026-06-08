@@ -1,0 +1,31 @@
+{
+  "id": "animal-mosquito",
+  "imageId": "animals/mosquito",
+  "names": {
+    "sv": "Mygga",
+    "no": "Mosquito",
+    "da": "Mosquito",
+    "fi": "Mosquito",
+    "is": "Mosquito",
+    "en-GB": "Mosquito",
+    "en-US": "Mosquito",
+    "en-CA": "Mosquito",
+    "en-AU": "Mosquito",
+    "de": "Mosquito",
+    "fr": "Mosquito",
+    "es": "Mosquito",
+    "it": "Mosquito",
+    "nl": "Mosquito",
+    "pt-BR": "Mosquito",
+    "ja": "Mosquito",
+    "ko": "Mosquito",
+    "hi": "Mosquito"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of small mosquito insect with long legs and wings, friendly non-scary cartoon. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-07T10:36:17.793Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

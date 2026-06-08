@@ -1,0 +1,31 @@
+{
+  "id": "animal-beluga",
+  "imageId": "animals/beluga",
+  "names": {
+    "sv": "Vitval",
+    "no": "Beluga whale",
+    "da": "Beluga whale",
+    "fi": "Beluga whale",
+    "is": "Beluga whale",
+    "en-GB": "Beluga whale",
+    "en-US": "Beluga whale",
+    "en-CA": "Beluga whale",
+    "en-AU": "Beluga whale",
+    "de": "Beluga whale",
+    "fr": "Beluga whale",
+    "es": "Beluga whale",
+    "it": "Beluga whale",
+    "nl": "Beluga whale",
+    "pt-BR": "Beluga whale",
+    "ja": "Beluga whale",
+    "ko": "Beluga whale",
+    "hi": "Beluga whale"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of white beluga whale smiling. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T00:03:14.762Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

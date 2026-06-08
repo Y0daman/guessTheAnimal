@@ -1,0 +1,31 @@
+{
+  "id": "animal-manta-ray",
+  "imageId": "animals/manta-ray",
+  "names": {
+    "sv": "Mantarocka",
+    "no": "Manta ray",
+    "da": "Manta ray",
+    "fi": "Manta ray",
+    "is": "Manta ray",
+    "en-GB": "Manta ray",
+    "en-US": "Manta ray",
+    "en-CA": "Manta ray",
+    "en-AU": "Manta ray",
+    "de": "Manta ray",
+    "fr": "Manta ray",
+    "es": "Manta ray",
+    "it": "Manta ray",
+    "nl": "Manta ray",
+    "pt-BR": "Manta ray",
+    "ja": "Manta ray",
+    "ko": "Manta ray",
+    "hi": "Manta ray"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of large manta ray with wing-like fins. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T00:04:17.369Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

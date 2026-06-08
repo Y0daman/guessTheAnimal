@@ -1,0 +1,26 @@
+{
+  "name": "@guess-the-animal/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "ios": "expo run:ios",
+    "android": "expo run:android",
+    "check": "expo config --type public >/dev/null",
+    "export:ios": "expo export --platform ios --output-dir dist/ios"
+  },
+  "dependencies": {
+    "expo": "~52.0.25",
+    "expo-asset": "~11.0.5",
+    "expo-haptics": "~14.0.1",
+    "expo-status-bar": "2.0.1",
+    "react": "18.3.1",
+    "react-native": "0.76.9"
+  },
+  "overrides": {
+    "@xmldom/xmldom": "^0.8.13",
+    "postcss": "^8.5.10",
+    "uuid": "^11.1.1"
+  }
+}

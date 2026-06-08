@@ -1,0 +1,31 @@
+{
+  "id": "animal-tree-kangaroo",
+  "imageId": "animals/tree-kangaroo",
+  "names": {
+    "sv": "Trädkänguru",
+    "no": "Tree kangaroo",
+    "da": "Tree kangaroo",
+    "fi": "Tree kangaroo",
+    "is": "Tree kangaroo",
+    "en-GB": "Tree kangaroo",
+    "en-US": "Tree kangaroo",
+    "en-CA": "Tree kangaroo",
+    "en-AU": "Tree kangaroo",
+    "de": "Tree kangaroo",
+    "fr": "Tree kangaroo",
+    "es": "Tree kangaroo",
+    "it": "Tree kangaroo",
+    "nl": "Tree kangaroo",
+    "pt-BR": "Tree kangaroo",
+    "ja": "Tree kangaroo",
+    "ko": "Tree kangaroo",
+    "hi": "Tree kangaroo"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of tree kangaroo climbing branch. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-07T11:53:41.892Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "animal-monitor-lizard",
+  "imageId": "animals/monitor-lizard",
+  "names": {
+    "sv": "Varan",
+    "no": "Monitor lizard",
+    "da": "Monitor lizard",
+    "fi": "Monitor lizard",
+    "is": "Monitor lizard",
+    "en-GB": "Monitor lizard",
+    "en-US": "Monitor lizard",
+    "en-CA": "Monitor lizard",
+    "en-AU": "Monitor lizard",
+    "de": "Monitor lizard",
+    "fr": "Monitor lizard",
+    "es": "Monitor lizard",
+    "it": "Monitor lizard",
+    "nl": "Monitor lizard",
+    "pt-BR": "Monitor lizard",
+    "ja": "Monitor lizard",
+    "ko": "Monitor lizard",
+    "hi": "Monitor lizard"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of monitor lizard with long tail and forked tongue, friendly non-scary. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no blood, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T01:25:43.852Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

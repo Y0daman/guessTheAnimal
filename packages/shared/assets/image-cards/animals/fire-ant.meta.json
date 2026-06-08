@@ -1,0 +1,31 @@
+{
+  "id": "animal-fire-ant",
+  "imageId": "animals/fire-ant",
+  "names": {
+    "sv": "Eldmyra",
+    "no": "Fire ant",
+    "da": "Fire ant",
+    "fi": "Fire ant",
+    "is": "Fire ant",
+    "en-GB": "Fire ant",
+    "en-US": "Fire ant",
+    "en-CA": "Fire ant",
+    "en-AU": "Fire ant",
+    "de": "Fire ant",
+    "fr": "Fire ant",
+    "es": "Fire ant",
+    "it": "Fire ant",
+    "nl": "Fire ant",
+    "pt-BR": "Fire ant",
+    "ja": "Fire ant",
+    "ko": "Fire ant",
+    "hi": "Fire ant"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of small reddish fire ant, friendly non-scary insect, no biting scene. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no blood, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T01:06:16.790Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}

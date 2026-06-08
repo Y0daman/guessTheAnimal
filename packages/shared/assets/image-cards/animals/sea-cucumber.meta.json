@@ -1,0 +1,31 @@
+{
+  "id": "animal-sea-cucumber",
+  "imageId": "animals/sea-cucumber",
+  "names": {
+    "sv": "Sjögurka",
+    "no": "Sea cucumber",
+    "da": "Sea cucumber",
+    "fi": "Sea cucumber",
+    "is": "Sea cucumber",
+    "en-GB": "Sea cucumber",
+    "en-US": "Sea cucumber",
+    "en-CA": "Sea cucumber",
+    "en-AU": "Sea cucumber",
+    "de": "Sea cucumber",
+    "fr": "Sea cucumber",
+    "es": "Sea cucumber",
+    "it": "Sea cucumber",
+    "nl": "Sea cucumber",
+    "pt-BR": "Sea cucumber",
+    "ja": "Sea cucumber",
+    "ko": "Sea cucumber",
+    "hi": "Sea cucumber"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of simple sea cucumber on seabed. Clear centered full-body subject, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game animal image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no animal name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T00:16:11.223Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/animals/metadata.json"
+}
