@@ -7,7 +7,7 @@
     "demo": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "check": "node --check apps/demo/main.js && node --check packages/shared/src/game/animal-attributes.js && node --check packages/shared/src/game/animal-facts.js && node --check packages/shared/src/game/solo-game.js && node --check packages/shared/src/game/progress.js",
+    "check": "node --check apps/demo/main.js && node --check packages/shared/src/game/ad-categories.js && node --check packages/shared/src/game/animal-attributes.js && node --check packages/shared/src/game/animal-facts.js && node --check packages/shared/src/game/solo-game.js && node --check packages/shared/src/game/progress.js",
     "test": "node --test packages/shared/src/game/*.test.mjs",
     "mobile": "npm --prefix apps/mobile run start",
     "mobile:ios": "npm --prefix apps/mobile run ios",

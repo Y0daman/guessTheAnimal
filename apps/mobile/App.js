@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { FlatList, Image, Pressable, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View, useWindowDimensions } from "react-native";
 import metadata from "./metadata.json";
+import { AD_REWARD_ROWS, getLockedAnimalsForRow } from "./game/ad-categories.js";
 import { normalizeAnimal, QUESTION_GROUPS } from "./game/animal-facts.js";
-import { ADS_PER_UNLOCK, getAdSeriesState, grantAdView, mergeSavedProgress, normalizeAdSeries, recordRoundResult } from "./game/progress.js";
+import { getAdRowProgress, getAdRowState, grantAdViewForRow, mergeSavedProgress, normalizeAdRows, recordRoundResult } from "./game/progress.js";
 import { askQuestion, createReadyRound, getAnimalStatus, getPossibleAnimals, getSortedAnimals, giveUp, guessAnimal, ROUND_PHASE, startSoloRound } from "./game/solo-game.js";
 import { animalImages } from "./animal-images.js";
 import { RewardCardOverlay } from "./components/RewardCardOverlay.js";
@@ -33,7 +34,6 @@ export default function App() {
   const lockedCount = animals.length - progress.unlockedIds.length;
   const currentScore = round.phase === ROUND_PHASE.PLAYING ? Math.max(10, 100 - 10 * round.asked.length - 20 * round.wrongGuesses.length) : progress.bestScore;
   const cardWidth = getCardWidth(width, columnCount);
-  const adSeries = getAdSeriesState(progress, now);
 
   useEffect(() => {
     const interval = setInterval(() => setNow(Date.now()), 1000);
@@ -41,7 +41,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    setProgress((currentProgress) => normalizeAdSeries(currentProgress, now));
+    setProgress((currentProgress) => normalizeAdRows(currentProgress, now));
   }, [now]);
 
   function startRound() {
@@ -83,15 +83,19 @@ export default function App() {
     setMessage(`Datorns djur var ${updated.result.secretName}. Starta en ny runda när du vill försöka igen.`);
   }
 
-  function handleAdReward() {
+  function handleAdReward(rowId) {
     if (round.phase === ROUND_PHASE.PLAYING || lockedCount <= 0) return;
-    const result = grantAdView(progress, animals, Date.now());
+    const result = grantAdViewForRow(progress, animals, rowId, Date.now());
     setProgress(result.progress);
     if (result.blockedReason === "cooldown") {
       setMessage(`Du kan starta en ny reklamserie om ${formatDuration(result.remainingMs)}.`);
       return;
     }
-    setMessage(result.unlockedAnimal ? `${result.unlockedAnimal.name} är upplåst.` : `Reklam sedd. ${ADS_PER_UNLOCK - result.progress.adViews} kvar till nästa kort.`);
+    if (result.blockedReason === "complete") {
+      setMessage("Alla djur i den här raden är redan upplåsta.");
+      return;
+    }
+    setMessage(result.unlockedAnimals?.length > 1 ? `${result.unlockedAnimals.length} djur är upplåsta.` : result.unlockedAnimal ? `${result.unlockedAnimal.name} är upplåst.` : "Reklam sedd." );
     if (result.unlockedAnimal) setRewardAnimal(result.unlockedAnimal);
   }
 
@@ -124,21 +128,12 @@ export default function App() {
           <View style={styles.hero}>
             <Text style={styles.eyebrow}>Lås upp fler djur</Text>
             <Text style={styles.title}>Reklamserie</Text>
-            <Text style={styles.intro}>Se {ADS_PER_UNLOCK} reklamklipp inom en timme för att låsa upp ett nytt djur. När serien är klar kan du inte starta en ny serie förrän timmen gått ut.</Text>
+            <Text style={styles.intro}>Välj en rad för att garanterat låsa upp djur från den kategorin. Varje rad har egen timer och cooldown.</Text>
             <View style={styles.controls}>
               <Button label="Tillbaka" variant="ghost" onPress={() => setScreen("home")} />
-              <Button label="Titta på reklam" disabled={lockedCount <= 0 || adSeries.status === "cooldown"} onPress={handleAdReward} />
             </View>
           </View>
-
-          <View style={styles.adPageCard}>
-            <Text style={styles.sectionTitle}>Progress</Text>
-            <View style={styles.rewardStars}>
-              {Array.from({ length: ADS_PER_UNLOCK }).map((_, index) => <Text key={index} style={[styles.rewardStar, index < progress.adViews ? styles.rewardStarActive : null]}>★</Text>)}
-            </View>
-            <Text style={styles.adPageText}>{adSeries.status === "not-started" ? "Första reklamen startar en timer på 1 timme." : adSeries.status === "cooldown" ? `Serie klar. Ny reklamserie kan startas om ${formatDuration(adSeries.remainingMs)}.` : `Tid kvar: ${formatDuration(adSeries.remainingMs)}.`}</Text>
-            <Text style={styles.help}>{lockedCount} djur är fortfarande låsta.</Text>
-          </View>
+          {AD_REWARD_ROWS.map((row) => <AdRewardRow key={row.id} row={row} animals={animals} progress={progress} now={now} onWatch={() => handleAdReward(row.id)} />)}
         </ScrollView>
         <RewardCardOverlay visible={Boolean(rewardAnimal)} animal={rewardAnimal} imageSource={rewardAnimal ? animalImages[rewardAnimal.id] : null} onComplete={() => setRewardAnimal(null)} />
       </SafeAreaView>
@@ -255,6 +250,40 @@ function Stat({ value, label }) {
   );
 }
 
+function AdRewardRow({ row, animals, progress, now, onWatch }) {
+  const rowProgress = getAdRowProgress(progress, row.id);
+  const rowState = getAdRowState(progress, row.id, now);
+  const lockedCount = getLockedAnimalsForRow(row, animals, progress.unlockedIds).length;
+  const isComingSoon = row.id === "dinosaurs" && lockedCount === 0;
+  const isDisabled = isComingSoon || lockedCount === 0 || rowState.status === "cooldown";
+  const statusText = isComingSoon
+    ? "Kommer när dinosauriekorten finns i appen."
+    : lockedCount === 0
+      ? "Alla djur i raden är upplåsta."
+      : rowState.status === "cooldown"
+        ? `Cooldown: ${formatDuration(rowState.remainingMs)}`
+        : rowState.status === "active"
+          ? `Tid kvar: ${formatDuration(rowState.remainingMs)}`
+          : "Första reklamen startar en 1-timmes timer.";
+
+  return (
+    <View style={[styles.adRewardRow, isComingSoon ? styles.adRewardRowMuted : null]}>
+      <View style={styles.adRewardHeader}>
+        <Text style={styles.adRewardIcon}>{row.icon}</Text>
+        <View style={styles.adRewardTitleBlock}>
+          <Text style={styles.adRewardTitle}>{row.title}</Text>
+          <Text style={styles.adRewardSubtitle}>{row.grantCount ? `${row.grantCount} djur vid upplåsning` : "1 djur per färdig rad"} · {lockedCount} låsta kvar</Text>
+        </View>
+      </View>
+      <View style={styles.adTokenGrid}>
+        {Array.from({ length: row.requiredViews }).map((_, index) => <Text key={index} style={[styles.adToken, index < rowProgress.adViews ? styles.adTokenActive : null]}>{row.icon}</Text>)}
+      </View>
+      <Text style={styles.adPageText}>{statusText}</Text>
+      <Button label="Titta på reklam" disabled={isDisabled} onPress={onWatch} />
+    </View>
+  );
+}
+
 function QuestionButton({ question, asked, disabled, onPress }) {
   return (
     <Pressable style={[styles.questionButton, asked ? styles.questionUsed : null, disabled ? styles.disabled : null]} disabled={disabled} onPress={onPress}>
@@ -291,7 +320,7 @@ function AnimalCard({ animal, cardWidth, columns, isLastInRow, status, disabled,
   return (
     <Pressable style={[styles.animalCard, cardSizeStyle(columns), { width: cardWidth, marginRight: isLastInRow ? 0 : 10 }, styles[`status_${status}`]]} disabled={notPlayable} onPress={onPress}>
       {status !== "possible" ? <Text style={styles.cardBadge}>{statusLabel(status)}</Text> : null}
-      <Image source={animalImages[animal.id]} style={[styles.animalImage, { width: imageSize, height: imageSize }]} resizeMode="contain" />
+      <Image source={animalImages[animal.id]} style={[styles.animalImage, { width: imageSize, height: imageSize }]} resizeMode="contain" blurRadius={locked ? 9 : 0} />
       <Text style={styles.animalName}>{animal.name}</Text>
       <Text numberOfLines={1} style={styles.animalMeta}>{animal.habitats.slice(0, 2).join(", ")}</Text>
     </Pressable>
@@ -411,6 +440,16 @@ const styles = StyleSheet.create({
   pillTextActive: { color: "#ffffff" },
   help: { color: "#64736f", marginTop: 8, lineHeight: 19 },
   adPageCard: { marginTop: 14, padding: 18, borderRadius: 26, backgroundColor: "#fffdf2", borderWidth: 2, borderColor: "rgba(33,47,43,0.10)" },
+  adRewardRow: { marginTop: 14, padding: 16, borderRadius: 26, backgroundColor: "#fffdf2", borderWidth: 2, borderColor: "rgba(33,47,43,0.10)" },
+  adRewardRowMuted: { opacity: 0.62 },
+  adRewardHeader: { flexDirection: "row", alignItems: "center", gap: 12 },
+  adRewardIcon: { width: 50, height: 50, overflow: "hidden", borderRadius: 16, backgroundColor: "#ffcf4d", textAlign: "center", lineHeight: 50, fontSize: 28 },
+  adRewardTitleBlock: { flex: 1 },
+  adRewardTitle: { color: "#1f352f", fontSize: 20, fontWeight: "900" },
+  adRewardSubtitle: { color: "#64736f", fontSize: 12, fontWeight: "800", marginTop: 3 },
+  adTokenGrid: { flexDirection: "row", flexWrap: "wrap", gap: 6, marginTop: 14, marginBottom: 10 },
+  adToken: { width: 31, height: 31, overflow: "hidden", borderRadius: 10, backgroundColor: "#ebe3c9", textAlign: "center", lineHeight: 31, fontSize: 17, opacity: 0.58 },
+  adTokenActive: { backgroundColor: "#ffcf4d", opacity: 1 },
   rewardStars: { flexDirection: "row", justifyContent: "center", gap: 10, marginVertical: 18 },
   rewardStar: { color: "#d8d1b9", fontSize: 38, fontWeight: "900" },
   rewardStarActive: { color: "#ffcf4d", textShadowColor: "rgba(255,177,47,0.35)", textShadowRadius: 8 },

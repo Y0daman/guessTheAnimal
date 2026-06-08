@@ -4,7 +4,7 @@ import test from "node:test";
 import { QUESTIONS } from "./animal-facts.js";
 import { getAnimalAttributes, REQUIRED_ATTRIBUTE_KEYS } from "./animal-attributes.js";
 import { askQuestion, calculateScore, createReadyRound, getPossibleAnimals, guessAnimal, matchesKnownAnswers, ROUND_PHASE } from "./solo-game.js";
-import { AD_SERIES_WINDOW_MS, ADS_PER_UNLOCK, getAdSeriesState, grantAdView, mergeSavedProgress, normalizeAdSeries } from "./progress.js";
+import { AD_SERIES_WINDOW_MS, ADS_PER_UNLOCK, getAdSeriesState, grantAdView, grantAdViewForRow, mergeSavedProgress, normalizeAdSeries } from "./progress.js";
 
 const lion = animal("animal-lion", "Lejon", ["savann"], "lejon gul savann");
 const shark = animal("animal-shark", "Haj", ["hav"], "haj hav blå");
@@ -73,6 +73,18 @@ test("unfinished ad series resets after one hour", () => {
   assert.equal(normalized.adSeriesStartedAt, null);
 });
 
+test("ad reward rows unlock animals from their category", () => {
+  let progress = mergeSavedProgress(animals, { unlockedIds: [lion.id], adRows: {} });
+  let unlockedAnimal = null;
+  for (let index = 0; index < ADS_PER_UNLOCK; index += 1) {
+    const result = grantAdViewForRow(progress, animals, "water", 1000 + index, () => 0);
+    progress = result.progress;
+    unlockedAnimal = result.unlockedAnimal || unlockedAnimal;
+  }
+  assert.equal(unlockedAnimal.id, shark.id);
+  assert.equal(progress.unlockedIds.includes(shark.id), true);
+});
+
 test("animal size metadata answers big and small correctly", () => {
   const bigQuestion = QUESTIONS.find((question) => question.id === "big");
   const smallQuestion = QUESTIONS.find((question) => question.id === "small");
@@ -103,5 +115,5 @@ test("every animal in metadata has explicit gameplay attributes", () => {
 });
 
 function animal(id, name, habitats, searchText) {
-  return { id, name, habitats, searchText, attributes: getAnimalAttributes(id) };
+  return { id, name, habitats, continents: [], searchText, attributes: getAnimalAttributes(id) };
 }

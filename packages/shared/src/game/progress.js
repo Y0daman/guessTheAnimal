@@ -1,3 +1,5 @@
+import { getAdRewardRow, getLockedAnimalsForRow } from "./ad-categories.js";
+
 export const ADS_PER_UNLOCK = 5;
 export const AD_SERIES_WINDOW_MS = 60 * 60 * 1000;
 export const INITIAL_UNLOCKED_CARDS = 36;
@@ -9,6 +11,7 @@ export function createInitialProgress(animals) {
     totalAdViews: 0,
     adSeriesStartedAt: null,
     adSeriesCompletedAt: null,
+    adRows: {},
     highlightedUnlockId: null,
     bestScore: 0,
     roundsWon: 0
@@ -28,9 +31,89 @@ export function mergeSavedProgress(animals, saved) {
     totalAdViews: Number.isInteger(saved?.totalAdViews) ? Math.max(0, saved.totalAdViews) : fallback.totalAdViews,
     adSeriesStartedAt: Number.isInteger(saved?.adSeriesStartedAt) ? saved.adSeriesStartedAt : null,
     adSeriesCompletedAt: Number.isInteger(saved?.adSeriesCompletedAt) ? saved.adSeriesCompletedAt : null,
+    adRows: saved?.adRows && typeof saved.adRows === "object" ? saved.adRows : {},
     highlightedUnlockId: validIds.has(saved?.highlightedUnlockId) ? saved.highlightedUnlockId : null,
     bestScore: Number.isInteger(saved?.bestScore) ? Math.max(0, saved.bestScore) : 0,
     roundsWon: Number.isInteger(saved?.roundsWon) ? Math.max(0, saved.roundsWon) : 0
+  };
+}
+
+export function getAdRowProgress(progress, rowId) {
+  return progress.adRows?.[rowId] || { adViews: 0, totalAdViews: 0, seriesStartedAt: null, seriesCompletedAt: null, categoryUnlocked: false };
+}
+
+export function getAdRowState(progress, rowId, now = Date.now()) {
+  const row = getAdRewardRow(rowId);
+  const rowProgress = getAdRowProgress(progress, rowId);
+  if (!row) return { status: "missing", remainingMs: 0, adViews: 0, requiredViews: 0 };
+
+  if (rowProgress.seriesCompletedAt) {
+    const remainingMs = Math.max(0, AD_SERIES_WINDOW_MS - (now - rowProgress.seriesCompletedAt));
+    if (remainingMs > 0) return { status: "cooldown", remainingMs, adViews: rowProgress.adViews, requiredViews: row.requiredViews };
+  }
+
+  if (!rowProgress.seriesStartedAt) return { status: "not-started", remainingMs: 0, adViews: rowProgress.adViews, requiredViews: row.requiredViews };
+
+  const remainingMs = Math.max(0, AD_SERIES_WINDOW_MS - (now - rowProgress.seriesStartedAt));
+  if (remainingMs <= 0 && row.resetOnExpire) return { status: "expired", remainingMs: 0, adViews: 0, requiredViews: row.requiredViews };
+  return { status: "active", remainingMs, adViews: rowProgress.adViews, requiredViews: row.requiredViews };
+}
+
+export function normalizeAdRows(progress, now = Date.now()) {
+  const nextRows = { ...(progress.adRows || {}) };
+  let changed = false;
+  for (const [rowId, rowProgress] of Object.entries(nextRows)) {
+    const row = getAdRewardRow(rowId);
+    if (!row) continue;
+    const state = getAdRowState(progress, rowId, now);
+    if (state.status === "expired" && row.resetOnExpire) {
+      nextRows[rowId] = { ...rowProgress, adViews: 0, seriesStartedAt: null, seriesCompletedAt: null };
+      changed = true;
+    } else if (rowProgress.seriesCompletedAt && now - rowProgress.seriesCompletedAt >= AD_SERIES_WINDOW_MS) {
+      nextRows[rowId] = { ...rowProgress, seriesStartedAt: null, seriesCompletedAt: null };
+      changed = true;
+    }
+  }
+  return changed ? { ...progress, adRows: nextRows } : progress;
+}
+
+export function grantAdViewForRow(progress, animals, rowId, now = Date.now(), random = Math.random) {
+  const row = getAdRewardRow(rowId);
+  if (!row) return { progress, unlockedAnimals: [], blockedReason: "missing" };
+
+  const normalized = normalizeAdRows(progress, now);
+  const rowProgress = getAdRowProgress(normalized, rowId);
+  const rowState = getAdRowState(normalized, rowId, now);
+  if (rowState.status === "cooldown") return { progress: normalized, unlockedAnimals: [], blockedReason: "cooldown", remainingMs: rowState.remainingMs };
+
+  const lockedPool = getLockedAnimalsForRow(row, animals, normalized.unlockedIds);
+  if (!lockedPool.length) return { progress: normalized, unlockedAnimals: [], blockedReason: "complete" };
+
+  const seriesStartedAt = rowProgress.seriesStartedAt || now;
+  const nextAdViews = rowProgress.adViews + 1;
+  const shouldGrant = nextAdViews >= row.requiredViews;
+  const hitCooldownChunk = !shouldGrant && nextAdViews % ADS_PER_UNLOCK === 0;
+  const grantCount = shouldGrant ? Math.min(row.grantCount || 1, lockedPool.length) : 0;
+  const unlockedAnimals = grantCount ? takeRandom(lockedPool, grantCount, random) : [];
+  const unlockedIds = unlockedAnimals.length ? [...normalized.unlockedIds, ...unlockedAnimals.map((animal) => animal.id)] : normalized.unlockedIds;
+  const nextRowProgress = {
+    ...rowProgress,
+    adViews: shouldGrant && row.resetOnExpire ? 0 : nextAdViews,
+    totalAdViews: rowProgress.totalAdViews + 1,
+    seriesStartedAt: shouldGrant && row.resetOnExpire ? null : seriesStartedAt,
+    seriesCompletedAt: shouldGrant || hitCooldownChunk ? now : null,
+    categoryUnlocked: rowProgress.categoryUnlocked || shouldGrant
+  };
+
+  return {
+    progress: {
+      ...normalized,
+      unlockedIds,
+      highlightedUnlockId: unlockedAnimals[0]?.id || normalized.highlightedUnlockId,
+      adRows: { ...(normalized.adRows || {}), [rowId]: nextRowProgress }
+    },
+    unlockedAnimal: unlockedAnimals[0] || null,
+    unlockedAnimals
   };
 }
 
@@ -127,4 +210,14 @@ export function recordRoundResult(progress, result) {
     bestScore: Math.max(progress.bestScore, result.score),
     roundsWon: progress.roundsWon + 1
   };
+}
+
+function takeRandom(items, count, random) {
+  const pool = [...items];
+  const selected = [];
+  while (pool.length && selected.length < count) {
+    const index = Math.floor(random() * pool.length);
+    selected.push(pool.splice(index, 1)[0]);
+  }
+  return selected;
 }
