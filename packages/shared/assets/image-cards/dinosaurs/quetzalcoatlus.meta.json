@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-quetzalcoatlus",
+  "imageId": "dinosaurs/quetzalcoatlus",
+  "names": {
+    "sv": "Quetzalcoatlus",
+    "no": "Quetzalcoatlus",
+    "da": "Quetzalcoatlus",
+    "fi": "Quetzalcoatlus",
+    "is": "Quetzalcoatlus",
+    "en-GB": "Quetzalcoatlus",
+    "en-US": "Quetzalcoatlus",
+    "en-CA": "Quetzalcoatlus",
+    "en-AU": "Quetzalcoatlus",
+    "de": "Quetzalcoatlus",
+    "fr": "Quetzalcoatlus",
+    "es": "Quetzalcoatlus",
+    "it": "Quetzalcoatlus",
+    "nl": "Quetzalcoatlus",
+    "pt-BR": "Quetzalcoatlus",
+    "ja": "Quetzalcoatlus",
+    "ko": "Quetzalcoatlus",
+    "hi": "Quetzalcoatlus"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of giant flying prehistoric reptile standing tall. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no blood, no cluttered background. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T04:27:50.995Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

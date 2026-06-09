@@ -1,0 +1,32 @@
+{
+  "id": "dinosaur-iguanodon",
+  "imageId": "dinosaurs/iguanodon",
+  "names": {
+    "sv": "Iguanodon",
+    "no": "Iguanodon",
+    "da": "Iguanodon",
+    "fi": "Iguanodon",
+    "is": "Iguanodon",
+    "en-GB": "Iguanodon",
+    "en-US": "Iguanodon",
+    "en-CA": "Iguanodon",
+    "en-AU": "Iguanodon",
+    "de": "Iguanodon",
+    "fr": "Iguanodon",
+    "es": "Iguanodon",
+    "it": "Iguanodon",
+    "nl": "Iguanodon",
+    "pt-BR": "Iguanodon",
+    "ja": "Iguanodon",
+    "ko": "Iguanodon",
+    "hi": "Iguanodon"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of an Iguanodon dinosaur with exactly four legs: two front legs and two back legs only. The dinosaur is standing in a clear side view with all four legs visible, a long tail, a gentle friendly face, and a small thumb spike on each front hand. Do not draw any extra legs or extra limbs. Warm clean background, no text, no labels, no watermark, suitable for a children's mobile party game dinosaur image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no blood, no cluttered background. Strict anatomy: exactly 4 legs total, no fifth leg, no extra limbs, no duplicate tail, no text, no letters, no labels. Composition: centered full-body side view, all four legs visible, enough empty space for card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T08:31:12.708Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json",
+  "note": "Regenerated because previous review image had five legs."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-cimolestes",
+  "imageId": "dinosaurs/cimolestes",
+  "names": {
+    "sv": "Cimolestes",
+    "no": "Cimolestes",
+    "da": "Cimolestes",
+    "fi": "Cimolestes",
+    "is": "Cimolestes",
+    "en-GB": "Cimolestes",
+    "en-US": "Cimolestes",
+    "en-CA": "Cimolestes",
+    "en-AU": "Cimolestes",
+    "de": "Cimolestes",
+    "fr": "Cimolestes",
+    "es": "Cimolestes",
+    "it": "Cimolestes",
+    "nl": "Cimolestes",
+    "pt-BR": "Cimolestes",
+    "ja": "Cimolestes",
+    "ko": "Cimolestes",
+    "hi": "Cimolestes"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of small prehistoric mammal. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Period: Late Cretaceous. Diet: insectivore/carnivore. Size: small. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-09T00:18:25.195Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

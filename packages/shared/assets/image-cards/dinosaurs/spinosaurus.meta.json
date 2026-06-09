@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-spinosaurus",
+  "imageId": "dinosaurs/spinosaurus",
+  "names": {
+    "sv": "Spinosaurus",
+    "no": "Spinosaurus",
+    "da": "Spinosaurus",
+    "fi": "Spinosaurus",
+    "is": "Spinosaurus",
+    "en-GB": "Spinosaurus",
+    "en-US": "Spinosaurus",
+    "en-CA": "Spinosaurus",
+    "en-AU": "Spinosaurus",
+    "de": "Spinosaurus",
+    "fr": "Spinosaurus",
+    "es": "Spinosaurus",
+    "it": "Spinosaurus",
+    "nl": "Spinosaurus",
+    "pt-BR": "Spinosaurus",
+    "ja": "Spinosaurus",
+    "ko": "Spinosaurus",
+    "hi": "Spinosaurus"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of large dinosaur with sail on back near water. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no blood, no cluttered background. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T02:37:55.021Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

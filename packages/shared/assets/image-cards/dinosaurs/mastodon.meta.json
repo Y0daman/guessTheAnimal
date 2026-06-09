@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-mastodon",
+  "imageId": "dinosaurs/mastodon",
+  "names": {
+    "sv": "Mastodont",
+    "no": "Mastodon",
+    "da": "Mastodon",
+    "fi": "Mastodon",
+    "is": "Mastodon",
+    "en-GB": "Mastodon",
+    "en-US": "Mastodon",
+    "en-CA": "Mastodon",
+    "en-AU": "Mastodon",
+    "de": "Mastodon",
+    "fr": "Mastodon",
+    "es": "Mastodon",
+    "it": "Mastodon",
+    "nl": "Mastodon",
+    "pt-BR": "Mastodon",
+    "ja": "Mastodon",
+    "ko": "Mastodon",
+    "hi": "Mastodon"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of prehistoric elephant-like mammal with tusks. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Period: Miocene/Pleistocene. Diet: herbivore. Size: huge. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-09T00:25:10.416Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

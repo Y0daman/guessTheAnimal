@@ -1,12 +1,13 @@
-import { getAdRewardRow, getLockedAnimalsForRow } from "./ad-categories.js";
+import { getAdRewardRow, getLockedAnimalsForRow, isDinosaur } from "./ad-categories.js";
 
 export const ADS_PER_UNLOCK = 5;
 export const AD_SERIES_WINDOW_MS = 60 * 60 * 1000;
 export const INITIAL_UNLOCKED_CARDS = 36;
 
 export function createInitialProgress(animals) {
+  const starterAnimals = animals.filter((animal) => !isDinosaur(animal));
   return {
-    unlockedIds: animals.slice(0, INITIAL_UNLOCKED_CARDS).map((animal) => animal.id),
+    unlockedIds: starterAnimals.slice(0, INITIAL_UNLOCKED_CARDS).map((animal) => animal.id),
     adViews: 0,
     totalAdViews: 0,
     adSeriesStartedAt: null,
@@ -160,7 +161,7 @@ export function grantAdView(progress, animals, now = Date.now(), random = Math.r
     };
   }
 
-  const lockedAnimals = animals.filter((animal) => !normalized.unlockedIds.includes(animal.id));
+  const lockedAnimals = animals.filter((animal) => !isDinosaur(animal) && !normalized.unlockedIds.includes(animal.id));
   const unlockedAnimal = lockedAnimals[Math.floor(random() * lockedAnimals.length)] || null;
   return {
     progress: {
@@ -189,7 +190,7 @@ export function legacyGrantAdView(progress, animals) {
     };
   }
 
-  const lockedAnimals = animals.filter((animal) => !progress.unlockedIds.includes(animal.id));
+  const lockedAnimals = animals.filter((animal) => !isDinosaur(animal) && !progress.unlockedIds.includes(animal.id));
   const unlockedAnimal = lockedAnimals[Math.floor(Math.random() * lockedAnimals.length)] || null;
   return {
     progress: {

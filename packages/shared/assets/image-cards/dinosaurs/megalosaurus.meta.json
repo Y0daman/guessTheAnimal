@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-megalosaurus",
+  "imageId": "dinosaurs/megalosaurus",
+  "names": {
+    "sv": "Megalosaurus",
+    "no": "Megalosaurus",
+    "da": "Megalosaurus",
+    "fi": "Megalosaurus",
+    "is": "Megalosaurus",
+    "en-GB": "Megalosaurus",
+    "en-US": "Megalosaurus",
+    "en-CA": "Megalosaurus",
+    "en-AU": "Megalosaurus",
+    "de": "Megalosaurus",
+    "fr": "Megalosaurus",
+    "es": "Megalosaurus",
+    "it": "Megalosaurus",
+    "nl": "Megalosaurus",
+    "pt-BR": "Megalosaurus",
+    "ja": "Megalosaurus",
+    "ko": "Megalosaurus",
+    "hi": "Megalosaurus"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of large early-known predatory dinosaur. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Period: Middle Jurassic. Diet: carnivore. Size: large. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-09T00:25:31.571Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

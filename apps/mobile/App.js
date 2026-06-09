@@ -381,11 +381,15 @@ function AnimalDetailOverlay({ animal, onClose }) {
   return (
     <View style={styles.detailBackdrop}>
       <View style={styles.detailCard}>
-        <Image source={animalImages[animal.id]} style={styles.detailImage} resizeMode="contain" />
+        <Pressable onPress={onClose}>
+          <Image source={animalImages[animal.id]} style={styles.detailImage} resizeMode="contain" />
+        </Pressable>
         <Text style={styles.detailTitle}>{animal.name}</Text>
-        <Text style={styles.detailDescription}>{animal.description}</Text>
-        <View style={styles.detailRows}>{rows.map(([label, value]) => <View key={label} style={styles.detailRow}><Text style={styles.detailLabel}>{label}</Text><Text style={styles.detailValue}>{value}</Text></View>)}</View>
-        {animal.clues.length ? <Text style={styles.detailClues}>Ledtrådar: {animal.clues.join(" ")}</Text> : null}
+        <ScrollView style={styles.detailScroll} contentContainerStyle={styles.detailScrollContent} showsVerticalScrollIndicator>
+          <Text style={styles.detailDescription}>{animal.description}</Text>
+          <View style={styles.detailRows}>{rows.map(([label, value]) => <View key={label} style={styles.detailRow}><Text style={styles.detailLabel}>{label}</Text><Text style={styles.detailValue}>{value}</Text></View>)}</View>
+          {animal.clues.length ? <Text style={styles.detailClues}>Ledtrådar: {animal.clues.join(" ")}</Text> : null}
+        </ScrollView>
         <Button label="Stäng" onPress={onClose} />
       </View>
     </View>
@@ -498,7 +502,7 @@ const styles = StyleSheet.create({
   scoreLine: { color: "#2f7668", fontWeight: "900", marginTop: 8 }
   ,detailBackdrop: { ...StyleSheet.absoluteFillObject, zIndex: 30, padding: 18, backgroundColor: "rgba(20,34,31,0.52)", justifyContent: "center" },
   detailCard: { height: "88%", padding: 18, borderRadius: 30, backgroundColor: "#fffdf2", borderWidth: 3, borderColor: "rgba(91,189,106,0.45)" },
-  detailImage: { alignSelf: "center", width: 176, height: 176, borderRadius: 24, backgroundColor: "#fff8e6" },
+  detailImage: { alignSelf: "center", width: "100%", height: 280, borderRadius: 24, backgroundColor: "#fff8e6" },
   detailTitle: { marginTop: 12, color: "#1f352f", fontSize: 34, fontWeight: "900", letterSpacing: -1.4, textAlign: "center" },
   detailScroll: { flex: 1, marginTop: 8, marginBottom: 12 },
   detailScrollContent: { paddingBottom: 8 },

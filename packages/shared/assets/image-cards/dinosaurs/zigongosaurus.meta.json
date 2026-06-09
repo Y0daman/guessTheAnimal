@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-zigongosaurus",
+  "imageId": "dinosaurs/zigongosaurus",
+  "names": {
+    "sv": "Zigongosaurus",
+    "no": "Zigongosaurus",
+    "da": "Zigongosaurus",
+    "fi": "Zigongosaurus",
+    "is": "Zigongosaurus",
+    "en-GB": "Zigongosaurus",
+    "en-US": "Zigongosaurus",
+    "en-CA": "Zigongosaurus",
+    "en-AU": "Zigongosaurus",
+    "de": "Zigongosaurus",
+    "fr": "Zigongosaurus",
+    "es": "Zigongosaurus",
+    "it": "Zigongosaurus",
+    "nl": "Zigongosaurus",
+    "pt-BR": "Zigongosaurus",
+    "ja": "Zigongosaurus",
+    "ko": "Zigongosaurus",
+    "hi": "Zigongosaurus"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of long-necked sauropod dinosaur. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Period: Jurassic. Diet: herbivore. Size: huge. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-09T00:47:51.261Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

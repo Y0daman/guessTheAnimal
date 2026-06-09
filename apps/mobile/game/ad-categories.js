@@ -16,5 +16,9 @@ export function getAdRewardRow(rowId) {
 }
 
 export function getLockedAnimalsForRow(row, animals, unlockedIds) {
-  return animals.filter((animal) => !unlockedIds.includes(animal.id) && row.matches(animal));
+  return animals.filter((animal) => !unlockedIds.includes(animal.id) && (row.id === "dinosaurs" ? isDinosaur(animal) : !isDinosaur(animal)) && row.matches(animal));
+}
+
+export function isDinosaur(animal) {
+  return animal.category === "dinosaurs" || animal.tags?.includes("dinosaurs") || animal.id.startsWith("dinosaur-");
 }

@@ -2,14 +2,16 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import { QUESTIONS } from "./animal-facts.js";
+import { getLockedAnimalsForRow, isDinosaur } from "./ad-categories.js";
 import { getAnimalAttributes, REQUIRED_ATTRIBUTE_KEYS } from "./animal-attributes.js";
 import { askQuestion, calculateScore, createReadyRound, getPossibleAnimals, guessAnimal, matchesKnownAnswers, ROUND_PHASE } from "./solo-game.js";
-import { AD_SERIES_WINDOW_MS, ADS_PER_UNLOCK, getAdSeriesState, grantAdView, grantAdViewForRow, mergeSavedProgress, normalizeAdSeries } from "./progress.js";
+import { AD_SERIES_WINDOW_MS, ADS_PER_UNLOCK, createInitialProgress, getAdSeriesState, grantAdView, grantAdViewForRow, mergeSavedProgress, normalizeAdSeries } from "./progress.js";
 
 const lion = animal("animal-lion", "Lejon", ["savann"], "lejon gul savann");
 const shark = animal("animal-shark", "Haj", ["hav"], "haj hav blå");
 const zebra = animal("animal-zebra", "Zebra", ["savann"], "zebra svartvita ränder");
 const clownfish = animal("animal-clownfish", "Clownfisk", ["korallrev", "hav"], "clownfisk orange liten");
+const triceratops = { ...animal("dinosaur-triceratops", "Triceratops", ["land"], "dinosaurie horn"), category: "dinosaurs", tags: ["dinosaurs"] };
 const animals = [lion, shark, zebra];
 
 test("question catalog contains playable questions", () => {
@@ -83,6 +85,15 @@ test("ad reward rows unlock animals from their category", () => {
   }
   assert.equal(unlockedAnimal.id, shark.id);
   assert.equal(progress.unlockedIds.includes(shark.id), true);
+});
+
+test("dinosaurs are not included in starter unlocks or regular rows", () => {
+  const mixedAnimals = [lion, triceratops, shark, zebra];
+  const progress = createInitialProgress(mixedAnimals);
+  assert.equal(progress.unlockedIds.includes(triceratops.id), false);
+  assert.equal(isDinosaur(triceratops), true);
+  assert.equal(getLockedAnimalsForRow({ id: "land", matches: () => true }, mixedAnimals, progress.unlockedIds).some((item) => item.id === triceratops.id), false);
+  assert.equal(getLockedAnimalsForRow({ id: "dinosaurs", matches: () => true }, mixedAnimals, progress.unlockedIds).some((item) => item.id === triceratops.id), true);
 });
 
 test("animal size metadata answers big and small correctly", () => {

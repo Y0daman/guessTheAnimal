@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-compsognathus",
+  "imageId": "dinosaurs/compsognathus",
+  "names": {
+    "sv": "Compsognathus",
+    "no": "Compsognathus",
+    "da": "Compsognathus",
+    "fi": "Compsognathus",
+    "is": "Compsognathus",
+    "en-GB": "Compsognathus",
+    "en-US": "Compsognathus",
+    "en-CA": "Compsognathus",
+    "en-AU": "Compsognathus",
+    "de": "Compsognathus",
+    "fr": "Compsognathus",
+    "es": "Compsognathus",
+    "it": "Compsognathus",
+    "nl": "Compsognathus",
+    "pt-BR": "Compsognathus",
+    "ja": "Compsognathus",
+    "ko": "Compsognathus",
+    "hi": "Compsognathus"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of tiny dinosaur standing on two legs. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no blood, no cluttered background. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T03:48:59.508Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

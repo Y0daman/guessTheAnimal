@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-lesothosaurus",
+  "imageId": "dinosaurs/lesothosaurus",
+  "names": {
+    "sv": "Lesothosaurus",
+    "no": "Lesothosaurus",
+    "da": "Lesothosaurus",
+    "fi": "Lesothosaurus",
+    "is": "Lesothosaurus",
+    "en-GB": "Lesothosaurus",
+    "en-US": "Lesothosaurus",
+    "en-CA": "Lesothosaurus",
+    "en-AU": "Lesothosaurus",
+    "de": "Lesothosaurus",
+    "fr": "Lesothosaurus",
+    "es": "Lesothosaurus",
+    "it": "Lesothosaurus",
+    "nl": "Lesothosaurus",
+    "pt-BR": "Lesothosaurus",
+    "ja": "Lesothosaurus",
+    "ko": "Lesothosaurus",
+    "hi": "Lesothosaurus"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of small agile plant-eating dinosaur. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Period: Early Jurassic. Diet: herbivore. Size: small. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-09T00:24:26.529Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

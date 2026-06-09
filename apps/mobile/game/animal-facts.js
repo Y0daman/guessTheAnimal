@@ -26,7 +26,7 @@ const BLUE_WATER_IDS = new Set(["animal-whale", "animal-dolphin", "animal-shark"
 const RED_PINK_IDS = new Set(["animal-flamingo", "animal-pig", "animal-crab", "animal-lobster", "animal-ladybug", "animal-fox", "animal-orangutan", "animal-rooster"]);
 
 export function normalizeAnimal(raw) {
-  const slug = raw.imageId.replace("animals/", "");
+  const slug = raw.imageId.split("/").at(-1);
   const searchText = [raw.nameSv, raw.descriptionSv, ...(raw.habitats || []), ...(raw.continents || []), ...(raw.cluesSv || []), ...(raw.gameIdeas || [])]
     .join(" ")
     .toLowerCase();
@@ -35,7 +35,7 @@ export function normalizeAnimal(raw) {
     id: raw.id,
     slug,
     name: raw.nameSv || raw.names?.sv || slug,
-    imageUrl: `/packages/shared/assets/image-cards/animals/${slug}.png`,
+    imageUrl: `/packages/shared/assets/image-cards/${raw.imageId}.png`,
     description: raw.descriptionSv || "",
     difficulty: raw.difficulty || "easy",
     category: raw.category || "animals",

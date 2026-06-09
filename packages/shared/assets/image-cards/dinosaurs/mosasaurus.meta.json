@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-mosasaurus",
+  "imageId": "dinosaurs/mosasaurus",
+  "names": {
+    "sv": "Mosasaurus",
+    "no": "Mosasaurus",
+    "da": "Mosasaurus",
+    "fi": "Mosasaurus",
+    "is": "Mosasaurus",
+    "en-GB": "Mosasaurus",
+    "en-US": "Mosasaurus",
+    "en-CA": "Mosasaurus",
+    "en-AU": "Mosasaurus",
+    "de": "Mosasaurus",
+    "fr": "Mosasaurus",
+    "es": "Mosasaurus",
+    "it": "Mosasaurus",
+    "nl": "Mosasaurus",
+    "pt-BR": "Mosasaurus",
+    "ja": "Mosasaurus",
+    "ko": "Mosasaurus",
+    "hi": "Mosasaurus"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of large marine prehistoric reptile swimming, friendly non-scary. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no blood, no cluttered background. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T04:30:06.887Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

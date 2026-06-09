@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-coelophysis",
+  "imageId": "dinosaurs/coelophysis",
+  "names": {
+    "sv": "Coelophysis",
+    "no": "Coelophysis",
+    "da": "Coelophysis",
+    "fi": "Coelophysis",
+    "is": "Coelophysis",
+    "en-GB": "Coelophysis",
+    "en-US": "Coelophysis",
+    "en-CA": "Coelophysis",
+    "en-AU": "Coelophysis",
+    "de": "Coelophysis",
+    "fr": "Coelophysis",
+    "es": "Coelophysis",
+    "it": "Coelophysis",
+    "nl": "Coelophysis",
+    "pt-BR": "Coelophysis",
+    "ja": "Coelophysis",
+    "ko": "Coelophysis",
+    "hi": "Coelophysis"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of slender early dinosaur standing on two legs. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no blood, no cluttered background. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T04:10:15.827Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

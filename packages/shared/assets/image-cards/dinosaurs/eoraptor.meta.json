@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-eoraptor",
+  "imageId": "dinosaurs/eoraptor",
+  "names": {
+    "sv": "Eoraptor",
+    "no": "Eoraptor",
+    "da": "Eoraptor",
+    "fi": "Eoraptor",
+    "is": "Eoraptor",
+    "en-GB": "Eoraptor",
+    "en-US": "Eoraptor",
+    "en-CA": "Eoraptor",
+    "en-AU": "Eoraptor",
+    "de": "Eoraptor",
+    "fr": "Eoraptor",
+    "es": "Eoraptor",
+    "it": "Eoraptor",
+    "nl": "Eoraptor",
+    "pt-BR": "Eoraptor",
+    "ja": "Eoraptor",
+    "ko": "Eoraptor",
+    "hi": "Eoraptor"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of one of the earliest small dinosaurs. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Period: Late Triassic. Diet: omnivore. Size: small. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-09T00:21:31.175Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

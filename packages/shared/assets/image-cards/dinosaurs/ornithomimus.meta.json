@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-ornithomimus",
+  "imageId": "dinosaurs/ornithomimus",
+  "names": {
+    "sv": "Ornithomimus",
+    "no": "Ornithomimus",
+    "da": "Ornithomimus",
+    "fi": "Ornithomimus",
+    "is": "Ornithomimus",
+    "en-GB": "Ornithomimus",
+    "en-US": "Ornithomimus",
+    "en-CA": "Ornithomimus",
+    "en-AU": "Ornithomimus",
+    "de": "Ornithomimus",
+    "fr": "Ornithomimus",
+    "es": "Ornithomimus",
+    "it": "Ornithomimus",
+    "nl": "Ornithomimus",
+    "pt-BR": "Ornithomimus",
+    "ja": "Ornithomimus",
+    "ko": "Ornithomimus",
+    "hi": "Ornithomimus"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of ostrich-like fast dinosaur. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Period: Late Cretaceous. Diet: omnivore. Size: medium. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-09T00:27:10.853Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

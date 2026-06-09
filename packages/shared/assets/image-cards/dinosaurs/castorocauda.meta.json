@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-castorocauda",
+  "imageId": "dinosaurs/castorocauda",
+  "names": {
+    "sv": "Castorocauda",
+    "no": "Castorocauda",
+    "da": "Castorocauda",
+    "fi": "Castorocauda",
+    "is": "Castorocauda",
+    "en-GB": "Castorocauda",
+    "en-US": "Castorocauda",
+    "en-CA": "Castorocauda",
+    "en-AU": "Castorocauda",
+    "de": "Castorocauda",
+    "fr": "Castorocauda",
+    "es": "Castorocauda",
+    "it": "Castorocauda",
+    "nl": "Castorocauda",
+    "pt-BR": "Castorocauda",
+    "ja": "Castorocauda",
+    "ko": "Castorocauda",
+    "hi": "Castorocauda"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of beaver-like prehistoric mammal that swam. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Period: Middle Jurassic. Diet: piscivore. Size: small. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-09T00:17:37.196Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

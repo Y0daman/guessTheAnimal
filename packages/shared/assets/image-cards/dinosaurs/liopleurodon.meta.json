@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-liopleurodon",
+  "imageId": "dinosaurs/liopleurodon",
+  "names": {
+    "sv": "Liopleurodon",
+    "no": "Liopleurodon",
+    "da": "Liopleurodon",
+    "fi": "Liopleurodon",
+    "is": "Liopleurodon",
+    "en-GB": "Liopleurodon",
+    "en-US": "Liopleurodon",
+    "en-CA": "Liopleurodon",
+    "en-AU": "Liopleurodon",
+    "de": "Liopleurodon",
+    "fr": "Liopleurodon",
+    "es": "Liopleurodon",
+    "it": "Liopleurodon",
+    "nl": "Liopleurodon",
+    "pt-BR": "Liopleurodon",
+    "ja": "Liopleurodon",
+    "ko": "Liopleurodon",
+    "hi": "Liopleurodon"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of large marine reptile with flippers, non-scary. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no blood, no cluttered background. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T04:37:35.060Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}

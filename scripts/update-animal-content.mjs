@@ -4,9 +4,11 @@ import { execFileSync } from "node:child_process";
 
 const projectRoot = resolve(import.meta.dirname, "..");
 const sourceRoot = "/Users/sssyhs/Documents/git/imposter/packages/shared/assets/image-cards/animals";
+const dinosaurSourceRoot = "/Users/sssyhs/Documents/git/imposter/packages/shared/assets/image-cards/dinosaurs";
 const targetRoot = resolve(projectRoot, "packages/shared/assets/image-cards/animals");
+const dinosaurTargetRoot = resolve(projectRoot, "packages/shared/assets/image-cards/dinosaurs");
 const mobileRoot = resolve(projectRoot, "apps/mobile");
-const mobileAssetsRoot = resolve(mobileRoot, "assets/animals-512");
+const mobileAssetsRoot = resolve(mobileRoot, "assets/cards-512");
 
 const requiredAttributeKeys = [
   "size",
@@ -43,10 +45,12 @@ const largeIds = new Set(["animal-lion", "animal-tiger", "animal-zebra", "animal
 const hardIds = new Set(["animal-cobra", "animal-rattlesnake", "animal-viper", "animal-python", "animal-boa-constrictor", "animal-anaconda", "animal-budgie-blue", "animal-cockatiel", "animal-macaw", "animal-hummingbird", "animal-kingfisher", "animal-puffin", "animal-ibis", "animal-cassowary", "animal-quail", "animal-pheasant", "animal-flamingo-chick", "animal-shrew", "animal-vole", "animal-degu", "animal-groundhog", "animal-opossum", "animal-tasmanian-devil", "animal-quokka", "animal-tree-kangaroo", "animal-echidna", "animal-fennec-fox", "animal-arctic-fox", "animal-red-deer", "animal-roe-deer", "animal-warthog", "animal-impala", "animal-springbok", "animal-oryx", "animal-okapi-calf", "animal-dugong", "animal-narwhal", "animal-beluga", "animal-hammerhead-shark", "animal-stingray", "animal-manta-ray", "animal-pufferfish", "animal-moray-eel", "animal-swordfish", "animal-marlin", "animal-guppy", "animal-axolotl", "animal-newt", "animal-tree-frog", "animal-poison-dart-frog", "animal-firefly", "animal-stag-beetle", "animal-termite", "animal-centipede", "animal-millipede", "animal-hermit-crab", "animal-prawn", "animal-sea-urchin", "animal-sea-cucumber", "animal-flying-fish", "animal-flying-squirrel", "animal-flying-fox", "animal-vampire-bat", "animal-sperm-whale", "animal-plankton", "animal-woodlouse", "animal-fire-ant", "animal-black-widow", "animal-deep-sea-anglerfish", "animal-basking-shark", "animal-monkfish", "animal-lionfish", "animal-bactrian-camel", "animal-giant-tortoise", "animal-monitor-lizard", "animal-komodo-dragon", "animal-pangolin", "animal-aardvark", "animal-mandrill", "animal-gibbon", "animal-macaque", "animal-capuchin", "animal-proboscis-monkey", "animal-bearded-dragon", "animal-tuatara"]);
 
 const source = JSON.parse(readFileSync(resolve(sourceRoot, "metadata.json"), "utf8"));
+const dinosaurSource = existsSync(resolve(dinosaurSourceRoot, "metadata.json")) ? JSON.parse(readFileSync(resolve(dinosaurSourceRoot, "metadata.json"), "utf8")) : { dinosaurCards: [] };
 const previousTarget = existsSync(resolve(targetRoot, "metadata.json")) ? JSON.parse(readFileSync(resolve(targetRoot, "metadata.json"), "utf8")) : { animals: [] };
 const previousById = new Map(previousTarget.animals.map((animal) => [animal.id, animal]));
 
 mkdirSync(targetRoot, { recursive: true });
+mkdirSync(dinosaurTargetRoot, { recursive: true });
 for (const animal of source.animals) {
   const slug = animal.imageId.replace("animals/", "");
   for (const suffix of [".png", ".meta.json"]) {
@@ -54,19 +58,29 @@ for (const animal of source.animals) {
     if (existsSync(sourcePath)) cpSync(sourcePath, resolve(targetRoot, basename(sourcePath)));
   }
 }
+for (const dinosaur of dinosaurSource.dinosaurCards || []) {
+  const slug = dinosaur.imageId.replace("dinosaurs/", "");
+  for (const suffix of [".png", ".meta.json"]) {
+    const sourcePath = resolve(dinosaurSourceRoot, `${slug}${suffix}`);
+    if (existsSync(sourcePath)) cpSync(sourcePath, resolve(dinosaurTargetRoot, basename(sourcePath)));
+  }
+}
 
 const playableSourceAnimals = source.animals.filter((animal) => existsSync(resolve(sourceRoot, `${animal.imageId.replace("animals/", "")}.png`)));
 const skippedAnimals = source.animals.filter((animal) => !existsSync(resolve(sourceRoot, `${animal.imageId.replace("animals/", "")}.png`)));
+const playableDinosaurs = (dinosaurSource.dinosaurCards || [])
+  .filter((animal) => existsSync(resolve(dinosaurSourceRoot, `${animal.imageId.replace("dinosaurs/", "")}.png`)))
+  .map((animal) => ({ ...animal, category: "dinosaurs", tags: [...new Set([...(animal.tags || []), "dinosaurs", "prehistoric"])] }));
 
-const mergedAnimals = playableSourceAnimals.map((sourceAnimal) => {
+const mergedAnimals = [...playableSourceAnimals, ...playableDinosaurs].map((sourceAnimal) => {
   const previous = previousById.get(sourceAnimal.id);
   const base = { ...sourceAnimal };
   const attributes = previous?.attributes || inferAttributes(sourceAnimal);
   base.attributes = materializeAttributes(attributes);
   base.difficulty = inferDifficulty(sourceAnimal);
   base.cluesSv = buildClues(sourceAnimal, base.attributes);
-  base.assetPath = `asset:image-cards/animals/${sourceAnimal.imageId.replace("animals/", "")}.png`;
-  base.generatedMetadataPath = `packages/shared/assets/image-cards/animals/${sourceAnimal.imageId.replace("animals/", "")}.meta.json`;
+  base.assetPath = `asset:image-cards/${sourceAnimal.imageId}.png`;
+  base.generatedMetadataPath = `packages/shared/assets/image-cards/${sourceAnimal.imageId}.meta.json`;
   return base;
 });
 
@@ -80,13 +94,14 @@ for (const file of ["animal-attributes.js", "animal-facts.js", "progress.js", "s
 cpSync(resolve(targetRoot, "metadata.json"), resolve(mobileRoot, "metadata.json"));
 
 rmSync(mobileAssetsRoot, { force: true, recursive: true });
-mkdirSync(mobileAssetsRoot, { recursive: true });
-execFileSync("magick", ["mogrify", "-path", mobileAssetsRoot, "-resize", "512x512", "-strip", "-define", "png:compression-level=9", `${targetRoot}/*.png`], { stdio: "inherit" });
+mkdirSync(resolve(mobileAssetsRoot, "animals"), { recursive: true });
+mkdirSync(resolve(mobileAssetsRoot, "dinosaurs"), { recursive: true });
+execFileSync("magick", ["mogrify", "-path", resolve(mobileAssetsRoot, "animals"), "-resize", "512x512", "-strip", "-define", "png:compression-level=9", `${targetRoot}/*.png`], { stdio: "inherit" });
+if (playableDinosaurs.length) execFileSync("magick", ["mogrify", "-path", resolve(mobileAssetsRoot, "dinosaurs"), "-resize", "512x512", "-strip", "-define", "png:compression-level=9", `${dinosaurTargetRoot}/*.png`], { stdio: "inherit" });
 
 const imageMap = ["export const animalImages = {"];
 for (const animal of mergedAnimals) {
-  const slug = animal.imageId.replace("animals/", "");
-  imageMap.push(`  ${JSON.stringify(animal.id)}: require("./assets/animals-512/${slug}.png"),`);
+  imageMap.push(`  ${JSON.stringify(animal.id)}: require("./assets/cards-512/${animal.imageId}.png"),`);
 }
 imageMap.push("};\n");
 writeFileSync(resolve(mobileRoot, "animal-images.js"), imageMap.join("\n"));
@@ -128,6 +143,8 @@ function inferAttributes(animal) {
   const laysEggs = isBird || isInsect || isArachnid && !slug.includes("scorpion") || isCrustacean || isFishLike || isReptile || isAmphibian || isMollusc || isAquaticNoLegs || ["platypus", "echidna"].some((item) => slug.includes(item));
   const mostlyLand = !(isFishLike || isAquaticNoLegs || ["seal", "sea-lion", "walrus", "dugong", "manatee", "otter"].some((item) => slug.includes(item)) || isCrustacean || ["clam", "oyster", "octopus", "squid"].some((item) => slug.includes(item)));
 
+  const isDinosaur = animal.category === "dinosaurs" || animal.id.startsWith("dinosaur-");
+
   return {
     size: inferSize(animal, slug),
     colors: inferColors(text, slug),
@@ -142,7 +159,7 @@ function inferAttributes(animal) {
     farmAnimal: farmIds.has(animal.id),
     pet: petIds.has(animal.id),
     coldHabitat: ["arktis", "havsis", "is", "arctic", "polar", "beluga", "narwhal", "walrus", "reindeer", "penguin"].some((word) => text.includes(word)),
-    shellOrArmor: isCrustacean || ["turtle", "tortoise", "armadillo", "pangolin", "beetle", "snail", "clam", "oyster", "urchin"].some((item) => slug.includes(item))
+    shellOrArmor: isCrustacean || ["turtle", "tortoise", "armadillo", "pangolin", "beetle", "snail", "clam", "oyster", "urchin", "ankylosaurus", "nodosaurus"].some((item) => slug.includes(item)) || isDinosaur && ["stegosaurus", "triceratops", "styracosaurus", "kentrosaurus"].some((item) => slug.includes(item))
   };
 }
 
@@ -153,6 +170,11 @@ function materializeAttributes(attributes) {
 }
 
 function inferSize(animal, slug) {
+  if (animal.category === "dinosaurs" || animal.id.startsWith("dinosaur-")) {
+    if (["microraptor", "oviraptor"].some((item) => slug.includes(item))) return "small";
+    if (["tyrannosaurus", "brachiosaurus", "brontosaurus", "spinosaurus", "mosasaurus", "plesiosaurus", "ichthyosaurus"].some((item) => slug.includes(item))) return "huge";
+    return "large";
+  }
   if (hugeIds.has(animal.id)) return "huge";
   if (largeIds.has(animal.id)) return "large";
   if (["mosquito", "fly", "tick", "flea", "plankton", "shrimp", "prawn", "guppy", "goldfish", "seahorse", "frog", "toad", "newt", "axolotl", "firefly", "moth", "caterpillar", "beetle", "cricket", "termite", "centipede", "millipede", "clam", "oyster", "urchin", "coral", "cucumber", "mole", "shrew", "vole", "gerbil", "degu", "chipmunk", "quokka", "kiwi", "quail", "canary", "hummingbird", "budgie", "budgerigar", "cockatiel", "gecko"].some((item) => slug.includes(item))) return "small";
@@ -176,6 +198,7 @@ function inferPattern(text, slug) {
 }
 
 function inferDifficulty(animal) {
+  if (animal.category === "dinosaurs" || animal.id.startsWith("dinosaur-")) return "hard";
   if (hardIds.has(animal.id)) return "hard";
   const slug = animal.imageId.replace("animals/", "");
   if (slug.includes("-") && !["polar-bear", "brown-bear", "sea-lion", "red-panda", "guinea-pig"].includes(slug)) return "hard";

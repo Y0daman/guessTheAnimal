@@ -1,0 +1,31 @@
+{
+  "id": "dinosaur-plesiosaurus",
+  "imageId": "dinosaurs/plesiosaurus",
+  "names": {
+    "sv": "Plesiosaurus",
+    "no": "Plesiosaurus",
+    "da": "Plesiosaurus",
+    "fi": "Plesiosaurus",
+    "is": "Plesiosaurus",
+    "en-GB": "Plesiosaurus",
+    "en-US": "Plesiosaurus",
+    "en-CA": "Plesiosaurus",
+    "en-AU": "Plesiosaurus",
+    "de": "Plesiosaurus",
+    "fr": "Plesiosaurus",
+    "es": "Plesiosaurus",
+    "it": "Plesiosaurus",
+    "nl": "Plesiosaurus",
+    "pt-BR": "Plesiosaurus",
+    "ja": "Plesiosaurus",
+    "ko": "Plesiosaurus",
+    "hi": "Plesiosaurus"
+  },
+  "prompt": "A cute child-friendly cartoon vector illustration of marine reptile with long neck and flippers. Clear centered full-body subject when possible, rounded soft shapes, warm clean background, no text, no letters, no labels, no watermark, non-scary, suitable for a children's mobile party game dinosaur image card. Style: child-friendly cartoon vector illustration, rounded shapes, clear silhouette, warm clean background, no text in image. Negative requirements: no text, no watermark, no scary gore, no realistic violence, no blood, no cluttered background. Strict: no text, no letters, no dinosaur name, no labels, no watermark, no scary gore, no realistic violence, no cluttered background. Composition: centered prehistoric animal, full body visible when possible, enough empty space around subject for a card layout.",
+  "provider": "openai",
+  "model": "gpt-image-2",
+  "quality": "low",
+  "size": "1024x1024",
+  "generatedAt": "2026-06-08T04:30:28.294Z",
+  "sourceMetadata": "packages/shared/assets/image-cards/dinosaurs/metadata.json"
+}
