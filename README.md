@@ -97,6 +97,20 @@ npm test
 npm run build
 ```
 
+## Bildgalleri
+
+Alla kortbilder kan granskas på en statisk HTML-sida:
+
+```text
+packages/shared/assets/image-cards/gallery.html
+```
+
+Regenerera galleriet efter ändringar i metadata eller bilder:
+
+```bash
+node scripts/generate-image-gallery.mjs
+```
+
 ## Kör Som Mobilapp
 
 Mobilleveransen ligger i `apps/mobile`. Den är en fristående Expo-app som använder lokal metadata, lokala djurbilder och samma spelmotor som webbdemot. Den kräver ingen Vite-server och ingen backend.
